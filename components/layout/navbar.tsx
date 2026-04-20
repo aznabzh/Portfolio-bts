@@ -20,13 +20,13 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80">
       <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 lg:px-6">
-        <Link href="/" className="flex items-center gap-2 text-sm font-semibold tracking-tight">
-          <span className="flex items-center justify-center w-7 h-7 rounded bg-primary text-primary-foreground">
+        <Link href="/" className="flex items-center gap-2.5 text-[13px] font-semibold tracking-tight">
+          <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-foreground shadow-sm">
             <Terminal className="h-4 w-4" />
           </span>
-          <span className="hidden sm:inline">portfolio</span>
+          <span className="hidden sm:inline font-semibold">portfolio</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -36,10 +36,10 @@ export function Navbar() {
               <Link
                 href={link.href}
                 className={cn(
-                  "px-3 py-1.5 text-[13px] font-medium rounded-md transition-colors",
+                  "px-3.5 py-2 text-[13px] font-medium rounded-lg transition-all",
                   pathname === link.href
-                    ? "bg-secondary text-foreground"
-                    : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                    ? "bg-secondary text-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
                 )}
               >
                 {link.label}
@@ -52,7 +52,7 @@ export function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden h-8 w-8"
+          className="md:hidden h-9 w-9"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
@@ -62,18 +62,18 @@ export function Navbar() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
-          <ul className="flex flex-col p-2">
+        <div className="md:hidden border-t border-border bg-card/95 backdrop-blur-md">
+          <ul className="flex flex-col p-3 gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
-                    "block px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                    "block px-4 py-2.5 text-[13px] font-medium rounded-lg transition-all",
                     pathname === link.href
                       ? "bg-secondary text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
                   )}
                 >
                   {link.label}
