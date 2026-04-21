@@ -2,14 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, FileText, Image, Code, FileCode, File, ChevronRight, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { 
-  getProjectById, 
-  getCompetencyById, 
+import {
+  competencies,
+  getProjectById,
   getCategoryLabel,
   getProofTypeLabel,
   projects,
-  type Proof 
+  type Proof,
 } from "@/lib/data";
+import { getProjectDetailViewModel } from "@/lib/view-models/project-detail";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -46,6 +47,8 @@ export default async function ProjectDetailPage({
   if (!project) {
     notFound();
   }
+
+  const projectDetail = getProjectDetailViewModel(project, competencies);
 
   return (
     <div className="py-10 md:py-12">
@@ -107,47 +110,42 @@ export default async function ProjectDetailPage({
               </div>
 
               <div className="space-y-4">
-                {project.competencyProofs.map((cp) => {
-                  const competency = getCompetencyById(cp.competencyId);
-                  if (!competency) return null;
-
-                  return (
-                    <div
-                      key={cp.competencyId}
-                      className="rounded-lg border border-border bg-card overflow-hidden"
-                    >
-                      {/* Competency Header */}
-                      <div className="flex items-center gap-3.5 px-5 py-4 bg-secondary/50 border-b border-border">
-                        <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
-                          {competency.code}
-                        </span>
-                        <div className="min-w-0">
-                          <p className="text-[13px] font-semibold">{competency.name}</p>
-                        </div>
-                      </div>
-
-                      {/* Proofs List */}
-                      <div className="divide-y divide-border">
-                        {cp.proofs.map((proof) => (
-                          <div
-                            key={proof.id}
-                            className="flex items-start gap-4 px-5 py-4 hover:bg-secondary/30 transition-colors"
-                          >
-                            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-secondary text-muted-foreground shrink-0">
-                              <ProofIcon type={proof.type} />
-                            </div>
-                            <div className="min-w-0 flex-1">
-                              <p className="text-[13px] font-medium">{proof.title}</p>
-                              <p className="text-[12px] text-muted-foreground mt-1 leading-relaxed">
-                                <span className="font-medium">{getProofTypeLabel(proof.type)}</span> — {proof.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
+                {projectDetail.proofGroups.map((group) => (
+                  <div
+                    key={group.competencyId}
+                    className="rounded-lg border border-border bg-card overflow-hidden"
+                  >
+                    {/* Competency Header */}
+                    <div className="flex items-center gap-3.5 px-5 py-4 bg-secondary/50 border-b border-border">
+                      <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
+                        {group.competencyCode}
+                      </span>
+                      <div className="min-w-0">
+                        <p className="text-[13px] font-semibold">{group.competencyName}</p>
                       </div>
                     </div>
-                  );
-                })}
+
+                    {/* Proofs List */}
+                    <div className="divide-y divide-border">
+                      {group.proofs.map((proof) => (
+                        <div
+                          key={proof.id}
+                          className="flex items-start gap-4 px-5 py-4 hover:bg-secondary/30 transition-colors"
+                        >
+                          <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-secondary text-muted-foreground shrink-0">
+                            <ProofIcon type={proof.type} />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-[13px] font-medium">{proof.title}</p>
+                            <p className="text-[12px] text-muted-foreground mt-1 leading-relaxed">
+                              <span className="font-medium">{getProofTypeLabel(proof.type)}</span> — {proof.description}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
           </div>
@@ -177,17 +175,14 @@ export default async function ProjectDetailPage({
                 Compétences mobilisées
               </p>
               <div className="space-y-2.5">
-                {project.competencies.map((compId) => {
-                  const comp = getCompetencyById(compId);
-                  return comp ? (
-                    <div key={compId} className="flex items-start gap-2.5">
-                      <span className="shrink-0 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-border text-muted-foreground">
-                        {comp.code}
-                      </span>
-                      <span className="text-[12px] text-muted-foreground leading-snug">{comp.name}</span>
-                    </div>
-                  ) : null;
-                })}
+                {projectDetail.competencies.map((competency) => (
+                  <div key={competency.id} className="flex items-start gap-2.5">
+                    <span className="shrink-0 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-border text-muted-foreground">
+                      {competency.code}
+                    </span>
+                    <span className="text-[12px] text-muted-foreground leading-snug">{competency.name}</span>
+                  </div>
+                ))}
               </div>
             </div>
 

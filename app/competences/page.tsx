@@ -66,7 +66,7 @@ export default function CompetencesPage() {
                       </td>
                     </tr>
                     {/* Projects in Group */}
-                    {group.projects.map((project) => (
+                    {group.projects.map(({ project, coveredCompetencyIds }) => (
                       <tr
                         key={project.id}
                         className="hover:bg-secondary/40 transition-colors"
@@ -78,7 +78,7 @@ export default function CompetencesPage() {
                           </div>
                         </td>
                         {competencies.map((comp) => {
-                          const hasCompetency = project.competencies.includes(comp.id);
+                          const hasCompetency = coveredCompetencyIds.has(comp.id);
                           return (
                             <td
                               key={comp.id}

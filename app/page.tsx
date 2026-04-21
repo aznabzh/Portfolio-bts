@@ -1,13 +1,17 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Folder, BookOpen, Rss, ExternalLink } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Folder, BookOpen, Rss } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { studentInfo, projects, competencies, watchEntries, getCategoryLabel } from "@/lib/data";
+import { getHomeViewModel } from "@/lib/view-models/home";
 
 export default function Home() {
-  const featuredProjects = projects.slice(0, 3);
-  const featuredCompetencies = competencies.slice(0, 6);
-  const featuredWatch = watchEntries.slice(0, 3);
+  const homeViewModel = getHomeViewModel(
+    projects,
+    competencies,
+    watchEntries,
+    getCategoryLabel,
+  );
 
   return (
     <div className="flex flex-col">
@@ -104,7 +108,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {featuredProjects.map((project) => (
+            {homeViewModel.featuredProjectCards.map(({ project, categoryShortLabel, previewTechnologies, remainingTechnologyCount }) => (
               <Link
                 key={project.id}
                 href={`/projets/${project.id}`}
@@ -112,7 +116,7 @@ export default function Home() {
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-secondary text-muted-foreground uppercase tracking-wide">
-                    {getCategoryLabel(project.category).split(" ")[0]}
+                    {categoryShortLabel}
                   </span>
                   <span className="text-[11px] text-muted-foreground font-medium">{project.year}</span>
                 </div>
@@ -123,14 +127,14 @@ export default function Home() {
                   {project.summary}
                 </p>
                 <div className="mt-4 pt-4 border-t border-border flex flex-wrap gap-1.5">
-                  {project.technologies.slice(0, 3).map((tech) => (
+                  {previewTechnologies.map((tech) => (
                     <span key={tech} className="text-[10px] px-2 py-0.5 rounded-md bg-secondary/80 text-muted-foreground font-mono font-medium">
                       {tech}
                     </span>
                   ))}
-                  {project.technologies.length > 3 && (
+                  {remainingTechnologyCount > 0 && (
                     <span className="text-[10px] px-2 py-0.5 text-muted-foreground font-medium">
-                      +{project.technologies.length - 3}
+                      +{remainingTechnologyCount}
                     </span>
                   )}
                 </div>
@@ -158,7 +162,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {featuredCompetencies.map((comp) => (
+            {homeViewModel.featuredCompetencies.map((comp) => (
               <div
                 key={comp.id}
                 className="flex items-start gap-3.5 p-4 rounded-lg border border-border bg-card"
@@ -196,7 +200,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {featuredWatch.map((entry) => (
+            {homeViewModel.featuredWatchEntries.map((entry) => (
               <div
                 key={entry.id}
                 className="p-5 rounded-lg border border-border bg-card"

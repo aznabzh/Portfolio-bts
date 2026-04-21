@@ -1,8 +1,13 @@
 import type { Project } from "@/lib/data";
 
+export interface CompetencyMatrixProjectRowViewModel {
+  project: Project;
+  coveredCompetencyIds: Set<string>;
+}
+
 export interface CompetencyMatrixGroupViewModel {
   label: string;
-  projects: Project[];
+  projects: CompetencyMatrixProjectRowViewModel[];
 }
 
 const projectGroupDefinitions: Array<{
@@ -33,7 +38,12 @@ export function getCompetencyMatrixGroups(
   return projectGroupDefinitions
     .map((group) => ({
       label: group.label,
-      projects: projects.filter(group.matches),
+      projects: projects
+        .filter(group.matches)
+        .map((project) => ({
+          project,
+          coveredCompetencyIds: new Set(project.competencies),
+        })),
     }))
     .filter((group) => group.projects.length > 0);
 }
