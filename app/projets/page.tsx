@@ -1,11 +1,15 @@
 import Link from "next/link";
-import { ArrowRight, ChevronRight } from "lucide-react";
-import { projects, getProjectsByCategory, getCategoryLabel, getCompetencyById } from "@/lib/data";
-import type { Project } from "@/lib/data";
-
-const categories: Project["category"][] = ["atelier", "stage", "personnel"];
+import { ArrowRight } from "lucide-react";
+import { competencies, projects, getCategoryLabel } from "@/lib/data";
+import { getProjectCategorySections } from "@/lib/view-models/projects";
 
 export default function ProjectsPage() {
+  const projectSections = getProjectCategorySections(
+    projects,
+    competencies,
+    getCategoryLabel,
+  );
+
   return (
     <div className="py-10 md:py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
@@ -19,22 +23,21 @@ export default function ProjectsPage() {
 
         {/* Projects by Category */}
         <div className="space-y-12">
-          {categories.map((category) => {
-            const categoryProjects = getProjectsByCategory(category);
-            if (categoryProjects.length === 0) return null;
+          {projectSections.map((section) => (
+            <section key={section.category}>
+              <div className="flex items-center gap-4 mb-5">
+                <h2 className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
+                  {section.label}
+                </h2>
+                <div className="flex-1 h-px bg-border" />
+                <span className="text-[11px] font-medium text-muted-foreground bg-secondary px-2 py-0.5 rounded-md">
+                  {section.projects.length}
+                </span>
+              </div>
 
-            return (
-              <section key={category}>
-                <div className="flex items-center gap-4 mb-5">
-                  <h2 className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
-                    {getCategoryLabel(category)}
-                  </h2>
-                  <div className="flex-1 h-px bg-border" />
-                  <span className="text-[11px] font-medium text-muted-foreground bg-secondary px-2 py-0.5 rounded-md">{categoryProjects.length}</span>
-                </div>
-
-                <div className="space-y-3">
-                  {categoryProjects.map((project) => (
+              <div className="space-y-3">
+                {section.projects.map(
+                  ({ project, competencyCodes, remainingCompetencyCount }) => (
                     <Link
                       key={project.id}
                       href={`/projets/${project.id}`}
@@ -70,20 +73,17 @@ export default function ProjectsPage() {
 
                         {/* Competencies Codes */}
                         <div className="hidden lg:flex items-center gap-1.5">
-                          {project.competencies.slice(0, 3).map((compId) => {
-                            const comp = getCompetencyById(compId);
-                            return comp ? (
-                              <span
-                                key={compId}
-                                className="text-[10px] px-2 py-0.5 rounded-md border border-border text-muted-foreground font-mono font-medium"
-                              >
-                                {comp.code}
-                              </span>
-                            ) : null;
-                          })}
-                          {project.competencies.length > 3 && (
+                          {competencyCodes.map((code) => (
+                            <span
+                              key={`${project.id}-${code}`}
+                              className="text-[10px] px-2 py-0.5 rounded-md border border-border text-muted-foreground font-mono font-medium"
+                            >
+                              {code}
+                            </span>
+                          ))}
+                          {remainingCompetencyCount > 0 && (
                             <span className="text-[10px] text-muted-foreground font-medium">
-                              +{project.competencies.length - 3}
+                              +{remainingCompetencyCount}
                             </span>
                           )}
                         </div>
@@ -94,11 +94,11 @@ export default function ProjectsPage() {
                         </div>
                       </div>
                     </Link>
-                  ))}
-                </div>
-              </section>
-            );
-          })}
+                  ),
+                )}
+              </div>
+            </section>
+          ))}
         </div>
       </div>
     </div>

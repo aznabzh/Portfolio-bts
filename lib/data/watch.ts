@@ -1,4 +1,4 @@
-import type { WatchEntry } from "./helpers";
+import type { WatchEntry } from "./types";
 
 // Technology watch entries
 export const watchEntries: WatchEntry[] = [

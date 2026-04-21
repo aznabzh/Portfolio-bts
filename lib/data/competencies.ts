@@ -1,4 +1,4 @@
-import type { Competency } from "./helpers";
+import type { Competency } from "./types";
 
 // Competencies based on BTS SIO SLAM referential
 export const competencies: Competency[] = [

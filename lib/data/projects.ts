@@ -1,4 +1,4 @@
-import type { Project } from "./helpers";
+import type { Project } from "./types";
 
 // Projects mock data
 export const projects: Project[] = [

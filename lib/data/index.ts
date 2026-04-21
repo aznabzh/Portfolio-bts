@@ -5,7 +5,7 @@ export {
   getProjectById,
   getProjectsByCategory,
   getProofTypeLabel,
-} from "./helpers";
+} from "./selectors";
 export type {
   Competency,
   CompetencyProof,
@@ -13,7 +13,7 @@ export type {
   Project,
   StudentInfo,
   WatchEntry,
-} from "./helpers";
+} from "./types";
 export { projects } from "./projects";
 export { studentInfo } from "./student";
 export { watchEntries } from "./watch";

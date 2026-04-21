@@ -1,4 +1,4 @@
-import type { StudentInfo } from "./helpers";
+import type { StudentInfo } from "./types";
 
 // Student info
 export const studentInfo: StudentInfo = {

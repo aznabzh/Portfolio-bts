@@ -1,35 +1,11 @@
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { projects, competencies } from "@/lib/data";
-import type { Project } from "@/lib/data";
-
-// Group projects by academic category/year
-interface ProjectGroup {
-  label: string;
-  projects: Project[];
-}
-
-const projectGroups: ProjectGroup[] = [
-  {
-    label: "Formation - 1ère année",
-    projects: projects.filter((p) => p.category === "atelier" && p.year === "2023"),
-  },
-  {
-    label: "Formation - 2nde année",
-    projects: projects.filter((p) => p.category === "atelier" && p.year === "2024"),
-  },
-  {
-    label: "Stages",
-    projects: projects.filter((p) => p.category === "stage"),
-  },
-  {
-    label: "Projets personnels",
-    projects: projects.filter((p) => p.category === "personnel"),
-  },
-].filter((group) => group.projects.length > 0);
+import { competencies, projects } from "@/lib/data";
+import { getCompetencyMatrixGroups } from "@/lib/view-models/competencies";
 
 export default function CompetencesPage() {
+  const projectGroups = getCompetencyMatrixGroups(projects);
+
   return (
     <div className="py-10 md:py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
@@ -160,7 +136,7 @@ export default function CompetencesPage() {
         {/* Note */}
         <div className="mt-8 p-5 rounded-lg bg-secondary/50 border border-border">
           <p className="text-[12px] text-muted-foreground leading-relaxed">
-            <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence a été mobilisée dans le projet. 
+            <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence a été mobilisée dans le projet.
             Cliquez sur la flèche pour accéder aux preuves détaillées du projet.
           </p>
         </div>
