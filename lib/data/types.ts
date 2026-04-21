@@ -1,12 +1,25 @@
+export interface SubCompetency {
+  id: string;
+  code: string;
+  name: string;
+  description: string;
+}
+
 export interface Proof {
   id: string;
   title: string;
   type: "screenshot" | "pdf" | "documentation" | "schema" | "code";
   description: string;
+  competencyId: string;
+  subCompetencyIds?: string[];
+  path?: string;
+  url?: string;
+  thumbnail?: string;
 }
 
 export interface CompetencyProof {
   competencyId: string;
+  subCompetencyIds?: string[];
   proofs: Proof[];
 }
 
@@ -22,7 +35,7 @@ export interface Project {
   technologies: string[];
   role: string;
   competencies: string[];
-  competencyProofs: CompetencyProof[];
+  proofs: Proof[];
 }
 
 export interface Competency {
@@ -30,6 +43,7 @@ export interface Competency {
   code: string;
   name: string;
   description: string;
+  subCompetencies: SubCompetency[];
 }
 
 export interface WatchEntry {

@@ -133,11 +133,56 @@ export default function CompetencesPage() {
           </div>
         </div>
 
+        {/* Sub-competencies Reference */}
+        <div className="mt-12">
+          <div className="flex items-center gap-3 mb-6">
+            <h2 className="text-[14px] font-semibold">Détail des sous-compétences</h2>
+            <div className="h-px flex-1 bg-border" />
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2">
+            {competencies.map((competency) => (
+              <div
+                key={competency.id}
+                className="rounded-lg border border-border bg-card overflow-hidden"
+              >
+                <div className="flex items-center gap-3 px-5 py-4 border-b border-border bg-secondary/40">
+                  <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
+                    {competency.code}
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-[13px] font-semibold">{competency.name}</p>
+                    <p className="text-[11px] text-muted-foreground mt-0.5 leading-relaxed">
+                      {competency.description}
+                    </p>
+                  </div>
+                </div>
+                <div className="divide-y divide-border">
+                  {competency.subCompetencies.map((subCompetency) => (
+                    <div key={subCompetency.id} className="px-5 py-4">
+                      <div className="flex items-start gap-3">
+                        <span className="shrink-0 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-border text-muted-foreground">
+                          {subCompetency.code}
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-[12px] font-medium leading-snug">{subCompetency.name}</p>
+                          <p className="text-[11px] text-muted-foreground mt-1 leading-relaxed">
+                            {subCompetency.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Note */}
         <div className="mt-8 p-5 rounded-lg bg-secondary/50 border border-border">
           <p className="text-[12px] text-muted-foreground leading-relaxed">
-            <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence a été mobilisée dans le projet.
-            Cliquez sur la flèche pour accéder aux preuves détaillées du projet.
+            <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence principale a été mobilisée dans le projet.
+            Les sous-compétences précisent ensuite plus finement ce qui a réellement été travaillé dans les preuves du projet.
           </p>
         </div>
       </div>

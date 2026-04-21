@@ -4,12 +4,15 @@ export type {
   Proof,
   Project,
   StudentInfo,
+  SubCompetency,
   WatchEntry,
 } from "./types";
 export {
   getCategoryLabel,
   getCompetencyById,
+  getCompetencyBySubCompetencyId,
   getProjectById,
   getProjectsByCategory,
   getProofTypeLabel,
+  getSubCompetencyById,
 } from "./selectors";

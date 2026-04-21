@@ -14,27 +14,54 @@ export const projects: Project[] = [
     technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
     role: "Développeur full-stack : conception de la base de données, développement du backend et de l'interface utilisateur.",
     competencies: ["c1", "c4", "c5"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p1",
+        title: "Schéma base de données",
+        type: "schema",
+        description: "MCD et MLD de l'application.",
         competencyId: "c1",
-        proofs: [
-          { id: "p1", title: "Schéma base de données", type: "schema", description: "MCD et MLD de l'application" },
-          { id: "p2", title: "Documentation technique", type: "documentation", description: "Documentation des tables et relations" },
-        ],
+        subCompetencyIds: ["c1-1", "c1-2"],
       },
       {
+        id: "p2",
+        title: "Documentation technique",
+        type: "documentation",
+        description: "Documentation des tables, relations et règles de gestion.",
+        competencyId: "c1",
+        subCompetencyIds: ["c1-2", "c1-3"],
+      },
+      {
+        id: "p3",
+        title: "Diagramme de Gantt",
+        type: "schema",
+        description: "Planning du projet et suivi des jalons.",
         competencyId: "c4",
-        proofs: [
-          { id: "p3", title: "Diagramme de Gantt", type: "schema", description: "Planning du projet" },
-          { id: "p4", title: "Compte-rendu réunions", type: "pdf", description: "CR des réunions d'équipe" },
-        ],
+        subCompetencyIds: ["c4-1", "c4-2"],
       },
       {
+        id: "p4",
+        title: "Compte-rendu réunions",
+        type: "pdf",
+        description: "Compte-rendu des réunions d'équipe et des décisions prises.",
+        competencyId: "c4",
+        subCompetencyIds: ["c4-3"],
+      },
+      {
+        id: "p5",
+        title: "Captures d'écran",
+        type: "screenshot",
+        description: "Écrans principaux de l'application de gestion de stock.",
         competencyId: "c5",
-        proofs: [
-          { id: "p5", title: "Captures d'écran", type: "screenshot", description: "Interface de l'application" },
-          { id: "p6", title: "Tests unitaires", type: "code", description: "Code des tests PHPUnit" },
-        ],
+        subCompetencyIds: ["c5-1", "c5-3"],
+      },
+      {
+        id: "p6",
+        title: "Tests unitaires",
+        type: "code",
+        description: "Extraits des tests utilisés pour valider les comportements critiques.",
+        competencyId: "c5",
+        subCompetencyIds: ["c5-2"],
       },
     ],
   },
@@ -50,25 +77,38 @@ export const projects: Project[] = [
     technologies: ["HTML5", "CSS3", "JavaScript", "Figma"],
     role: "Développeur front-end et designer UI : maquettage, intégration et optimisation SEO.",
     competencies: ["c3", "c4", "c5"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p7",
+        title: "Maquettes Figma",
+        type: "screenshot",
+        description: "Maquettes desktop et mobile utilisées pour valider l'interface.",
         competencyId: "c3",
-        proofs: [
-          { id: "p7", title: "Maquettes Figma", type: "screenshot", description: "Maquettes desktop et mobile" },
-          { id: "p8", title: "Rapport SEO", type: "pdf", description: "Analyse et optimisations SEO" },
-        ],
+        subCompetencyIds: ["c3-1", "c3-3"],
       },
       {
+        id: "p8",
+        title: "Rapport SEO",
+        type: "pdf",
+        description: "Analyse des optimisations SEO réalisées et de leur impact attendu.",
+        competencyId: "c3",
+        subCompetencyIds: ["c3-2"],
+      },
+      {
+        id: "p9",
+        title: "Cahier des charges",
+        type: "pdf",
+        description: "Spécifications fonctionnelles et organisation du projet.",
         competencyId: "c4",
-        proofs: [
-          { id: "p9", title: "Cahier des charges", type: "pdf", description: "Spécifications du projet" },
-        ],
+        subCompetencyIds: ["c4-1"],
       },
       {
+        id: "p10",
+        title: "Site en ligne",
+        type: "screenshot",
+        description: "Captures du site final déployé et testé.",
         competencyId: "c5",
-        proofs: [
-          { id: "p10", title: "Site en ligne", type: "screenshot", description: "Captures du site final" },
-        ],
+        subCompetencyIds: ["c5-2", "c5-3"],
       },
     ],
   },
@@ -84,25 +124,38 @@ export const projects: Project[] = [
     technologies: ["Node.js", "Express", "MongoDB", "Swagger", "JWT"],
     role: "Développeur backend : architecture API, implémentation des endpoints et sécurisation.",
     competencies: ["c1", "c5", "c6"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p11",
+        title: "Architecture API",
+        type: "schema",
+        description: "Schéma de l'architecture REST et des principales briques techniques.",
         competencyId: "c1",
-        proofs: [
-          { id: "p11", title: "Architecture API", type: "schema", description: "Schéma de l'architecture REST" },
-        ],
+        subCompetencyIds: ["c1-2"],
       },
       {
+        id: "p12",
+        title: "Documentation Swagger",
+        type: "screenshot",
+        description: "Interface Swagger UI montrant les routes exposées.",
         competencyId: "c5",
-        proofs: [
-          { id: "p12", title: "Documentation Swagger", type: "screenshot", description: "Interface Swagger UI" },
-          { id: "p13", title: "Tests Postman", type: "screenshot", description: "Collection de tests" },
-        ],
+        subCompetencyIds: ["c5-3"],
       },
       {
+        id: "p13",
+        title: "Tests Postman",
+        type: "screenshot",
+        description: "Collection de tests utilisés pour vérifier les endpoints.",
+        competencyId: "c5",
+        subCompetencyIds: ["c5-2"],
+      },
+      {
+        id: "p14",
+        title: "Veille Node.js",
+        type: "documentation",
+        description: "Synthèse des bonnes pratiques étudiées pendant le projet.",
         competencyId: "c6",
-        proofs: [
-          { id: "p14", title: "Veille Node.js", type: "documentation", description: "Synthèse des bonnes pratiques" },
-        ],
+        subCompetencyIds: ["c6-1", "c6-2"],
       },
     ],
   },
@@ -118,30 +171,38 @@ export const projects: Project[] = [
     technologies: ["C#", ".NET", "SQL Server", "Entity Framework"],
     role: "Développeur junior : analyse des besoins, développement et tests sous supervision.",
     competencies: ["c1", "c2", "c4", "c5"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p15",
+        title: "Schéma BDD étendu",
+        type: "schema",
+        description: "Nouvelles tables et relations ajoutées pour le module CRM.",
         competencyId: "c1",
-        proofs: [
-          { id: "p15", title: "Schéma BDD étendu", type: "schema", description: "Nouvelles tables du module" },
-        ],
+        subCompetencyIds: ["c1-2", "c1-3"],
       },
       {
+        id: "p16",
+        title: "Tickets traités",
+        type: "screenshot",
+        description: "Exemples de demandes prises en charge et résolues en stage.",
         competencyId: "c2",
-        proofs: [
-          { id: "p16", title: "Tickets traités", type: "screenshot", description: "Exemples de tickets résolus" },
-        ],
+        subCompetencyIds: ["c2-1", "c2-3"],
       },
       {
+        id: "p17",
+        title: "Rapport de stage",
+        type: "pdf",
+        description: "Rapport détaillant le contexte, les missions et l'avancement du stage.",
         competencyId: "c4",
-        proofs: [
-          { id: "p17", title: "Rapport de stage", type: "pdf", description: "Rapport complet du stage" },
-        ],
+        subCompetencyIds: ["c4-3"],
       },
       {
+        id: "p18",
+        title: "Module en production",
+        type: "screenshot",
+        description: "Captures du module intégré dans le CRM de l'entreprise.",
         competencyId: "c5",
-        proofs: [
-          { id: "p18", title: "Module en production", type: "screenshot", description: "Captures du module" },
-        ],
+        subCompetencyIds: ["c5-3"],
       },
     ],
   },
@@ -157,24 +218,30 @@ export const projects: Project[] = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "Développeur unique : conception, développement et déploiement.",
     competencies: ["c3", "c5", "c6"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p19",
+        title: "Code source GitHub",
+        type: "code",
+        description: "Repository du projet avec l'historique de développement.",
         competencyId: "c3",
-        proofs: [
-          { id: "p19", title: "Code source GitHub", type: "code", description: "Repository du projet" },
-        ],
+        subCompetencyIds: ["c3-1"],
       },
       {
+        id: "p20",
+        title: "Portfolio en ligne",
+        type: "screenshot",
+        description: "Captures du portfolio déployé et prêt pour l'oral.",
         competencyId: "c5",
-        proofs: [
-          { id: "p20", title: "Portfolio en ligne", type: "screenshot", description: "Site déployé" },
-        ],
+        subCompetencyIds: ["c5-3"],
       },
       {
+        id: "p21",
+        title: "Veille React/Next.js",
+        type: "documentation",
+        description: "Notes d'apprentissage utilisées pour structurer le projet.",
         competencyId: "c6",
-        proofs: [
-          { id: "p21", title: "Veille React/Next.js", type: "documentation", description: "Notes d'apprentissage" },
-        ],
+        subCompetencyIds: ["c6-1", "c6-2"],
       },
     ],
   },
@@ -190,18 +257,22 @@ export const projects: Project[] = [
     technologies: ["React Native", "Expo", "TypeScript", "AsyncStorage"],
     role: "Développeur unique : conception, développement et tests sur simulateur.",
     competencies: ["c5", "c6"],
-    competencyProofs: [
+    proofs: [
       {
+        id: "p22",
+        title: "Captures application",
+        type: "screenshot",
+        description: "Écrans de l'application mobile en situation d'usage.",
         competencyId: "c5",
-        proofs: [
-          { id: "p22", title: "Captures application", type: "screenshot", description: "Écrans de l'application" },
-        ],
+        subCompetencyIds: ["c5-1", "c5-2"],
       },
       {
+        id: "p23",
+        title: "Journal d'apprentissage",
+        type: "documentation",
+        description: "Notes prises pendant la montée en compétence sur React Native.",
         competencyId: "c6",
-        proofs: [
-          { id: "p23", title: "Journal d'apprentissage", type: "documentation", description: "Notes React Native" },
-        ],
+        subCompetencyIds: ["c6-1", "c6-2"],
       },
     ],
   },

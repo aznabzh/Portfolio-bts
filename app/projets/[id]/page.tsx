@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, FileText, Image, Code, FileCode, File, ChevronRight, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, File, FileCode, FileText, Image, Code, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   competencies,
-  getProjectById,
   getCategoryLabel,
+  getProjectById,
   getProofTypeLabel,
   projects,
   type Proof,
@@ -125,6 +125,28 @@ export default async function ProjectDetailPage({
                       </div>
                     </div>
 
+                    {group.subCompetencies.length > 0 && (
+                      <div className="px-5 py-3 border-b border-border bg-card">
+                        <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                          Sous-compétences travaillées
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {group.subCompetencies.map((subCompetency) => (
+                            <span
+                              key={subCompetency.id}
+                              className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary px-2.5 py-1 text-[10px] text-muted-foreground font-medium"
+                              title={subCompetency.name}
+                            >
+                              <span className="font-mono font-bold text-foreground/80">
+                                {subCompetency.code}
+                              </span>
+                              <span>{subCompetency.name}</span>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
                     {/* Proofs List */}
                     <div className="divide-y divide-border">
                       {group.proofs.map((proof) => (
@@ -136,7 +158,20 @@ export default async function ProjectDetailPage({
                             <ProofIcon type={proof.type} />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <p className="text-[13px] font-medium">{proof.title}</p>
+                            <div className="flex items-start justify-between gap-3">
+                              <p className="text-[13px] font-medium">{proof.title}</p>
+                              {proof.href && (
+                                <Link
+                                  href={proof.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="shrink-0 inline-flex items-center gap-1 text-[11px] text-muted-foreground hover:text-foreground transition-colors"
+                                >
+                                  Ouvrir
+                                  <ExternalLink className="h-3.5 w-3.5" />
+                                </Link>
+                              )}
+                            </div>
                             <p className="text-[12px] text-muted-foreground mt-1 leading-relaxed">
                               <span className="font-medium">{getProofTypeLabel(proof.type)}</span> — {proof.description}
                             </p>
