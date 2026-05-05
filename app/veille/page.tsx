@@ -3,12 +3,12 @@ import { watchEntries } from "@/lib/data";
 
 export default function VeillePage() {
   return (
-    <div className="py-10 md:py-12">
+    <div className="py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-[1.5rem] font-semibold tracking-tight">Veille technologique</h1>
-          <p className="mt-2 text-[14px] text-muted-foreground max-w-xl leading-relaxed">
+          <h1 className="page-title">Veille technologique</h1>
+          <p className="page-intro">
             Suivi des évolutions dans le développement web et logiciel.
           </p>
         </div>
@@ -18,18 +18,18 @@ export default function VeillePage() {
           {watchEntries.map((entry, index) => (
             <article
               key={entry.id}
-              className="p-5 rounded-lg border border-border bg-card hover:border-foreground/10 transition-all"
+              className="surface-card surface-card-hover rounded-lg p-5"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-5">
                 {/* Date */}
-                <div className="md:w-32 shrink-0">
-                  <p className="text-[13px] font-semibold">{entry.date}</p>
-                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">{entry.source}</p>
+                <div className="shrink-0 md:w-32">
+                  <p className="text-[13px] font-semibold tracking-tight">{entry.date}</p>
+                  <p className="mt-0.5 text-[11px] font-semibold text-muted-foreground">{entry.source}</p>
                 </div>
                 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h2 className="text-[14px] font-semibold leading-snug">{entry.title}</h2>
+                  <h2 className="text-[14px] font-semibold leading-snug tracking-tight">{entry.title}</h2>
                   <p className="mt-2 text-[13px] text-muted-foreground leading-relaxed">
                     {entry.summary}
                   </p>
@@ -47,7 +47,7 @@ export default function VeillePage() {
         </div>
 
         {/* Methodology */}
-        <div className="mt-10 p-5 rounded-lg bg-secondary/50 border border-border">
+        <div className="muted-panel mt-10 rounded-lg p-5">
           <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
             Méthodologie
           </p>

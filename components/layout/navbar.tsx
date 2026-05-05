@@ -21,13 +21,13 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80">
-      <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 lg:px-6">
+    <header className="sticky top-0 z-50 w-full border-b border-border/90 bg-background/95 shadow-[0_1px_0_rgb(255_255_255_/_0.65)] backdrop-blur-md supports-[backdrop-filter]:bg-background/86">
+      <nav className="mx-auto flex h-[3.75rem] max-w-6xl items-center justify-between px-4 lg:px-6">
         <Link href="/" className="flex items-center gap-2.5 text-[13px] font-semibold tracking-tight">
-          <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-foreground shadow-sm">
+          <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-foreground shadow-sm shadow-black/15">
             <Terminal className="h-4 w-4" />
           </span>
-          <span className="hidden sm:inline font-semibold">portfolio</span>
+          <span className="hidden sm:inline font-semibold text-foreground">portfolio</span>
         </Link>
 
         <div className="flex items-center gap-1">
@@ -40,8 +40,8 @@ export function Navbar() {
                   className={cn(
                     "px-3.5 py-2 text-[13px] font-medium rounded-lg transition-all",
                     pathname === link.href
-                      ? "bg-secondary text-foreground shadow-sm"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+                      ? "bg-card text-foreground shadow-sm ring-1 ring-border"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/70"
                   )}
                 >
                   {link.label}
@@ -67,7 +67,7 @@ export function Navbar() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-card/95 backdrop-blur-md">
+        <div className="md:hidden border-t border-border bg-card/95 shadow-lg shadow-black/5 backdrop-blur-md">
           <ul className="flex flex-col p-3 gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -77,8 +77,8 @@ export function Navbar() {
                   className={cn(
                     "block px-4 py-2.5 text-[13px] font-medium rounded-lg transition-all",
                     pathname === link.href
-                      ? "bg-secondary text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+                      ? "bg-secondary text-foreground ring-1 ring-border"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/70"
                   )}
                 >
                   {link.label}

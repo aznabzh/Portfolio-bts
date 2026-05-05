@@ -51,7 +51,7 @@ export default async function ProjectDetailPage({
   const projectDetail = getProjectDetailViewModel(project, competencies);
 
   return (
-    <div className="py-10 md:py-12">
+    <div className="py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-[12px] text-muted-foreground mb-8 font-medium">
@@ -63,15 +63,15 @@ export default async function ProjectDetailPage({
         </div>
 
         {/* Header */}
-        <header className="mb-10 pb-8 border-b border-border">
+        <header className="mb-10 border-b border-border pb-8">
           <div className="flex items-center gap-2.5 mb-3">
             <span className="text-[10px] font-semibold px-2.5 py-1 rounded-md bg-primary text-primary-foreground uppercase tracking-wide">
               {getCategoryLabel(project.category)}
             </span>
             <span className="text-[11px] text-muted-foreground font-medium">{project.period}</span>
           </div>
-          <h1 className="text-[1.5rem] font-semibold tracking-tight">{project.title}</h1>
-          <p className="mt-3 text-[14px] text-muted-foreground max-w-2xl leading-relaxed">
+          <h1 className="page-title">{project.title}</h1>
+          <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-muted-foreground">
             {project.summary}
           </p>
         </header>
@@ -82,19 +82,19 @@ export default async function ProjectDetailPage({
           <div className="space-y-10">
             {/* Info Grid */}
             <div className="grid gap-4 sm:grid-cols-3">
-              <div className="p-5 rounded-lg border border-border bg-card">
+              <div className="surface-card rounded-lg p-5">
                 <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
                   Contexte
                 </p>
                 <p className="text-[13px] leading-relaxed">{project.context}</p>
               </div>
-              <div className="p-5 rounded-lg border border-border bg-card">
+              <div className="surface-card rounded-lg p-5">
                 <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
                   Objectif
                 </p>
                 <p className="text-[13px] leading-relaxed">{project.objective}</p>
               </div>
-              <div className="p-5 rounded-lg border border-border bg-card">
+              <div className="surface-card rounded-lg p-5">
                 <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
                   Mon rôle
                 </p>
@@ -113,10 +113,10 @@ export default async function ProjectDetailPage({
                 {projectDetail.proofGroups.map((group) => (
                   <div
                     key={group.competencyId}
-                    className="rounded-lg border border-border bg-card overflow-hidden"
+                    className="surface-card overflow-hidden rounded-lg"
                   >
                     {/* Competency Header */}
-                    <div className="flex items-center gap-3.5 px-5 py-4 bg-secondary/50 border-b border-border">
+                    <div className="flex items-center gap-3.5 px-5 py-4 bg-secondary/55 border-b border-border">
                       <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
                         {group.competencyCode}
                       </span>
@@ -134,7 +134,7 @@ export default async function ProjectDetailPage({
                           {group.subCompetencies.map((subCompetency) => (
                             <span
                               key={subCompetency.id}
-                              className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary px-2.5 py-1 text-[10px] text-muted-foreground font-medium"
+                              className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary/80 px-2.5 py-1 text-[10px] font-medium text-muted-foreground shadow-xs"
                               title={subCompetency.name}
                             >
                               <span className="font-mono font-bold text-foreground/80">
@@ -154,7 +154,7 @@ export default async function ProjectDetailPage({
                           key={proof.id}
                           className="flex items-start gap-4 px-5 py-4 hover:bg-secondary/30 transition-colors"
                         >
-                          <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-secondary text-muted-foreground shrink-0">
+                          <div className="icon-tile h-9 w-9 text-muted-foreground">
                             <ProofIcon type={proof.type} />
                           </div>
                           <div className="min-w-0 flex-1">
@@ -188,7 +188,7 @@ export default async function ProjectDetailPage({
           {/* Right Column - Sidebar */}
           <aside className="space-y-5">
             {/* Technologies */}
-            <div className="p-5 rounded-lg border border-border bg-card">
+            <div className="surface-card rounded-lg p-5">
               <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-4">
                 Technologies
               </p>
@@ -196,7 +196,7 @@ export default async function ProjectDetailPage({
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="text-[11px] px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground font-mono font-medium"
+                    className="code-chip text-[11px]"
                   >
                     {tech}
                   </span>
@@ -205,14 +205,14 @@ export default async function ProjectDetailPage({
             </div>
 
             {/* Competencies */}
-            <div className="p-5 rounded-lg border border-border bg-card">
+            <div className="surface-card rounded-lg p-5">
               <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-4">
                 Compétences mobilisées
               </p>
               <div className="space-y-2.5">
                 {projectDetail.competencies.map((competency) => (
                   <div key={competency.id} className="flex items-start gap-2.5">
-                    <span className="shrink-0 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-border text-muted-foreground">
+                    <span className="code-chip shrink-0">
                       {competency.code}
                     </span>
                     <span className="text-[12px] text-muted-foreground leading-snug">{competency.name}</span>
@@ -222,7 +222,7 @@ export default async function ProjectDetailPage({
             </div>
 
             {/* CTA */}
-            <div className="p-5 rounded-lg border border-border bg-secondary/40">
+            <div className="muted-panel rounded-lg p-5">
               <p className="text-[12px] text-muted-foreground mb-4 leading-relaxed">
                 Voir la synthèse complète des compétences du référentiel BTS SIO.
               </p>
@@ -237,7 +237,7 @@ export default async function ProjectDetailPage({
             {/* Back Link */}
             <Link
               href="/projets"
-              className="flex items-center justify-center gap-2.5 p-4 rounded-lg border border-border text-[12px] text-muted-foreground font-medium hover:text-foreground hover:bg-secondary/50 transition-all"
+              className="flex items-center justify-center gap-2.5 rounded-lg border border-border bg-card/70 p-4 text-[12px] font-semibold text-muted-foreground shadow-xs transition-all hover:bg-secondary/60 hover:text-foreground"
             >
               <ArrowLeft className="h-4 w-4" />
               Retour aux projets

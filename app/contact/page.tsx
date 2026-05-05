@@ -25,22 +25,22 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="py-10 md:py-12">
+    <div className="py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-[1.5rem] font-semibold tracking-tight">Contact</h1>
-          <p className="mt-2 text-[14px] text-muted-foreground leading-relaxed">
+          <h1 className="page-title">Contact</h1>
+          <p className="page-intro">
             {"N'hésitez pas à me contacter pour toute question."}
           </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1fr,340px]">
           {/* Contact Form */}
-          <div className="p-6 rounded-lg border border-border bg-card">
+          <div className="surface-card rounded-lg p-6">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label htmlFor="name" className="block text-[12px] font-semibold mb-2">
+                <label htmlFor="name" className="mb-2 block text-[12px] font-semibold">
                   Nom
                 </label>
                 <Input
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-[12px] font-semibold mb-2">
+                <label htmlFor="email" className="mb-2 block text-[12px] font-semibold">
                   Email
                 </label>
                 <Input
@@ -70,7 +70,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-[12px] font-semibold mb-2">
+                <label htmlFor="message" className="mb-2 block text-[12px] font-semibold">
                   Message
                 </label>
                 <Textarea
@@ -99,9 +99,9 @@ export default function ContactPage() {
           <div className="space-y-4">
             <Link
               href={`mailto:${studentInfo.email}`}
-              className="flex items-center gap-4 p-5 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
+              className="surface-card surface-card-hover flex items-center gap-4 rounded-lg p-5"
             >
-              <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-secondary border border-border">
+              <div className="icon-tile h-11 w-11">
                 <Mail className="h-5 w-5 text-foreground/70" />
               </div>
               <div className="flex-1 min-w-0">
@@ -115,9 +115,9 @@ export default function ContactPage() {
               href={studentInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
+              className="surface-card surface-card-hover flex items-center gap-4 rounded-lg p-5"
             >
-              <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-secondary border border-border">
+              <div className="icon-tile h-11 w-11">
                 <Github className="h-5 w-5 text-foreground/70" />
               </div>
               <div className="flex-1 min-w-0">
@@ -131,9 +131,9 @@ export default function ContactPage() {
               href={studentInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
+              className="surface-card surface-card-hover flex items-center gap-4 rounded-lg p-5"
             >
-              <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-secondary border border-border">
+              <div className="icon-tile h-11 w-11">
                 <Linkedin className="h-5 w-5 text-foreground/70" />
               </div>
               <div className="flex-1 min-w-0">
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
             </Link>
 
-            <div className="p-5 rounded-lg bg-secondary/50 border border-border">
+            <div className="muted-panel rounded-lg p-5">
               <p className="text-[12px] text-muted-foreground leading-relaxed">
                 Portfolio BTS SIO SLAM pour l&apos;épreuve E5.
               </p>

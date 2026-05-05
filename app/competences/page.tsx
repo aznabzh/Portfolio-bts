@@ -7,7 +7,7 @@ export default function CompetencesPage() {
   const projectGroups = getCompetencyMatrixGroups(projects);
 
   return (
-    <div className="py-10 md:py-12">
+    <div className="py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         {/* Header */}
         <div className="mb-8">
@@ -18,33 +18,33 @@ export default function CompetencesPage() {
         </div>
 
         {/* Legend */}
-        <div className="flex items-center gap-6 mb-6 p-4 rounded-lg bg-secondary/50 border border-border">
+        <div className="muted-panel mb-6 flex items-center gap-6 rounded-lg p-4">
           <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">Légende</span>
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center shadow-sm">
+            <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center shadow-sm shadow-black/15">
               <Check className="h-3.5 w-3.5 text-primary-foreground" strokeWidth={2.5} />
             </div>
             <span className="text-[12px] text-muted-foreground font-medium">Travaillée</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 border border-border rounded-md bg-card" />
+            <div className="w-6 h-6 border border-border rounded-md bg-card shadow-xs" />
             <span className="text-[12px] text-muted-foreground font-medium">Non concernée</span>
           </div>
         </div>
 
         {/* Matrix Table */}
-        <div className="border border-border rounded-lg bg-card overflow-hidden shadow-sm">
+        <div className="surface-card overflow-hidden rounded-lg">
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-[12px] min-w-[750px]">
               <thead>
-                <tr className="bg-secondary/60">
-                  <th className="text-left p-4 font-semibold border-b border-border min-w-[220px] sticky left-0 bg-secondary/60 z-10">
+                <tr className="bg-secondary/70">
+                  <th className="text-left p-4 font-semibold border-b border-border min-w-[220px] sticky left-0 bg-secondary/70 z-10">
                     Projet
                   </th>
                   {competencies.map((comp) => (
                     <th
                       key={comp.id}
-                      className="p-3 font-mono font-bold border-b border-l border-border text-center w-16 text-[11px]"
+                      className="p-3 font-mono font-bold border-b border-l border-border text-center w-16 text-[11px] text-foreground/80"
                       title={comp.name}
                     >
                       {comp.code}
@@ -57,7 +57,7 @@ export default function CompetencesPage() {
                 {projectGroups.map((group, groupIndex) => (
                   <>
                     {/* Group Header */}
-                    <tr key={`group-${groupIndex}`} className="bg-muted/60">
+                    <tr key={`group-${groupIndex}`} className="bg-muted/70">
                       <td
                         colSpan={competencies.length + 2}
                         className="px-4 py-3 text-[11px] font-semibold text-muted-foreground border-b border-border uppercase tracking-wider"
@@ -69,9 +69,9 @@ export default function CompetencesPage() {
                     {group.projects.map(({ project, coveredCompetencyIds }) => (
                       <tr
                         key={project.id}
-                        className="hover:bg-secondary/40 transition-colors"
+                        className="group/row hover:bg-gray-50 transition-colors"
                       >
-                        <td className="p-4 border-b border-border sticky left-0 bg-card hover:bg-secondary/40 z-10 transition-colors">
+                        <td className="p-4 border-b border-border sticky left-0 bg-card group-hover/row:bg-gray-50 z-10 transition-colors">
                           <div className="flex flex-col">
                             <span className="font-semibold text-[13px]">{project.title}</span>
                             <span className="text-[11px] text-muted-foreground font-medium mt-0.5">{project.period}</span>
@@ -85,11 +85,11 @@ export default function CompetencesPage() {
                               className="p-3 border-b border-l border-border text-center"
                             >
                               {hasCompetency ? (
-                                <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center mx-auto shadow-sm">
+                                <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center mx-auto shadow-sm shadow-black/15">
                                   <Check className="h-3.5 w-3.5 text-primary-foreground" strokeWidth={2.5} />
                                 </div>
                               ) : (
-                                <div className="w-6 h-6 border border-border rounded-md mx-auto bg-card" />
+                                <div className="w-6 h-6 border border-border rounded-md mx-auto bg-card shadow-xs" />
                               )}
                             </td>
                           );
@@ -97,7 +97,7 @@ export default function CompetencesPage() {
                         <td className="p-3 border-b border-l border-border text-center">
                           <Link
                             href={`/projets/${project.id}`}
-                            className="inline-flex items-center justify-center w-7 h-7 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-all"
+                            className="inline-flex items-center justify-center w-7 h-7 rounded-md text-muted-foreground hover:text-primary hover:bg-accent transition-all"
                             title="Voir les preuves"
                           >
                             <ArrowRight className="h-4 w-4" />
@@ -120,7 +120,7 @@ export default function CompetencesPage() {
           </div>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {competencies.map((comp) => (
-              <div key={comp.id} className="flex items-start gap-3.5 p-4 rounded-lg border border-border bg-card">
+              <div key={comp.id} className="surface-card flex items-start gap-3.5 rounded-lg p-4">
                 <span className="shrink-0 text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
                   {comp.code}
                 </span>
@@ -143,9 +143,9 @@ export default function CompetencesPage() {
             {competencies.map((competency) => (
               <div
                 key={competency.id}
-                className="rounded-lg border border-border bg-card overflow-hidden"
+                className="surface-card overflow-hidden rounded-lg"
               >
-                <div className="flex items-center gap-3 px-5 py-4 border-b border-border bg-secondary/40">
+                <div className="flex items-center gap-3 px-5 py-4 border-b border-border bg-secondary/55">
                   <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-primary text-primary-foreground">
                     {competency.code}
                   </span>
@@ -179,7 +179,7 @@ export default function CompetencesPage() {
         </div>
 
         {/* Note */}
-        <div className="mt-8 p-5 rounded-lg bg-secondary/50 border border-border">
+        <div className="muted-panel mt-8 rounded-lg p-5">
           <p className="text-[12px] text-muted-foreground leading-relaxed">
             <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence principale a été mobilisée dans le projet.
             Les sous-compétences précisent ensuite plus finement ce qui a réellement été travaillé dans les preuves du projet.
