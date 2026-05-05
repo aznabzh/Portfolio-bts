@@ -2,8 +2,17 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["main", "codex/mockup-design-2"]
+    branches: ["main"]
   workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy"
+        required: true
+        default: "main"
+        type: choice
+        options:
+          - main
+          - codex/mockup-design-2
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -22,8 +31,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout selected branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || 'main' }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
