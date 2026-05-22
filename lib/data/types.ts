@@ -17,6 +17,8 @@ export interface Proof {
   id: string;
   title: string;
   type: "screenshot";
+  evidenceType?: "capture";
+  proofStatus?: "à créer" | "à récupérer" | "à vérifier" | "candidat";
   description: string;
   competencyId: string;
   subCompetencyIds?: string[];
