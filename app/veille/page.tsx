@@ -46,16 +46,7 @@ export default function VeillePage() {
           ))}
         </div>
 
-        {/* Methodology */}
-        <div className="mt-10 p-5 rounded-lg bg-secondary/50 border border-border">
-          <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-            Méthodologie
-          </p>
-          <p className="text-[13px] text-muted-foreground leading-relaxed">
-            Veille réalisée via documentation officielle, blogs techniques, newsletters et réseaux professionnels. 
-            Sujets en lien avec les compétences BTS SIO SLAM.
-          </p>
-        </div>
+
       </div>
     </div>
   );

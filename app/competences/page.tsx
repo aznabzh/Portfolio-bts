@@ -17,21 +17,6 @@ export default function CompetencesPage() {
           </p>
         </div>
 
-        {/* Legend */}
-        <div className="flex items-center gap-6 mb-6 p-4 rounded-lg bg-secondary/50 border border-border">
-          <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">Légende</span>
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center shadow-sm">
-              <Check className="h-3.5 w-3.5 text-primary-foreground" strokeWidth={2.5} />
-            </div>
-            <span className="text-[12px] text-muted-foreground font-medium">Travaillée</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 border border-border rounded-md bg-card" />
-            <span className="text-[12px] text-muted-foreground font-medium">Non concernée</span>
-          </div>
-        </div>
-
         {/* Matrix Table */}
         <div className="border border-border rounded-lg bg-card overflow-hidden shadow-sm">
           <div className="overflow-x-auto">
@@ -178,13 +163,7 @@ export default function CompetencesPage() {
           </div>
         </div>
 
-        {/* Note */}
-        <div className="mt-8 p-5 rounded-lg bg-secondary/50 border border-border">
-          <p className="text-[12px] text-muted-foreground leading-relaxed">
-            <strong className="text-foreground font-semibold">Note :</strong> Chaque case cochée indique que la compétence principale a été mobilisée dans le projet.
-            Les sous-compétences précisent ensuite plus finement ce qui a réellement été travaillé dans les preuves du projet.
-          </p>
-        </div>
+
       </div>
     </div>
   );

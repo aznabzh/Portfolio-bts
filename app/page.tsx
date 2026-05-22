@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Folder, BookOpen, Rss } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { studentInfo, projects, competencies, watchEntries, getCategoryLabel } from "@/lib/data";
@@ -18,73 +18,31 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-12 md:py-16 border-b border-border">
         <div className="mx-auto max-w-6xl px-4 lg:px-6">
-          <div className="grid gap-10 lg:grid-cols-[1fr,300px] lg:gap-16">
-            <div>
-              <div className="flex items-center gap-2.5 mb-5">
-                <span className="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-semibold bg-primary text-primary-foreground tracking-wide">
-                  BTS SIO SLAM
-                </span>
-                <span className="text-[11px] text-muted-foreground font-medium">Portfolio E5</span>
-              </div>
-              <h1 className="text-[1.75rem] md:text-[2rem] font-semibold tracking-tight text-balance leading-tight">
-                {studentInfo.name}
-              </h1>
-              <p className="mt-4 text-[15px] text-muted-foreground leading-relaxed max-w-xl">
-                {studentInfo.intro}
-              </p>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <Button asChild className="h-9 px-4 text-[13px] font-medium">
-                  <Link href="/projets">
-                    Voir les projets
-                    <ArrowRight className="ml-2 h-3.5 w-3.5" />
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild className="h-9 px-4 text-[13px] font-medium">
-                  <Link href="/competences">
-                    Matrice compétences
-                  </Link>
-                </Button>
-              </div>
+          <div>
+            <div className="flex items-center gap-2.5 mb-5">
+              <span className="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-semibold bg-primary text-primary-foreground tracking-wide">
+                BTS SIO SLAM
+              </span>
+              <span className="text-[11px] text-muted-foreground font-medium">Portfolio E5</span>
             </div>
-            
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-3 lg:grid-cols-1 lg:gap-3">
-              <Link 
-                href="/projets" 
-                className="group flex items-center gap-3.5 p-4 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
-              >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-secondary border border-border">
-                  <Folder className="h-4.5 w-4.5 text-foreground/70" />
-                </div>
-                <div>
-                  <p className="text-xl font-semibold leading-none">{projects.length}</p>
-                  <p className="text-[11px] text-muted-foreground mt-1 font-medium">Projets</p>
-                </div>
-              </Link>
-              <Link 
-                href="/competences" 
-                className="group flex items-center gap-3.5 p-4 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
-              >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-secondary border border-border">
-                  <BookOpen className="h-4.5 w-4.5 text-foreground/70" />
-                </div>
-                <div>
-                  <p className="text-xl font-semibold leading-none">{competencies.length}</p>
-                  <p className="text-[11px] text-muted-foreground mt-1 font-medium">Compétences</p>
-                </div>
-              </Link>
-              <Link 
-                href="/veille" 
-                className="group flex items-center gap-3.5 p-4 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
-              >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-secondary border border-border">
-                  <Rss className="h-4.5 w-4.5 text-foreground/70" />
-                </div>
-                <div>
-                  <p className="text-xl font-semibold leading-none">{watchEntries.length}</p>
-                  <p className="text-[11px] text-muted-foreground mt-1 font-medium">Articles veille</p>
-                </div>
-              </Link>
+            <h1 className="text-[1.75rem] md:text-[2rem] font-semibold tracking-tight text-balance leading-tight">
+              {studentInfo.name}
+            </h1>
+            <p className="mt-4 text-[15px] text-muted-foreground leading-relaxed max-w-xl">
+              {studentInfo.intro}
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Button asChild className="h-9 px-4 text-[13px] font-medium">
+                <Link href="/projets">
+                  Voir les projets
+                  <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                </Link>
+              </Button>
+              <Button variant="outline" asChild className="h-9 px-4 text-[13px] font-medium">
+                <Link href="/competences">
+                  Matrice compétences
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
