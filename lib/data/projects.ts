@@ -14,6 +14,8 @@ export const projects: Project[] = [
     technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
     role: "Développeur full-stack : conception de la base de données, développement du backend et de l'interface utilisateur.",
     competencies: ["c1", "c4", "c5"],
+    image: "/previews/white-preview.png",
+    imageAlt: "Apercu blanc temporaire du projet de gestion de stock",
     proofs: [
       {
         id: "p1",

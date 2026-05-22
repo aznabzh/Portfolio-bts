@@ -4,6 +4,9 @@ export interface ProjectListItemViewModel {
   project: Project;
   competencyCodes: string[];
   remainingCompetencyCount: number;
+  previewImage?: string;
+  previewImageAlt: string;
+  previewVariant: NonNullable<Project["previewVariant"]>;
 }
 
 export interface ProjectCategorySectionViewModel {
@@ -13,6 +16,43 @@ export interface ProjectCategorySectionViewModel {
 }
 
 const orderedCategories: Project["category"][] = ["atelier", "stage", "personnel"];
+
+function getProjectPreviewImage(project: Project): string | undefined {
+  return project.image;
+}
+
+export function getProjectPreviewVariant(
+  project: Project,
+): NonNullable<Project["previewVariant"]> {
+  if (project.previewVariant) {
+    return project.previewVariant;
+  }
+
+  const title = project.title.toLowerCase();
+  const technologies = project.technologies.join(" ").toLowerCase();
+
+  if (project.category === "stage") {
+    return "stage";
+  }
+
+  if (title.includes("api") || technologies.includes("swagger") || technologies.includes("express")) {
+    return "api";
+  }
+
+  if (title.includes("mobile") || technologies.includes("react native") || technologies.includes("expo")) {
+    return "mobile";
+  }
+
+  if (title.includes("portfolio") || technologies.includes("next.js")) {
+    return "portfolio";
+  }
+
+  if (technologies.includes("c#") || technologies.includes(".net")) {
+    return "desktop";
+  }
+
+  return "web";
+}
 
 export function getProjectCategorySections(
   projects: Project[],
@@ -40,6 +80,9 @@ export function getProjectCategorySections(
             project,
             competencyCodes,
             remainingCompetencyCount: Math.max(project.competencies.length - 3, 0),
+            previewImage: getProjectPreviewImage(project),
+            previewImageAlt: project.imageAlt ?? `Apercu du projet ${project.title}`,
+            previewVariant: getProjectPreviewVariant(project),
           };
         }),
       };

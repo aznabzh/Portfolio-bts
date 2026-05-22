@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { VisualPreview } from "@/components/portfolio/visual-preview";
 import { competencies, projects, getCategoryLabel } from "@/lib/data";
 import { getProjectCategorySections } from "@/lib/view-models/projects";
 
@@ -35,33 +36,49 @@ export default function ProjectsPage() {
                 </span>
               </div>
 
-              <div className="space-y-3">
+              <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {section.projects.map(
-                  ({ project, competencyCodes, remainingCompetencyCount }) => (
+                  ({
+                    project,
+                    competencyCodes,
+                    remainingCompetencyCount,
+                    previewImage,
+                    previewImageAlt,
+                    previewVariant,
+                  }) => (
                     <Link
                       key={project.id}
                       href={`/projets/${project.id}`}
-                      className="group flex flex-col md:flex-row md:items-center gap-4 p-5 rounded-lg border border-border bg-card hover:border-foreground/15 hover:shadow-sm transition-all"
+                      className="group flex min-h-[360px] flex-col overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:border-foreground/15 hover:shadow-md"
                     >
-                      {/* Main Info */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2.5 mb-1.5">
-                          <h3 className="text-[14px] font-semibold group-hover:text-foreground/80 transition-colors truncate">
-                            {project.title}
-                          </h3>
-                          <span className="shrink-0 text-[11px] text-muted-foreground font-medium">
+                      <VisualPreview
+                        image={previewImage}
+                        imageAlt={previewImageAlt}
+                        label="Projet"
+                        variant={previewVariant}
+                      />
+
+                      <div className="flex flex-1 flex-col p-4">
+                        <div className="mb-2.5 flex items-center justify-between gap-3">
+                          <span className="rounded-md bg-secondary px-2.5 py-1 text-[11px] font-semibold text-foreground">
                             {project.year}
                           </span>
+                          {project.featured && (
+                            <span className="rounded-md border border-border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                              Projet clé
+                            </span>
+                          )}
                         </div>
-                        <p className="text-[12px] text-muted-foreground line-clamp-1 leading-relaxed">
+
+                        <h3 className="text-[14px] font-semibold leading-snug tracking-tight transition-colors group-hover:text-foreground/80">
+                          {project.title}
+                        </h3>
+                        <p className="mt-1.5 line-clamp-2 text-[12px] leading-relaxed text-muted-foreground">
                           {project.summary}
                         </p>
-                      </div>
 
-                      {/* Technologies */}
-                      <div className="flex items-center gap-5 md:gap-6">
-                        <div className="flex flex-wrap gap-1.5">
-                          {project.technologies.slice(0, 4).map((tech) => (
+                        <div className="mt-4 flex flex-wrap gap-1.5">
+                          {project.technologies.slice(0, 5).map((tech) => (
                             <span
                               key={tech}
                               className="text-[10px] px-2 py-0.5 rounded-md bg-secondary text-muted-foreground font-mono font-medium"
@@ -71,12 +88,11 @@ export default function ProjectsPage() {
                           ))}
                         </div>
 
-                        {/* Competencies Codes */}
-                        <div className="hidden lg:flex items-center gap-1.5">
+                        <div className="mt-2.5 flex flex-wrap gap-1.5">
                           {competencyCodes.map((code) => (
                             <span
                               key={`${project.id}-${code}`}
-                              className="text-[10px] px-2 py-0.5 rounded-md border border-border text-muted-foreground font-mono font-medium"
+                              className="rounded-md border border-border px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
                             >
                               {code}
                             </span>
@@ -88,9 +104,13 @@ export default function ProjectsPage() {
                           )}
                         </div>
 
-                        {/* Arrow */}
-                        <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0">
-                          <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary-foreground transition-colors" />
+                        <div className="mt-auto flex items-center justify-between border-t border-border pt-3.5">
+                          <span className="text-[11px] font-medium text-muted-foreground">
+                            {project.period}
+                          </span>
+                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-secondary text-muted-foreground transition-all group-hover:bg-primary group-hover:text-primary-foreground">
+                            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                          </span>
                         </div>
                       </div>
                     </Link>

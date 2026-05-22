@@ -45,6 +45,10 @@ export interface Project {
   role: string;
   competencies: string[];
   proofs: Proof[];
+  image?: string;
+  imageAlt?: string;
+  featured?: boolean;
+  previewVariant?: "api" | "web" | "desktop" | "mobile" | "portfolio" | "stage";
 }
 
 export interface Competency {
@@ -62,6 +66,11 @@ export interface WatchEntry {
   title: string;
   summary: string;
   tags: string[];
+  image?: string;
+  imageAlt?: string;
+  url?: string;
+  featured?: boolean;
+  previewVariant?: "article" | "docs" | "css" | "ai" | "framework" | "typescript";
 }
 
 export interface StudentInfo {
