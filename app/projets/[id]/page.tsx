@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ExternalLink, File, FileCode, FileText, Image, Code, ChevronRight } from "lucide-react";
+import { ArrowLeft, ExternalLink, Image, ChevronRight } from "lucide-react";
+import { ProofImageGallery } from "@/components/proofs/proof-image-gallery";
 import { Button } from "@/components/ui/button";
 import {
   competencies,
   getCategoryLabel,
   getProjectById,
-  getProofTypeLabel,
   projects,
-  type Proof,
 } from "@/lib/data";
 import { getProjectDetailViewModel } from "@/lib/view-models/project-detail";
 
@@ -16,24 +15,6 @@ export function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id,
   }));
-}
-
-function ProofIcon({ type }: { type: Proof["type"] }) {
-  const iconClass = "h-4 w-4";
-  switch (type) {
-    case "screenshot":
-      return <Image className={iconClass} />;
-    case "pdf":
-      return <FileText className={iconClass} />;
-    case "documentation":
-      return <File className={iconClass} />;
-    case "schema":
-      return <FileCode className={iconClass} />;
-    case "code":
-      return <Code className={iconClass} />;
-    default:
-      return <File className={iconClass} />;
-  }
 }
 
 export default async function ProjectDetailPage({
@@ -155,7 +136,7 @@ export default async function ProjectDetailPage({
                           className="flex items-start gap-4 px-5 py-4 hover:bg-secondary/30 transition-colors"
                         >
                           <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-secondary text-muted-foreground shrink-0">
-                            <ProofIcon type={proof.type} />
+                            <Image className="h-4 w-4" />
                           </div>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-3">
@@ -173,8 +154,9 @@ export default async function ProjectDetailPage({
                               )}
                             </div>
                             <p className="text-[12px] text-muted-foreground mt-1 leading-relaxed">
-                              <span className="font-medium">{getProofTypeLabel(proof.type)}</span> — {proof.description}
+                              {proof.description}
                             </p>
+                            <ProofImageGallery images={proof.images} />
                           </div>
                         </div>
                       ))}

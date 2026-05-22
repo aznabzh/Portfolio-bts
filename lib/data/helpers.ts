@@ -2,6 +2,7 @@ export type {
   Competency,
   CompetencyProof,
   Proof,
+  ProofImage,
   Project,
   StudentInfo,
   SubCompetency,
@@ -13,6 +14,5 @@ export {
   getCompetencyBySubCompetencyId,
   getProjectById,
   getProjectsByCategory,
-  getProofTypeLabel,
   getSubCompetencyById,
 } from "./selectors";

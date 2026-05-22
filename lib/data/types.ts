@@ -5,16 +5,25 @@ export interface SubCompetency {
   description: string;
 }
 
+export interface ProofImage {
+  id: string;
+  src: string;
+  alt: string;
+  title?: string;
+  thumbnail?: string;
+}
+
 export interface Proof {
   id: string;
   title: string;
-  type: "screenshot" | "pdf" | "documentation" | "schema" | "code";
+  type: "screenshot";
   description: string;
   competencyId: string;
   subCompetencyIds?: string[];
   path?: string;
   url?: string;
   thumbnail?: string;
+  images?: ProofImage[];
 }
 
 export interface CompetencyProof {

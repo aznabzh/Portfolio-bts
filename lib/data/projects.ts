@@ -18,7 +18,7 @@ export const projects: Project[] = [
       {
         id: "p1",
         title: "Schéma base de données",
-        type: "schema",
+        type: "screenshot",
         description: "MCD et MLD de l'application.",
         competencyId: "c1",
         subCompetencyIds: ["c1-1", "c1-2"],
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       {
         id: "p2",
         title: "Documentation technique",
-        type: "documentation",
+        type: "screenshot",
         description: "Documentation des tables, relations et règles de gestion.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2", "c1-3"],
@@ -34,7 +34,7 @@ export const projects: Project[] = [
       {
         id: "p3",
         title: "Diagramme de Gantt",
-        type: "schema",
+        type: "screenshot",
         description: "Planning du projet et suivi des jalons.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1", "c4-2"],
@@ -42,7 +42,7 @@ export const projects: Project[] = [
       {
         id: "p4",
         title: "Compte-rendu réunions",
-        type: "pdf",
+        type: "screenshot",
         description: "Compte-rendu des réunions d'équipe et des décisions prises.",
         competencyId: "c4",
         subCompetencyIds: ["c4-3"],
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       {
         id: "p6",
         title: "Tests unitaires",
-        type: "code",
+        type: "screenshot",
         description: "Extraits des tests utilisés pour valider les comportements critiques.",
         competencyId: "c5",
         subCompetencyIds: ["c5-2"],
@@ -89,7 +89,7 @@ export const projects: Project[] = [
       {
         id: "p8",
         title: "Rapport SEO",
-        type: "pdf",
+        type: "screenshot",
         description: "Analyse des optimisations SEO réalisées et de leur impact attendu.",
         competencyId: "c3",
         subCompetencyIds: ["c3-2"],
@@ -97,7 +97,7 @@ export const projects: Project[] = [
       {
         id: "p9",
         title: "Cahier des charges",
-        type: "pdf",
+        type: "screenshot",
         description: "Spécifications fonctionnelles et organisation du projet.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1"],
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       {
         id: "p11",
         title: "Architecture API",
-        type: "schema",
+        type: "screenshot",
         description: "Schéma de l'architecture REST et des principales briques techniques.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2"],
@@ -152,7 +152,7 @@ export const projects: Project[] = [
       {
         id: "p14",
         title: "Veille Node.js",
-        type: "documentation",
+        type: "screenshot",
         description: "Synthèse des bonnes pratiques étudiées pendant le projet.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],
@@ -175,7 +175,7 @@ export const projects: Project[] = [
       {
         id: "p15",
         title: "Schéma BDD étendu",
-        type: "schema",
+        type: "screenshot",
         description: "Nouvelles tables et relations ajoutées pour le module CRM.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2", "c1-3"],
@@ -191,7 +191,7 @@ export const projects: Project[] = [
       {
         id: "p17",
         title: "Rapport de stage",
-        type: "pdf",
+        type: "screenshot",
         description: "Rapport détaillant le contexte, les missions et l'avancement du stage.",
         competencyId: "c4",
         subCompetencyIds: ["c4-3"],
@@ -222,7 +222,7 @@ export const projects: Project[] = [
       {
         id: "p19",
         title: "Code source GitHub",
-        type: "code",
+        type: "screenshot",
         description: "Repository du projet avec l'historique de développement.",
         competencyId: "c3",
         subCompetencyIds: ["c3-1"],
@@ -234,11 +234,31 @@ export const projects: Project[] = [
         description: "Captures du portfolio déployé et prêt pour l'oral.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
+        images: [
+          {
+            id: "portfolio-test-liste-projets",
+            src: "/preuves/tests/liste-projets.png",
+            alt: "Capture de test de la liste des projets du portfolio",
+            title: "Liste des projets",
+          },
+          {
+            id: "portfolio-test-detail-projet",
+            src: "/preuves/tests/detail-projet.png",
+            alt: "Capture de test de la page detail projet du portfolio",
+            title: "Detail projet",
+          },
+          {
+            id: "portfolio-test-preuves-modal",
+            src: "/preuves/tests/preuves-modal.png",
+            alt: "Capture de test de l'ouverture d'une preuve agrandie",
+            title: "Preuve agrandie",
+          },
+        ],
       },
       {
         id: "p21",
         title: "Veille React/Next.js",
-        type: "documentation",
+        type: "screenshot",
         description: "Notes d'apprentissage utilisées pour structurer le projet.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],
@@ -269,7 +289,7 @@ export const projects: Project[] = [
       {
         id: "p23",
         title: "Journal d'apprentissage",
-        type: "documentation",
+        type: "screenshot",
         description: "Notes prises pendant la montée en compétence sur React Native.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],

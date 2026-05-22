@@ -219,6 +219,7 @@ Chaque preuve contient actuellement :
 - `title`
 - `type`
 - `description`
+- `images` pour une ou plusieurs captures d'écran
 
 ### Comment les preuves sont liées aux projets
 - une preuve appartient à un projet parce qu'elle est stockée à l'intérieur de ce projet
@@ -244,24 +245,50 @@ Exemple :
     {
       id: "p-nouveau",
       title: "Compte-rendu de sprint",
-      type: "pdf",
-      description: "Compte-rendu montrant l'organisation et le suivi du projet"
+      type: "screenshot",
+      description: "Capture montrant l'organisation et le suivi du projet"
     }
   ]
 }
 ```
 
 ### Comment ajouter de vrais fichiers / liens en sécurité
-Point important :
-- dans l'état actuel du dépôt, le type `Proof` ne contient pas encore de champ `url`, `path`, `file`, `thumbnail` ou équivalent
-- donc on peut renseigner le contenu descriptif réel, mais pas encore afficher un lien/fichier cliquable sans petite évolution du modèle
+Pour les captures d'écran :
+- placer les fichiers dans `public/preuves/...`
+- référencer les images avec un chemin public, par exemple `/preuves/api-rest/postman-1.png`
+- utiliser `images` quand une même preuve contient plusieurs captures
 
-La manière la plus sûre aujourd'hui :
-- remplacer les faux titres/descriptions par les vrais
-- préparer à part la liste des vrais fichiers à lier plus tard
+Exemple :
 
-Si vous voulez aller plus loin plus tard :
-- il faudra faire un petit refactor dédié du type `Proof` et du rendu de [app/projets/[id]/page.tsx](/c:/Users/coren/OneDrive/Bureau/portfolio/b_G8wZ4HEEm1O/app/projets/[id]/page.tsx:105)
+```ts
+{
+  id: "p13",
+  title: "Tests Postman",
+  type: "screenshot",
+  description: "Collection de tests utilisés pour vérifier les endpoints.",
+  competencyId: "c5",
+  subCompetencyIds: ["c5-2"],
+  images: [
+    {
+      id: "postman-login",
+      src: "/preuves/api-rest/postman-login.png",
+      alt: "Test Postman de la route de connexion",
+      title: "Connexion"
+    },
+    {
+      id: "postman-events",
+      src: "/preuves/api-rest/postman-events.png",
+      alt: "Test Postman de la liste des événements",
+      title: "Liste des événements"
+    }
+  ]
+}
+```
+
+Pour les autres fichiers :
+- ils doivent être exportés ou capturés sous forme d'image avant d'être ajoutés comme preuve
+- un PDF, un extrait de code ou un schéma doit donc être représenté par une capture d'écran
+- `thumbnail` peut être utilisé pour afficher une miniature différente de l'image originale
 
 ### Qu'est-ce qu'une bonne preuve pour E5
 Une preuve utile montre concrètement :
@@ -271,13 +298,13 @@ Une preuve utile montre concrètement :
 
 Exemples utiles :
 - capture d'écran d'une fonctionnalité
-- schéma UML / MCD / MLD
-- extrait de code significatif
-- cahier des charges
-- ticket traité
-- documentation technique
-- rapport de stage
-- résultats de tests
+- capture d'un schéma UML / MCD / MLD
+- capture d'un extrait de code significatif
+- capture d'un cahier des charges
+- capture d'un ticket traité
+- capture d'une documentation technique
+- capture d'une page de rapport de stage
+- capture de résultats de tests
 
 ## 7. Comment modifier la veille technologique
 
@@ -332,7 +359,7 @@ La veille doit rester en lien avec :
 - Utiliser `name` ou `code` comme référence à la place de `id`
 - Réutiliser deux fois le même `id`
 - Mettre des projets incomplets "pour plus tard" puis oublier de les finaliser
-- Vouloir ajouter des liens de preuves cliquables directement alors que le modèle actuel ne prévoit pas encore de champ pour cela
+- Ajouter une capture dans `public/preuves` sans l'ajouter dans le champ `images` de la preuve correspondante
 
 ## 9. Ordre recommandé pour remplacer le mock data
 
@@ -374,4 +401,4 @@ Avant de considérer l'intégration de contenu comme terminée, vérifier :
 
 - `studentInfo.subtitle` et `studentInfo.about` existent dans les données, mais ne sont pas vraiment exploités dans l'UI actuelle
 - les mentions visuelles comme `Portfolio E5`, `BTS SIO SLAM`, certains textes d'introduction de page et les métadonnées SEO ne viennent pas toutes de la couche `lib/data`
-- l'ajout de vraies preuves cliquables n'est pas encore pris en charge par le modèle actuel sans petite évolution dédiée
+- les preuves de type capture peuvent maintenant être ouvertes en grand depuis la page détail projet

@@ -1,4 +1,4 @@
-import type { Competency, Project, Proof } from "@/lib/data";
+import type { Competency, Project, Proof, ProofImage } from "@/lib/data";
 
 export interface ProjectDetailSubCompetencyViewModel {
   id: string;
@@ -13,6 +13,7 @@ export interface ProjectDetailProofViewModel {
   description: string;
   href?: string;
   thumbnail?: string;
+  images: ProofImage[];
 }
 
 export interface ProjectDetailProofGroupViewModel {
@@ -80,14 +81,31 @@ export function getProjectDetailViewModel(
           competencyCode: competency.code,
           competencyName: competency.name,
           subCompetencies,
-          proofs: groupProofs.map((proof) => ({
-            id: proof.id,
-            title: proof.title,
-            type: proof.type,
-            description: proof.description,
-            href: proof.url ?? proof.path,
-            thumbnail: proof.thumbnail,
-          })),
+          proofs: groupProofs.map((proof) => {
+            const images =
+              proof.images ??
+              (proof.path
+                ? [
+                    {
+                      id: `${proof.id}-image`,
+                      src: proof.path,
+                      alt: proof.title,
+                      title: proof.title,
+                      thumbnail: proof.thumbnail,
+                    },
+                  ]
+                : []);
+
+            return {
+              id: proof.id,
+              title: proof.title,
+              type: proof.type,
+              description: proof.description,
+              href: proof.url ?? proof.path,
+              thumbnail: proof.thumbnail,
+              images,
+            };
+          }),
         },
       ];
     }),

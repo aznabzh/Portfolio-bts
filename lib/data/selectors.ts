@@ -1,6 +1,6 @@
 import { competencies } from "./competencies";
 import { projects } from "./projects";
-import type { Competency, Proof, Project, SubCompetency } from "./types";
+import type { Competency, Project, SubCompetency } from "./types";
 
 export function getProjectById(id: string): Project | undefined {
   return projects.find((project) => project.id === id);
@@ -32,14 +32,3 @@ export function getCategoryLabel(category: Project["category"]): string {
   return labels[category];
 }
 
-export function getProofTypeLabel(type: Proof["type"]): string {
-  const labels: Record<Proof["type"], string> = {
-    screenshot: "Capture d'écran",
-    pdf: "Document PDF",
-    documentation: "Documentation",
-    schema: "Schéma",
-    code: "Code source",
-  };
-
-  return labels[type];
-}

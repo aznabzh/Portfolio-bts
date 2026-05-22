@@ -5,13 +5,13 @@ export {
   getCompetencyBySubCompetencyId,
   getProjectById,
   getProjectsByCategory,
-  getProofTypeLabel,
   getSubCompetencyById,
 } from "./selectors";
 export type {
   Competency,
   CompetencyProof,
   Proof,
+  ProofImage,
   Project,
   StudentInfo,
   SubCompetency,

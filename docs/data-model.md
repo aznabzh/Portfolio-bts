@@ -79,8 +79,8 @@ Represents a project or realization shown in the portfolio.
     {
       "id": "postman-tests",
       "title": "Captures de tests Postman",
-      "type": "image",
-      "path": "/evidences/api-rest/postman-tests.png",
+      "type": "screenshot",
+      "path": "/preuves/api-rest/postman-tests.png",
       "skills": ["b2.1"]
     }
   ]
@@ -123,28 +123,26 @@ Suggested optional fields
 description
 label
 thumbnail
+images
 externalUrl
-Evidence types
-Examples:
-image
-pdf
-document
-code
-diagram
-link
+Evidence type
+All proofs use:
+screenshot
 Notes
 Every evidence should belong to a project.
 Every evidence should support one or more skill IDs when relevant.
 The same evidence may support multiple competencies.
+Screenshot proofs can contain several images through `images`, so one proof can show several captures for the same sub-competency.
+Local screenshots should be stored in `public/preuves/...` and referenced with paths like `/preuves/project-x/capture-1.png`.
 Example shape
 JSON
 {
-  "id": "uml-diagram",
-  "title": "Diagramme UML",
-  "type": "pdf",
-  "path": "/evidences/project-x/uml.pdf",
+  "id": "postman-tests",
+  "title": "Tests Postman",
+  "type": "screenshot",
+  "path": "/preuves/project-x/postman-tests.png",
   "skills": ["b1.4", "b2.1"],
-  "description": "Diagramme utilisé pour la phase de conception."
+  "description": "Captures montrant les tests réalisés."
 }
 4. WatchEntry
 Purpose
