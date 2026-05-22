@@ -22,6 +22,8 @@ export const projects: Project[] = [
         description: "MCD et MLD de l'application.",
         competencyId: "c1",
         subCompetencyIds: ["c1-1", "c1-2"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p1-schema-bdd.png",
+        thumbnail: "/Portfolio-bts/preuves/gestion-stock/p1-schema-bdd.png",
       },
       {
         id: "p2",
@@ -30,6 +32,7 @@ export const projects: Project[] = [
         description: "Documentation des tables, relations et règles de gestion.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2", "c1-3"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p2-doc-technique.pdf",
       },
       {
         id: "p3",
@@ -38,6 +41,8 @@ export const projects: Project[] = [
         description: "Planning du projet et suivi des jalons.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1", "c4-2"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p3-gantt.png",
+        thumbnail: "/Portfolio-bts/preuves/gestion-stock/p3-gantt.png",
       },
       {
         id: "p4",
@@ -46,6 +51,7 @@ export const projects: Project[] = [
         description: "Compte-rendu des réunions d'équipe et des décisions prises.",
         competencyId: "c4",
         subCompetencyIds: ["c4-3"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p4-cr-reunions.pdf",
       },
       {
         id: "p5",
@@ -54,6 +60,8 @@ export const projects: Project[] = [
         description: "Écrans principaux de l'application de gestion de stock.",
         competencyId: "c5",
         subCompetencyIds: ["c5-1", "c5-3"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p5-captures-interface.png",
+        thumbnail: "/Portfolio-bts/preuves/gestion-stock/p5-captures-interface.png",
       },
       {
         id: "p6",
@@ -62,6 +70,8 @@ export const projects: Project[] = [
         description: "Extraits des tests utilisés pour valider les comportements critiques.",
         competencyId: "c5",
         subCompetencyIds: ["c5-2"],
+        path: "/Portfolio-bts/preuves/gestion-stock/p6-tests-unitaires.png",
+        thumbnail: "/Portfolio-bts/preuves/gestion-stock/p6-tests-unitaires.png",
       },
     ],
   },
@@ -85,6 +95,8 @@ export const projects: Project[] = [
         description: "Maquettes desktop et mobile utilisées pour valider l'interface.",
         competencyId: "c3",
         subCompetencyIds: ["c3-1", "c3-3"],
+        path: "/Portfolio-bts/preuves/site-vitrine/p7-maquettes-figma.png",
+        thumbnail: "/Portfolio-bts/preuves/site-vitrine/p7-maquettes-figma.png",
       },
       {
         id: "p8",
@@ -93,6 +105,7 @@ export const projects: Project[] = [
         description: "Analyse des optimisations SEO réalisées et de leur impact attendu.",
         competencyId: "c3",
         subCompetencyIds: ["c3-2"],
+        path: "/Portfolio-bts/preuves/site-vitrine/p8-rapport-seo.pdf",
       },
       {
         id: "p9",
@@ -101,6 +114,7 @@ export const projects: Project[] = [
         description: "Spécifications fonctionnelles et organisation du projet.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1"],
+        path: "/Portfolio-bts/preuves/site-vitrine/p9-cahier-charges.pdf",
       },
       {
         id: "p10",
@@ -109,6 +123,8 @@ export const projects: Project[] = [
         description: "Captures du site final déployé et testé.",
         competencyId: "c5",
         subCompetencyIds: ["c5-2", "c5-3"],
+        path: "/Portfolio-bts/preuves/site-vitrine/p10-site-en-ligne.png",
+        thumbnail: "/Portfolio-bts/preuves/site-vitrine/p10-site-en-ligne.png",
       },
     ],
   },
@@ -132,6 +148,8 @@ export const projects: Project[] = [
         description: "Schéma de l'architecture REST et des principales briques techniques.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2"],
+        path: "/Portfolio-bts/preuves/api-rest/p11-architecture-api.png",
+        thumbnail: "/Portfolio-bts/preuves/api-rest/p11-architecture-api.png",
       },
       {
         id: "p12",
@@ -140,6 +158,8 @@ export const projects: Project[] = [
         description: "Interface Swagger UI montrant les routes exposées.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
+        path: "/Portfolio-bts/preuves/api-rest/p12-swagger.png",
+        thumbnail: "/Portfolio-bts/preuves/api-rest/p12-swagger.png",
       },
       {
         id: "p13",
@@ -148,6 +168,8 @@ export const projects: Project[] = [
         description: "Collection de tests utilisés pour vérifier les endpoints.",
         competencyId: "c5",
         subCompetencyIds: ["c5-2"],
+        path: "/Portfolio-bts/preuves/api-rest/p13-tests-postman.png",
+        thumbnail: "/Portfolio-bts/preuves/api-rest/p13-tests-postman.png",
       },
       {
         id: "p14",
@@ -156,6 +178,8 @@ export const projects: Project[] = [
         description: "Synthèse des bonnes pratiques étudiées pendant le projet.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],
+        path: "/Portfolio-bts/preuves/api-rest/p14-veille-node.png",
+        thumbnail: "/Portfolio-bts/preuves/api-rest/p14-veille-node.png",
       },
     ],
   },
@@ -179,6 +203,8 @@ export const projects: Project[] = [
         description: "Nouvelles tables et relations ajoutées pour le module CRM.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2", "c1-3"],
+        path: "/Portfolio-bts/preuves/stage-entreprise/p15-schema-bdd-etendu.png",
+        thumbnail: "/Portfolio-bts/preuves/stage-entreprise/p15-schema-bdd-etendu.png",
       },
       {
         id: "p16",
@@ -187,6 +213,8 @@ export const projects: Project[] = [
         description: "Exemples de demandes prises en charge et résolues en stage.",
         competencyId: "c2",
         subCompetencyIds: ["c2-1", "c2-3"],
+        path: "/Portfolio-bts/preuves/stage-entreprise/p16-tickets-wekan.png",
+        thumbnail: "/Portfolio-bts/preuves/stage-entreprise/p16-tickets-wekan.png",
       },
       {
         id: "p17",
@@ -195,6 +223,7 @@ export const projects: Project[] = [
         description: "Rapport détaillant le contexte, les missions et l'avancement du stage.",
         competencyId: "c4",
         subCompetencyIds: ["c4-3"],
+        path: "/Portfolio-bts/preuves/stage-entreprise/p17-rapport-stage.pdf",
       },
       {
         id: "p18",
@@ -203,6 +232,8 @@ export const projects: Project[] = [
         description: "Captures du module intégré dans le CRM de l'entreprise.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
+        path: "/Portfolio-bts/preuves/stage-entreprise/p18-crm-production.png",
+        thumbnail: "/Portfolio-bts/preuves/stage-entreprise/p18-crm-production.png",
       },
     ],
   },
@@ -226,6 +257,8 @@ export const projects: Project[] = [
         description: "Repository du projet avec l'historique de développement.",
         competencyId: "c3",
         subCompetencyIds: ["c3-1"],
+        path: "/Portfolio-bts/preuves/portfolio-personnel/p19-code-github.png",
+        thumbnail: "/Portfolio-bts/preuves/portfolio-personnel/p19-code-github.png",
       },
       {
         id: "p20",
@@ -234,6 +267,8 @@ export const projects: Project[] = [
         description: "Captures du portfolio déployé et prêt pour l'oral.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
+        path: "/Portfolio-bts/preuves/portfolio-personnel/p20-portfolio-en-ligne.png",
+        thumbnail: "/Portfolio-bts/preuves/portfolio-personnel/p20-portfolio-en-ligne.png",
       },
       {
         id: "p21",
@@ -242,6 +277,8 @@ export const projects: Project[] = [
         description: "Notes d'apprentissage utilisées pour structurer le projet.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],
+        path: "/Portfolio-bts/preuves/portfolio-personnel/p21-veille-react.png",
+        thumbnail: "/Portfolio-bts/preuves/portfolio-personnel/p21-veille-react.png",
       },
     ],
   },
@@ -265,6 +302,8 @@ export const projects: Project[] = [
         description: "Écrans de l'application mobile en situation d'usage.",
         competencyId: "c5",
         subCompetencyIds: ["c5-1", "c5-2"],
+        path: "/Portfolio-bts/preuves/app-mobile/p22-captures-app.png",
+        thumbnail: "/Portfolio-bts/preuves/app-mobile/p22-captures-app.png",
       },
       {
         id: "p23",
@@ -273,6 +312,8 @@ export const projects: Project[] = [
         description: "Notes prises pendant la montée en compétence sur React Native.",
         competencyId: "c6",
         subCompetencyIds: ["c6-1", "c6-2"],
+        path: "/Portfolio-bts/preuves/app-mobile/p23-journal-apprentissage.png",
+        thumbnail: "/Portfolio-bts/preuves/app-mobile/p23-journal-apprentissage.png",
       },
     ],
   },
