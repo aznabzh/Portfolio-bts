@@ -17,8 +17,8 @@ export const competencies: Competency[] = [
       {
         id: "c1-2",
         code: "B1.1.2",
-        name: "Documenter l'architecture et les accès",
-        description: "Formaliser les schémas, documents techniques et informations d'exploitation.",
+        name: "Exploiter des référentiels, normes et standards",
+        description: "Appliquer les standards techniques, conventions et référentiels attendus dans le projet.",
       },
       {
         id: "c1-3",
@@ -63,8 +63,8 @@ export const competencies: Competency[] = [
       {
         id: "c3-1",
         code: "B1.3.1",
-        name: "Produire et publier un contenu en ligne",
-        description: "Mettre en ligne des contenus, pages ou supports cohérents avec le besoin.",
+        name: "Participer à la valorisation de l'image de l'organisation",
+        description: "Produire des contenus numériques cohérents avec l'identité et les objectifs de l'organisation.",
       },
       {
         id: "c3-2",
