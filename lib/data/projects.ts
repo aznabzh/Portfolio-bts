@@ -688,7 +688,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent le respect des conventions MVC, DAO/DTO et des standards PHP/MySQL attendus pour la partie dynamique.",
+          "Les captures montrent l'architecture MVC, la séparation DAO/DTO et les conventions attendues pour la partie dynamique.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2"],
         images: [
@@ -725,7 +725,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent des menus et pages accessibles selon les rôles RH, salarié et bénévole, avec accès limité aux documents.",
+          "Les captures montrent des accès et menus différents selon les rôles RH, salarié et bénévole.",
         competencyId: "c1",
         subCompetencyIds: ["c1-3"],
         images: [
@@ -762,7 +762,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les preuves relient le cahier des charges à la réalisation de la partie B (contrôleurs, vues, fonctionnalités RH).",
+          "Les captures relient le cahier des charges aux contrôleurs et vues réalisés pour la partie B.",
         competencyId: "c2",
         subCompetencyIds: ["c2-3"],
         images: [
@@ -800,12 +800,13 @@ export const projects: Project[] = [
       },
       {
         id: "ap31-evolution-site",
-        title: "B1.3.3 - Participer à l'évolution d'un site web exploitant les données",
+        title:
+          "B1.3.3 - Participer à l'évolution d'un site Web exploitant les données de l'organisation",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent des pages dynamiques reliées à la base MySQL (intervenants, contrats, bulletins).",
+          "Les captures montrent des pages dynamiques liées aux données MySQL (intervenants, contrats, bulletins).",
         competencyId: "c3",
         subCompetencyIds: ["c3-3"],
         images: [
@@ -848,7 +849,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures cadrent les objectifs, les contraintes et la répartition du travail pour le projet.",
+          "Les documents montrent les objectifs, le périmètre et la répartition du travail.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1"],
         images: [
@@ -891,7 +892,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "La capture de tableau de suivi montre la planification et l'avancement des tâches.",
+          "La capture de suivi montre la planification et l'avancement des tâches.",
         competencyId: "c4",
         subCompetencyIds: ["c4-2"],
         images: [
@@ -905,12 +906,12 @@ export const projects: Project[] = [
       },
       {
         id: "ap31-tests-integration",
-        title: "B1.5.1 - Réaliser les tests d'intégration et d'acceptation",
+        title: "B1.5.1 - Réaliser les tests d'intégration et d'acceptation d'un service",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent des tests et vérifications fonctionnelles de la partie B avec des comptes de test.",
+          "Les captures montrent des tests et vérifications fonctionnelles sur la partie B.",
         competencyId: "c5",
         subCompetencyIds: ["c5-1"],
         images: [
@@ -996,7 +997,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent la documentation de setup, de test et de dépannage avec les informations utiles.",
+          "Les captures montrent la documentation de setup et de test pour les utilisateurs.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
         images: [
@@ -1419,7 +1420,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures recensent l'application, la base, les routes et les outils utilisés pour identifier les ressources du projet.",
+          "Les captures recensent l'application, la base et les routes utilisées dans le projet.",
         competencyId: "c1",
         subCompetencyIds: ["c1-1"],
         images: [
@@ -1451,12 +1452,13 @@ export const projects: Project[] = [
       },
       {
         id: "stage1-referentiels-standards",
-        title: "B1.1.2 - Exploiter des référentiels, normes et standards",
+        title:
+          "B1.1.2 - Exploiter des référentiels, normes et standards adoptés par le prestataire informatique",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent l'application Symfony structurée (MVC, routes, services, ORM) et les standards de développement.",
+          "Les captures montrent l'architecture Symfony (MVC, routes, services, ORM) et les standards appliqués.",
         competencyId: "c1",
         subCompetencyIds: ["c1-2"],
         images: [
@@ -1487,7 +1489,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent l'évolution de l'application de prise de rendez-vous (formulaire, créneaux, confirmation).",
+          "Les captures montrent l'évolution de l'application (formulaire, créneaux, confirmation).",
         competencyId: "c2",
         subCompetencyIds: ["c2-3"],
         images: [
@@ -1507,12 +1509,13 @@ export const projects: Project[] = [
       },
       {
         id: "stage1-valorisation-image",
-        title: "B1.3.1 - Participer à la valorisation de l'image de l'organisation",
+        title:
+          "B1.3.1 - Participer à la valorisation de l'image de l'organisation sur les médias numériques",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent un service en ligne modernisé et accessible pour valoriser l'image de l'organisation.",
+          "Les captures montrent un service en ligne modernisé pour l'image de Biscaphone.",
         competencyId: "c3",
         subCompetencyIds: ["c3-1"],
         images: [
@@ -1538,12 +1541,13 @@ export const projects: Project[] = [
       },
       {
         id: "stage1-evolution-site",
-        title: "B1.3.3 - Participer à l'évolution d'un site web exploitant les données",
+        title:
+          "B1.3.3 - Participer à l'évolution d'un site Web exploitant les données de l'organisation",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent un site web dynamique exploitant les données de rendez-vous en base.",
+          "Les captures montrent une application dynamique exploitant les données de rendez-vous.",
         competencyId: "c3",
         subCompetencyIds: ["c3-3"],
         images: [
@@ -1580,7 +1584,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les documents cadrent le besoin client, le contexte et les objectifs fonctionnels de la mission.",
+          "Les documents cadrent le besoin client, le contexte et les objectifs fonctionnels.",
         competencyId: "c4",
         subCompetencyIds: ["c4-1"],
         images: [
@@ -1636,7 +1640,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent le suivi des difficultés et les écarts entre prévu et réalisé.",
+          "Les captures montrent le suivi des difficultés et les écarts rencontrés.",
         competencyId: "c4",
         subCompetencyIds: ["c4-3"],
         images: [
@@ -1656,7 +1660,7 @@ export const projects: Project[] = [
       },
       {
         id: "stage1-tests-integration",
-        title: "B1.5.1 - Réaliser les tests d'intégration et d'acceptation",
+        title: "B1.5.1 - Réaliser les tests d'intégration et d'acceptation d'un service",
         type: "screenshot",
         evidenceType: "capture",
         proofStatus: "à vérifier",
@@ -1692,7 +1696,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "Les captures montrent le guide d'installation/configuration et les consignes de mise en place.",
+          "Les captures montrent le guide d'installation et de configuration du service.",
         competencyId: "c5",
         subCompetencyIds: ["c5-3"],
         images: [
@@ -1717,7 +1721,7 @@ export const projects: Project[] = [
         evidenceType: "capture",
         proofStatus: "à vérifier",
         description:
-          "La capture montre la mise en place de l'environnement d'apprentissage (WAMP, Composer, Symfony, Git, docs).",
+          "La capture montre la mise en place de l'environnement d'apprentissage (WAMP, Composer, Symfony, Git).",
         competencyId: "c6",
         subCompetencyIds: ["c6-1"],
         images: [
