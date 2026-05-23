@@ -37,8 +37,8 @@ export const competencies: Competency[] = [
       {
         id: "c2-1",
         code: "B1.2.1",
-        name: "Qualifier et prioriser une demande",
-        description: "Identifier la nature du problème, son impact et son niveau d'urgence.",
+        name: "Collecter, suivre et orienter des demandes",
+        description: "Identifier les demandes, suivre leur avancement et orienter leur traitement.",
       },
       {
         id: "c2-2",
@@ -49,8 +49,8 @@ export const competencies: Competency[] = [
       {
         id: "c2-3",
         code: "B1.2.3",
-        name: "Assurer le suivi jusqu'à la résolution",
-        description: "Vérifier la prise en charge et la clôture effective de l'incident.",
+        name: "Traiter des demandes concernant les applications",
+        description: "Corriger ou faire évoluer une application à partir de demandes identifiées.",
       },
     ],
   },
@@ -115,20 +115,20 @@ export const competencies: Competency[] = [
       {
         id: "c5-1",
         code: "B1.5.1",
-        name: "Concevoir, développer et intégrer le service",
-        description: "Assembler les briques techniques nécessaires au fonctionnement du service.",
+        name: "Réaliser les tests d'intégration et d'acceptation",
+        description: "Vérifier la conformité du service et corriger les anomalies détectées.",
       },
       {
         id: "c5-2",
         code: "B1.5.2",
-        name: "Tester, valider et corriger le service",
-        description: "Vérifier la conformité du service et corriger les anomalies détectées.",
+        name: "Déployer un service",
+        description: "Préparer et rendre accessible le service dans son environnement d'utilisation.",
       },
       {
         id: "c5-3",
         code: "B1.5.3",
-        name: "Déployer et accompagner la mise à disposition",
-        description: "Préparer la mise en production et l'appropriation par l'utilisateur.",
+        name: "Accompagner les utilisateurs dans la mise en place d'un service",
+        description: "Documenter ou expliquer l'utilisation et la maintenance du service.",
       },
     ],
   },

@@ -16,11 +16,24 @@ const projectGroupDefinitions: Array<{
 }> = [
   {
     label: "Formation - 1ère année",
-    matches: (project) => project.category === "atelier" && project.year === "2023",
+    matches: (project) =>
+      project.category === "atelier" &&
+      [
+        "ap-12-ticketing",
+        "ap-21-generateur-sql",
+        "ap-23-site-statique-m2l",
+        "ap-24-championnat",
+        "ap-25-gsb-frais",
+      ].includes(project.id),
   },
   {
     label: "Formation - 2nde année",
-    matches: (project) => project.category === "atelier" && project.year === "2024",
+    matches: (project) =>
+      project.category === "atelier" &&
+      [
+        "ap-31-m2l-dynamique",
+        "ap-32-aux-claviers-citoyens",
+      ].includes(project.id),
   },
   {
     label: "Stages",
