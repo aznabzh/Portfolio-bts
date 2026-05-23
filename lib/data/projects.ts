@@ -528,65 +528,11 @@ export const projects: Project[] = [
     technologies: ["Java", "JavaFX", "FXML", "DAO", "Base de données"],
     role:
       "Développeur applicatif : compréhension de l'architecture existante, ajout de fonctionnalités et préparation de preuves par parcours utilisateur.",
-    competencies: ["c1", "c4"],
+    competencies: ["c4"],
     image: "/previews/projects/ap-25-gsb-frais.png",
     imageAlt: "Apercu de l'atelier AP 2.5 Gestion des frais GSB",
     previewVariant: "desktop",
     proofs: [
-      {
-        id: "ap25-referentiels-architecture",
-        title: "B1.1.2 - Exploiter des référentiels, normes et standards",
-        type: "screenshot",
-        evidenceType: "capture",
-        proofStatus: "à vérifier",
-        description: "Les captures montrent le respect de l'architecture GSB en couches : contrôleurs, DAO, objets métier, ressources et configuration.",
-        competencyId: "c1",
-        subCompetencyIds: ["c1-2"],
-        images: [
-          {
-            id: "ap25-referentiels-architecture-1",
-            src: "/proofs/ap-25-gsb-frais/1/1.2/1.png",
-            alt: "Architecture du projet GSB",
-            title: "Architecture projet",
-          },
-          {
-            id: "ap25-referentiels-architecture-2",
-            src: "/proofs/ap-25-gsb-frais/1/1.2/2.png",
-            alt: "Organisation controllers DAO métier GSB",
-            title: "Organisation en couches",
-          },
-          {
-            id: "ap25-referentiels-architecture-3",
-            src: "/proofs/ap-25-gsb-frais/1/1.2/3.png",
-            alt: "Ressources et configuration GSB",
-            title: "Ressources",
-          },
-          {
-            id: "ap25-referentiels-architecture-4",
-            src: "/proofs/ap-25-gsb-frais/1/1.2/4.png",
-            alt: "Structure applicative GSB",
-            title: "Structure applicative",
-          },
-        ],
-      },
-      {
-        id: "ap25-habilitations",
-        title: "B1.1.3 - Mettre en place et vérifier les niveaux d'habilitation",
-        type: "screenshot",
-        evidenceType: "capture",
-        proofStatus: "à vérifier",
-        description: "La capture montre une organisation par profils utilisateur, mais ne prouve pas encore directement les droits après connexion.",
-        competencyId: "c1",
-        subCompetencyIds: ["c1-3"],
-        images: [
-          {
-            id: "ap25-habilitations-1",
-            src: "/proofs/ap-25-gsb-frais/1/1.3/1.png",
-            alt: "Séparation des contrôleurs par profil GSB",
-            title: "Profils utilisateur",
-          },
-        ],
-      },
       {
         id: "ap25-analyse-objectifs",
         title: "B1.4.1 - Analyser les objectifs et les modalités d'organisation",
