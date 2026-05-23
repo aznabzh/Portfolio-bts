@@ -2273,6 +2273,8 @@ export const projects: Project[] = [
     role:
       "Développeur mobile : conception, maquettage, développement et déploiement sur appareil Android.",
     competencies: ["c2", "c4", "c5", "c6"],
+    image: "/previews/projects/menstrual-cycle-tracker.png",
+    imageAlt: "Apercu du projet Menstrual Cycle Tracker",
     previewVariant: "mobile",
     proofs: [
       {
