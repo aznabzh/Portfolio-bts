@@ -1,0 +1,216 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+      - generic [ref=e8]:
+        - button "Choisir le thème" [ref=e9]:
+          - img
+          - generic [ref=e10]: Choisir le thème
+        - button "Ouvrir le menu" [ref=e11]:
+          - img
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "Projets" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Projets réalisés durant ma formation BTS SIO SLAM et en dehors.
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - heading "Ateliers professionnels" [level=2] [ref=e21]
+            - generic [ref=e23]: "3"
+          - generic [ref=e24]:
+            - link "Web Projet Header Section Responsive 2024 Application de gestion de stock Développement d'une application web de gestion de stock pour une PME fictive. PHP MySQL Bootstrap JavaScript B1.1 B1.4 B1.5 Septembre 2024 - Décembre 2024" [ref=e25] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/gestion-stock/
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e32]
+                  - generic [ref=e37]:
+                    - paragraph [ref=e38]: Web
+                    - paragraph [ref=e39]: Projet
+                - generic [ref=e40]:
+                  - generic [ref=e47]: Header
+                  - generic [ref=e52]: Section
+                  - generic [ref=e57]: Responsive
+              - generic [ref=e60]:
+                - generic [ref=e62]: "2024"
+                - heading "Application de gestion de stock" [level=3] [ref=e63]
+                - paragraph [ref=e64]: Développement d'une application web de gestion de stock pour une PME fictive.
+                - generic [ref=e65]:
+                  - generic [ref=e66]: PHP
+                  - generic [ref=e67]: MySQL
+                  - generic [ref=e68]: Bootstrap
+                  - generic [ref=e69]: JavaScript
+                - generic [ref=e70]:
+                  - generic [ref=e71]: B1.1
+                  - generic [ref=e72]: B1.4
+                  - generic [ref=e73]: B1.5
+                - generic [ref=e74]:
+                  - generic [ref=e75]: Septembre 2024 - Décembre 2024
+                  - img [ref=e77]
+            - link "Web Projet Header Section Responsive 2023 Site vitrine responsive Création d'un site vitrine responsive pour une association locale. HTML5 CSS3 JavaScript Figma B1.3 B1.4 B1.5 Novembre 2023 - Janvier 2024" [ref=e80] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/site-vitrine/
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - img [ref=e87]
+                  - generic [ref=e92]:
+                    - paragraph [ref=e93]: Web
+                    - paragraph [ref=e94]: Projet
+                - generic [ref=e95]:
+                  - generic [ref=e102]: Header
+                  - generic [ref=e107]: Section
+                  - generic [ref=e112]: Responsive
+              - generic [ref=e115]:
+                - generic [ref=e117]: "2023"
+                - heading "Site vitrine responsive" [level=3] [ref=e118]
+                - paragraph [ref=e119]: Création d'un site vitrine responsive pour une association locale.
+                - generic [ref=e120]:
+                  - generic [ref=e121]: HTML5
+                  - generic [ref=e122]: CSS3
+                  - generic [ref=e123]: JavaScript
+                  - generic [ref=e124]: Figma
+                - generic [ref=e125]:
+                  - generic [ref=e126]: B1.3
+                  - generic [ref=e127]: B1.4
+                  - generic [ref=e128]: B1.5
+                - generic [ref=e129]:
+                  - generic [ref=e130]: Novembre 2023 - Janvier 2024
+                  - img [ref=e132]
+            - link "API Projet GET /api/items POST /auth/login 200 OK 2024 API REST de gestion d'événements Conception et développement d'une API REST pour la gestion d'événements. Node.js Express MongoDB Swagger JWT B1.1 B1.5 B1.6 Février 2024 - Avril 2024" [ref=e135] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/api-rest/
+              - generic [ref=e139]:
+                - generic [ref=e140]:
+                  - img [ref=e142]
+                  - generic [ref=e145]:
+                    - paragraph [ref=e146]: API
+                    - paragraph [ref=e147]: Projet
+                - generic [ref=e148]:
+                  - generic [ref=e155]: GET /api/items
+                  - generic [ref=e160]: POST /auth/login
+                  - generic [ref=e165]: 200 OK
+              - generic [ref=e168]:
+                - generic [ref=e170]: "2024"
+                - heading "API REST de gestion d'événements" [level=3] [ref=e171]
+                - paragraph [ref=e172]: Conception et développement d'une API REST pour la gestion d'événements.
+                - generic [ref=e173]:
+                  - generic [ref=e174]: Node.js
+                  - generic [ref=e175]: Express
+                  - generic [ref=e176]: MongoDB
+                  - generic [ref=e177]: Swagger
+                  - generic [ref=e178]: JWT
+                - generic [ref=e179]:
+                  - generic [ref=e180]: B1.1
+                  - generic [ref=e181]: B1.5
+                  - generic [ref=e182]: B1.6
+                - generic [ref=e183]:
+                  - generic [ref=e184]: Février 2024 - Avril 2024
+                  - img [ref=e186]
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - heading "Stages" [level=2] [ref=e191]
+            - generic [ref=e193]: "1"
+          - link "Stage Projet Mission Tickets Livrable 2024 Stage - Développement d'un module CRM Développement d'un module de suivi client pour le CRM interne de l'entreprise. C# .NET SQL Server Entity Framework B1.1 B1.2 B1.4 +1 Mai 2024 - Juin 2024 (6 semaines)" [ref=e195] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/stage-entreprise/
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - img [ref=e202]
+                - generic [ref=e206]:
+                  - paragraph [ref=e207]: Stage
+                  - paragraph [ref=e208]: Projet
+              - generic [ref=e209]:
+                - generic [ref=e216]: Mission
+                - generic [ref=e221]: Tickets
+                - generic [ref=e226]: Livrable
+            - generic [ref=e229]:
+              - generic [ref=e231]: "2024"
+              - heading "Stage - Développement d'un module CRM" [level=3] [ref=e232]
+              - paragraph [ref=e233]: Développement d'un module de suivi client pour le CRM interne de l'entreprise.
+              - generic [ref=e234]:
+                - generic [ref=e235]: C#
+                - generic [ref=e236]: .NET
+                - generic [ref=e237]: SQL Server
+                - generic [ref=e238]: Entity Framework
+              - generic [ref=e239]:
+                - generic [ref=e240]: B1.1
+                - generic [ref=e241]: B1.2
+                - generic [ref=e242]: B1.4
+                - generic [ref=e243]: "+1"
+              - generic [ref=e244]:
+                - generic [ref=e245]: Mai 2024 - Juin 2024 (6 semaines)
+                - img [ref=e247]
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - heading "Réalisations personnelles" [level=2] [ref=e252]
+            - generic [ref=e254]: "2"
+          - generic [ref=e255]:
+            - link "Portfolio Projet Next.js Static export E5 2024 Portfolio personnel Développement de ce portfolio pour présenter mes compétences et projets BTS. Next.js React TypeScript Tailwind CSS B1.3 B1.5 B1.6 Projet continu" [ref=e256] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/portfolio-personnel/
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - img [ref=e263]
+                  - generic [ref=e266]:
+                    - paragraph [ref=e267]: Portfolio
+                    - paragraph [ref=e268]: Projet
+                - generic [ref=e269]:
+                  - generic [ref=e276]: Next.js
+                  - generic [ref=e281]: Static export
+                  - generic [ref=e286]: E5
+              - generic [ref=e289]:
+                - generic [ref=e291]: "2024"
+                - heading "Portfolio personnel" [level=3] [ref=e292]
+                - paragraph [ref=e293]: Développement de ce portfolio pour présenter mes compétences et projets BTS.
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Next.js
+                  - generic [ref=e296]: React
+                  - generic [ref=e297]: TypeScript
+                  - generic [ref=e298]: Tailwind CSS
+                - generic [ref=e299]:
+                  - generic [ref=e300]: B1.3
+                  - generic [ref=e301]: B1.5
+                  - generic [ref=e302]: B1.6
+                - generic [ref=e303]:
+                  - generic [ref=e304]: Projet continu
+                  - img [ref=e306]
+            - link "Mobile Projet Screen State Storage 2023 Application mobile de quiz Développement d'une application mobile de quiz sur la culture générale. React Native Expo TypeScript AsyncStorage B1.5 B1.6 Été 2023" [ref=e309] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/app-mobile/
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - img [ref=e316]
+                  - generic [ref=e318]:
+                    - paragraph [ref=e319]: Mobile
+                    - paragraph [ref=e320]: Projet
+                - generic [ref=e321]:
+                  - generic [ref=e328]: Screen
+                  - generic [ref=e333]: State
+                  - generic [ref=e338]: Storage
+              - generic [ref=e341]:
+                - generic [ref=e343]: "2023"
+                - heading "Application mobile de quiz" [level=3] [ref=e344]
+                - paragraph [ref=e345]: Développement d'une application mobile de quiz sur la culture générale.
+                - generic [ref=e346]:
+                  - generic [ref=e347]: React Native
+                  - generic [ref=e348]: Expo
+                  - generic [ref=e349]: TypeScript
+                  - generic [ref=e350]: AsyncStorage
+                - generic [ref=e351]:
+                  - generic [ref=e352]: B1.5
+                  - generic [ref=e353]: B1.6
+                - generic [ref=e354]:
+                  - generic [ref=e355]: Été 2023
+                  - img [ref=e357]
+  - contentinfo [ref=e360]:
+    - generic [ref=e362]:
+      - generic [ref=e364]: Corentin Richard
+      - generic [ref=e365]:
+        - link "GitHub" [ref=e366] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e367]
+        - link "LinkedIn" [ref=e370] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e371]
+        - link "Email" [ref=e375] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e376]
+  - button "Open Next.js Dev Tools" [ref=e384] [cursor=pointer]:
+    - img [ref=e385]

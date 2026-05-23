@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Thème système" [ref=e21]:
+          - img
+          - generic [ref=e22]: Thème système
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Veille technologique" [level=1] [ref=e27]
+        - paragraph [ref=e28]: Suivi des évolutions dans le développement web et logiciel.
+      - generic [ref=e29]:
+        - article [ref=e30]:
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - img [ref=e37]
+              - generic [ref=e40]:
+                - paragraph [ref=e41]: Framework
+                - paragraph [ref=e42]: Veille
+            - generic [ref=e43]:
+              - generic [ref=e50]: Router
+              - generic [ref=e55]: Component
+              - generic [ref=e60]: Server
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: Mars 2024
+              - generic [ref=e66]: Blog officiel React
+            - heading "React Server Components" [level=2] [ref=e67]
+            - paragraph [ref=e68]: Les React Server Components permettent de rendre des composants côté serveur, réduisant le JavaScript envoyé au client et améliorant les performances.
+            - generic [ref=e69]:
+              - generic [ref=e70]: React
+              - generic [ref=e71]: Performance
+              - generic [ref=e72]: SSR
+            - generic [ref=e73]:
+              - generic [ref=e74]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e75]:
+                - img [ref=e76]
+        - article [ref=e79]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - img [ref=e86]
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: Docs
+                - paragraph [ref=e91]: Veille
+            - generic [ref=e92]:
+              - generic [ref=e99]: Guide
+              - generic [ref=e104]: Concept
+              - generic [ref=e109]: Exemple
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]: Février 2024
+              - generic [ref=e115]: Documentation Next.js
+            - heading "App Router et nouvelles conventions" [level=2] [ref=e116]
+            - paragraph [ref=e117]: Next.js 14 introduit l'App Router comme standard, avec de nouvelles conventions de routing et le support natif des Server Components.
+            - generic [ref=e118]:
+              - generic [ref=e119]: Next.js
+              - generic [ref=e120]: Routing
+              - generic [ref=e121]: Framework
+            - generic [ref=e122]:
+              - generic [ref=e123]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e124]:
+                - img [ref=e125]
+        - article [ref=e128]:
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - img [ref=e135]
+              - generic [ref=e140]:
+                - paragraph [ref=e141]: CSS
+                - paragraph [ref=e142]: Veille
+            - generic [ref=e143]:
+              - generic [ref=e150]: Layout
+              - generic [ref=e155]: Container
+              - generic [ref=e160]: Responsive
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]: Janvier 2024
+              - generic [ref=e166]: MDN Web Docs
+            - heading "CSS Container Queries" [level=2] [ref=e167]
+            - paragraph [ref=e168]: Les Container Queries permettent d'adapter le style d'un élément en fonction de la taille de son conteneur parent, offrant plus de flexibilité que les media queries.
+            - generic [ref=e169]:
+              - generic [ref=e170]: CSS
+              - generic [ref=e171]: Responsive
+              - generic [ref=e172]: Web
+            - generic [ref=e173]:
+              - generic [ref=e174]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e175]:
+                - img [ref=e176]
+        - article [ref=e179]:
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - img [ref=e186]
+              - generic [ref=e189]:
+                - paragraph [ref=e190]: IA
+                - paragraph [ref=e191]: Veille
+            - generic [ref=e192]:
+              - generic [ref=e199]: Prompt
+              - generic [ref=e204]: Suggestion
+              - generic [ref=e209]: Review
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - generic [ref=e214]: Décembre 2023
+              - generic [ref=e215]: GitHub Blog
+            - heading "GitHub Copilot et IA générative" [level=2] [ref=e216]
+            - paragraph [ref=e217]: L'IA générative transforme le développement logiciel. GitHub Copilot utilise des modèles de langage pour suggérer du code en temps réel.
+            - generic [ref=e218]:
+              - generic [ref=e219]: IA
+              - generic [ref=e220]: Productivité
+              - generic [ref=e221]: Outils
+            - generic [ref=e222]:
+              - generic [ref=e223]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e224]:
+                - img [ref=e225]
+        - article [ref=e228]:
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - img [ref=e235]
+              - generic [ref=e237]:
+                - paragraph [ref=e238]: TypeScript
+                - paragraph [ref=e239]: Veille
+            - generic [ref=e240]:
+              - generic [ref=e247]: Types
+              - generic [ref=e252]: Inference
+              - generic [ref=e257]: Build
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]: Novembre 2023
+              - generic [ref=e263]: TypeScript Blog
+            - heading "TypeScript 5.3 - Nouvelles fonctionnalités" [level=2] [ref=e264]
+            - paragraph [ref=e265]: TypeScript 5.3 apporte des améliorations de performance, de nouveaux types utilitaires et une meilleure inférence de types.
+            - generic [ref=e266]:
+              - generic [ref=e267]: TypeScript
+              - generic [ref=e268]: JavaScript
+              - generic [ref=e269]: Types
+            - generic [ref=e270]:
+              - generic [ref=e271]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e272]:
+                - img [ref=e273]
+  - contentinfo [ref=e276]:
+    - generic [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]: Corentin Richard
+        - generic [ref=e282]: BTS SIO SLAM
+        - generic [ref=e284]: "2026"
+      - generic [ref=e285]:
+        - link "GitHub" [ref=e286] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e287]
+        - link "LinkedIn" [ref=e290] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e291]
+        - link "Email" [ref=e295] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e296]
+  - button "Open Next.js Dev Tools" [ref=e304] [cursor=pointer]:
+    - img [ref=e305]
+  - alert [ref=e308]

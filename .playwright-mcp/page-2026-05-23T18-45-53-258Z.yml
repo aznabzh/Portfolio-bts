@@ -1,0 +1,193 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Choisir le thème" [ref=e21]:
+          - img
+          - generic [ref=e22]: Choisir le thème
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Veille technologique" [level=1] [ref=e27]
+        - paragraph [ref=e28]: Cette page regroupe mes deux veilles réalisées dans le cadre du BTS SIO SLAM. La veille me permet de rester à jour, de suivre des technologies utiles au développement, de comparer des outils et de relier ces recherches à mes projets.
+      - generic [ref=e29]:
+        - heading "Méthode de veille" [level=2] [ref=e31]
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - img [ref=e35]
+            - paragraph [ref=e38]: Choisir des sujets liés au développement, à mes stages et à mon parcours SLAM.
+          - generic [ref=e39]:
+            - img [ref=e40]
+            - paragraph [ref=e43]: "Sélectionner peu de sources, mais fiables : documentations officielles, plateformes techniques et articles spécialisés."
+          - generic [ref=e44]:
+            - img [ref=e45]
+            - paragraph [ref=e48]: Consulter les informations régulièrement ou lorsqu'un besoin apparaît dans un projet.
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - paragraph [ref=e53]: Conserver les liens, notes, captures et synthèses utiles dans le portfolio.
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - paragraph [ref=e58]: Relier les informations retenues à mes AP, mes stages ou mes choix techniques.
+      - generic [ref=e59]:
+        - article [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]: Veille 1
+              - generic [ref=e64]: Veille technique
+            - heading "Découverte de Flutter" [level=2] [ref=e65]
+            - paragraph [ref=e66]: Flutter, Dart, développement mobile multiplateforme, widgets, pub.dev et Firebase.
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - paragraph [ref=e70]: Axe de veille
+                - paragraph [ref=e71]: Comprendre dans quels cas Flutter est intéressant pour créer une application mobile moderne avec une base de code commune.
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: Pourquoi ce sujet
+                - paragraph [ref=e74]: J'ai choisi ce sujet parce que le développement mobile complète bien le parcours SLAM. Flutter permet de créer une application visuelle, testable rapidement, et il est cohérent avec mon stage mobile autour de FIND.
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: Informations retenues
+                - generic [ref=e77]:
+                  - generic [ref=e78]: Flutter permet de viser plusieurs plateformes avec une même base de code.
+                  - generic [ref=e79]: Dart est le langage utilisé pour structurer la logique et les interfaces.
+                  - generic [ref=e80]: Les écrans sont construits avec des widgets assemblés dans le code.
+                  - generic [ref=e81]: Le hot reload facilite les tests visuels et les corrections rapides.
+                  - generic [ref=e82]: pub.dev permet d'ajouter des packages, à condition de vérifier leur qualité.
+                  - generic [ref=e83]: Firebase peut compléter une application Flutter avec Auth, Firestore, Storage ou notifications.
+                  - generic [ref=e84]: Flutter est pertinent pour un projet mobile étudiant, personnel ou MVP, mais demande une organisation claire.
+              - generic [ref=e85]:
+                - paragraph [ref=e86]: Lien avec mes projets
+                - paragraph [ref=e87]: Cette veille est liée à mon stage de deuxième année sur FIND, à la découverte de Firebase et à la structuration d'une application mobile Flutter.
+            - complementary [ref=e88]:
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: Sources suivies
+                - generic [ref=e91]:
+                  - link "Flutter Docs" [ref=e92] [cursor=pointer]:
+                    - /url: https://docs.flutter.dev/
+                    - generic [ref=e93]: Flutter Docs
+                    - img [ref=e94]
+                  - link "Dart Docs" [ref=e97] [cursor=pointer]:
+                    - /url: https://dart.dev/docs
+                    - generic [ref=e98]: Dart Docs
+                    - img [ref=e99]
+                  - link "Dart Language" [ref=e102] [cursor=pointer]:
+                    - /url: https://dart.dev/language
+                    - generic [ref=e103]: Dart Language
+                    - img [ref=e104]
+                  - link "Flutter Hot Reload" [ref=e107] [cursor=pointer]:
+                    - /url: https://docs.flutter.dev/tools/hot-reload
+                    - generic [ref=e108]: Flutter Hot Reload
+                    - img [ref=e109]
+                  - link "pub.dev" [ref=e112] [cursor=pointer]:
+                    - /url: https://pub.dev/
+                    - generic [ref=e113]: pub.dev
+                    - img [ref=e114]
+                  - link "Firebase Flutter Setup" [ref=e117] [cursor=pointer]:
+                    - /url: https://firebase.google.com/docs/flutter/setup
+                    - generic [ref=e118]: Firebase Flutter Setup
+                    - img [ref=e119]
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: Compétences BTS associées
+                - generic [ref=e124]:
+                  - generic [ref=e125]: B1.6.2 principale
+                  - generic [ref=e126]: B1.6.1 pour la démarche d'apprentissage
+                  - generic [ref=e127]: B1.6.4 si reliée au projet professionnel
+        - article [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: Veille 2
+              - generic [ref=e132]: Veille générale / professionnelle
+            - heading "Évolution des outils de développement" [level=2] [ref=e133]
+            - paragraph [ref=e134]: GitHub, GitLab, Docker, CI/CD, Linear, documentation, gestion d'issues et assistants IA.
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - paragraph [ref=e138]: Axe de veille
+                - paragraph [ref=e139]: Comprendre comment les outils modernes aident les développeurs à coder, collaborer, tester, documenter et livrer des projets.
+              - generic [ref=e140]:
+                - paragraph [ref=e141]: Pourquoi ce sujet
+                - paragraph [ref=e142]: Ce sujet est utile parce qu'un développeur ne fait pas seulement du code. Dans mes AP, mes stages et ce portfolio, j'utilise aussi des issues, Git, Docker, des README, des workflows et des outils de suivi.
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: Informations retenues
+                - generic [ref=e145]:
+                  - generic [ref=e146]: GitHub et GitLab servent à versionner, gérer les branches, suivre les issues et parfois automatiser les livraisons.
+                  - generic [ref=e147]: Les issues structurent les demandes, corrections et évolutions applicatives.
+                  - generic [ref=e148]: La CI/CD automatise des étapes comme les tests, la construction ou le déploiement.
+                  - generic [ref=e149]: Docker facilite la reproductibilité d'un environnement de développement.
+                  - generic [ref=e150]: Linear, GitHub Projects ou GitLab Boards aident à suivre les tâches et l'avancement.
+                  - generic [ref=e151]: Les assistants IA peuvent aider à produire ou relire du code, mais les résultats doivent être vérifiés et testés.
+              - generic [ref=e152]:
+                - paragraph [ref=e153]: Lien avec mes projets
+                - paragraph [ref=e154]: Cette veille se retrouve dans mes AP avec GitHub/GitLab, Docker, les tickets de suivi, Linear pendant le stage, et GitHub Actions pour le déploiement du portfolio.
+            - complementary [ref=e155]:
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: Sources suivies
+                - generic [ref=e158]:
+                  - link "GitHub Actions" [ref=e159] [cursor=pointer]:
+                    - /url: https://docs.github.com/actions
+                    - generic [ref=e160]: GitHub Actions
+                    - img [ref=e161]
+                  - link "GitLab CI/CD" [ref=e164] [cursor=pointer]:
+                    - /url: https://docs.gitlab.com/ci/
+                    - generic [ref=e165]: GitLab CI/CD
+                    - img [ref=e166]
+                  - link "Docker Compose" [ref=e169] [cursor=pointer]:
+                    - /url: https://docs.docker.com/compose/
+                    - generic [ref=e170]: Docker Compose
+                    - img [ref=e171]
+                  - link "Linear Docs" [ref=e174] [cursor=pointer]:
+                    - /url: https://linear.app/docs
+                    - generic [ref=e175]: Linear Docs
+                    - img [ref=e176]
+                  - link "GitLab Docs" [ref=e179] [cursor=pointer]:
+                    - /url: https://docs.gitlab.com/
+                    - generic [ref=e180]: GitLab Docs
+                    - img [ref=e181]
+                  - link "Docker Docs" [ref=e184] [cursor=pointer]:
+                    - /url: https://docs.docker.com/
+                    - generic [ref=e185]: Docker Docs
+                    - img [ref=e186]
+              - generic [ref=e189]:
+                - paragraph [ref=e190]: Compétences BTS associées
+                - generic [ref=e191]:
+                  - generic [ref=e192]: B1.6.2 principale
+                  - generic [ref=e193]: B1.6.1 pour progresser dans la méthode de travail
+                  - generic [ref=e194]: B1.6.4 pour le profil de futur développeur
+      - generic [ref=e195]:
+        - heading "Synthèse" [level=2] [ref=e196]
+        - paragraph [ref=e197]: Flutter représente une veille technique ciblée sur le développement mobile. Les outils de développement représentent une veille plus générale sur les pratiques utilisées pour organiser, tester et livrer un projet. Ces deux sujets montrent une démarche de progression continue, liée à mes AP, à mes stages et à mon évolution professionnelle.
+  - contentinfo [ref=e198]:
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - generic [ref=e202]: Corentin Richard
+        - generic [ref=e204]: BTS SIO SLAM
+        - generic [ref=e206]: "2026"
+      - generic [ref=e207]:
+        - link "GitHub" [ref=e208] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e209]
+        - link "LinkedIn" [ref=e212] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e213]
+        - link "Email" [ref=e217] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e218]

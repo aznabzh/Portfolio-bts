@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Choisir le thème" [ref=e21]:
+          - img
+          - generic [ref=e22]: Choisir le thème
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: BTS SIO SLAM
+            - generic [ref=e31]: Portfolio E5
+          - heading "Corentin Richard" [level=1] [ref=e32]
+          - paragraph [ref=e33]: Étudiant en BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers. Passionné par le développement web et les nouvelles technologies.
+          - generic [ref=e34]:
+            - link "Voir les projets" [ref=e35] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+              - text: Voir les projets
+              - img
+            - link "Matrice compétences" [ref=e36] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+        - generic [ref=e37]:
+          - link "6 Projets" [ref=e38] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/
+            - img [ref=e40]
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: "6"
+              - paragraph [ref=e44]: Projets
+          - link "6 Compétences" [ref=e45] [cursor=pointer]:
+            - /url: /Portfolio-bts/competences/
+            - img [ref=e47]
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: "6"
+              - paragraph [ref=e51]: Compétences
+          - link "5 Articles veille" [ref=e52] [cursor=pointer]:
+            - /url: /Portfolio-bts/veille/
+            - img [ref=e54]
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: "5"
+              - paragraph [ref=e60]: Articles veille
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - heading "Projets récents" [level=2] [ref=e65]
+          - link "Tous les projets" [ref=e67] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/
+            - text: Tous les projets
+            - img [ref=e68]
+        - generic [ref=e71]:
+          - link "Ateliers 2024 Application de gestion de stock Développement d'une application web de gestion de stock pour une PME fictive. PHP MySQL Bootstrap +1" [ref=e72] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/gestion-stock/
+            - generic [ref=e73]:
+              - generic [ref=e74]: Ateliers
+              - generic [ref=e75]: "2024"
+            - heading "Application de gestion de stock" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Développement d'une application web de gestion de stock pour une PME fictive.
+            - generic [ref=e78]:
+              - generic [ref=e79]: PHP
+              - generic [ref=e80]: MySQL
+              - generic [ref=e81]: Bootstrap
+              - generic [ref=e82]: "+1"
+          - link "Ateliers 2023 Site vitrine responsive Création d'un site vitrine responsive pour une association locale. HTML5 CSS3 JavaScript +1" [ref=e83] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/site-vitrine/
+            - generic [ref=e84]:
+              - generic [ref=e85]: Ateliers
+              - generic [ref=e86]: "2023"
+            - heading "Site vitrine responsive" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Création d'un site vitrine responsive pour une association locale.
+            - generic [ref=e89]:
+              - generic [ref=e90]: HTML5
+              - generic [ref=e91]: CSS3
+              - generic [ref=e92]: JavaScript
+              - generic [ref=e93]: "+1"
+          - link "Ateliers 2024 API REST de gestion d'événements Conception et développement d'une API REST pour la gestion d'événements. Node.js Express MongoDB +2" [ref=e94] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/api-rest/
+            - generic [ref=e95]:
+              - generic [ref=e96]: Ateliers
+              - generic [ref=e97]: "2024"
+            - heading "API REST de gestion d'événements" [level=3] [ref=e98]
+            - paragraph [ref=e99]: Conception et développement d'une API REST pour la gestion d'événements.
+            - generic [ref=e100]:
+              - generic [ref=e101]: Node.js
+              - generic [ref=e102]: Express
+              - generic [ref=e103]: MongoDB
+              - generic [ref=e104]: "+2"
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - heading "Compétences BTS SIO" [level=2] [ref=e109]
+          - link "Voir la matrice" [ref=e111] [cursor=pointer]:
+            - /url: /Portfolio-bts/competences/
+            - text: Voir la matrice
+            - img [ref=e112]
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: B1.1
+            - generic [ref=e118]:
+              - paragraph [ref=e119]: Gérer le patrimoine informatique
+              - paragraph [ref=e120]: Recenser et identifier les ressources numériques
+          - generic [ref=e121]:
+            - generic [ref=e122]: B1.2
+            - generic [ref=e123]:
+              - paragraph [ref=e124]: Répondre aux incidents
+              - paragraph [ref=e125]: Collecter, suivre et orienter des demandes
+          - generic [ref=e126]:
+            - generic [ref=e127]: B1.3
+            - generic [ref=e128]:
+              - paragraph [ref=e129]: Développer la présence en ligne
+              - paragraph [ref=e130]: Participer à la valorisation de l'image de l'organisation
+          - generic [ref=e131]:
+            - generic [ref=e132]: B1.4
+            - generic [ref=e133]:
+              - paragraph [ref=e134]: Travailler en mode projet
+              - paragraph [ref=e135]: Analyser les objectifs et les modalités d'organisation d'un projet
+          - generic [ref=e136]:
+            - generic [ref=e137]: B1.5
+            - generic [ref=e138]:
+              - paragraph [ref=e139]: Mettre à disposition des utilisateurs un service informatique
+              - paragraph [ref=e140]: Réaliser les tests d'intégration et d'acceptation d'un service
+          - generic [ref=e141]:
+            - generic [ref=e142]: B1.6
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: Organiser son développement professionnel
+              - paragraph [ref=e145]: Mettre en place son environnement d'apprentissage personnel
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - heading "Veille technologique" [level=2] [ref=e150]
+          - link "Toute la veille" [ref=e152] [cursor=pointer]:
+            - /url: /Portfolio-bts/veille/
+            - text: Toute la veille
+            - img [ref=e153]
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: Mars 2024
+              - generic [ref=e161]: Blog officiel React
+            - heading "React Server Components" [level=3] [ref=e162]
+            - paragraph [ref=e163]: Les React Server Components permettent de rendre des composants côté serveur, réduisant le JavaScript envoyé au client et améliorant les performances.
+            - generic [ref=e164]:
+              - generic [ref=e165]: React
+              - generic [ref=e166]: Performance
+              - generic [ref=e167]: SSR
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: Février 2024
+              - generic [ref=e172]: Documentation Next.js
+            - heading "App Router et nouvelles conventions" [level=3] [ref=e173]
+            - paragraph [ref=e174]: Next.js 14 introduit l'App Router comme standard, avec de nouvelles conventions de routing et le support natif des Server Components.
+            - generic [ref=e175]:
+              - generic [ref=e176]: Next.js
+              - generic [ref=e177]: Routing
+              - generic [ref=e178]: Framework
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]: Janvier 2024
+              - generic [ref=e183]: MDN Web Docs
+            - heading "CSS Container Queries" [level=3] [ref=e184]
+            - paragraph [ref=e185]: Les Container Queries permettent d'adapter le style d'un élément en fonction de la taille de son conteneur parent, offrant plus de flexibilité que les media queries.
+            - generic [ref=e186]:
+              - generic [ref=e187]: CSS
+              - generic [ref=e188]: Responsive
+              - generic [ref=e189]: Web
+  - contentinfo [ref=e190]:
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - generic [ref=e194]: Corentin Richard
+        - generic [ref=e196]: BTS SIO SLAM
+        - generic [ref=e198]: "2026"
+      - generic [ref=e199]:
+        - link "GitHub" [ref=e200] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e201]
+        - link "LinkedIn" [ref=e204] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e205]
+        - link "Email" [ref=e209] [cursor=pointer]:
+          - /url: mailto:cor.rchd@email.com
+          - img [ref=e210]
+  - button "Open Next.js Dev Tools" [ref=e218] [cursor=pointer]:
+    - img [ref=e219]

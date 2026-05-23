@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Thème sombre" [ref=e21]:
+          - img
+          - generic [ref=e22]: Thème sombre
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: BTS SIO SLAM
+          - generic [ref=e30]: Portfolio E5
+        - heading "Corentin Richard" [level=1] [ref=e31]
+        - paragraph [ref=e32]: Étudiant en BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers. Passionné par le développement web et les nouvelles technologies.
+        - generic [ref=e33]:
+          - link "Voir les projets" [ref=e34] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/
+            - text: Voir les projets
+            - img
+          - link "Matrice compétences" [ref=e35] [cursor=pointer]:
+            - /url: /Portfolio-bts/competences/
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - heading "Projets récents" [level=2] [ref=e40]
+          - link "Tous les projets" [ref=e42] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/
+            - text: Tous les projets
+            - img [ref=e43]
+        - generic [ref=e46]:
+          - link "Apercu de l'atelier AP 1.2 sur la gestion de tickets Ateliers 2024 AP 1.2 - Ticketing et résolution de tickets Traitement de tickets d'évolution et de correction sur une application existante. C# Visual Studio Application desktop +2" [ref=e47] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/ap-12-ticketing/
+            - img "Apercu de l'atelier AP 1.2 sur la gestion de tickets" [ref=e49]
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - generic [ref=e52]: Ateliers
+                - generic [ref=e53]: "2024"
+              - heading "AP 1.2 - Ticketing et résolution de tickets" [level=3] [ref=e54]
+              - paragraph [ref=e55]: Traitement de tickets d'évolution et de correction sur une application existante.
+              - generic [ref=e56]:
+                - generic [ref=e57]: C#
+                - generic [ref=e58]: Visual Studio
+                - generic [ref=e59]: Application desktop
+                - generic [ref=e60]: "+2"
+          - link "Apercu de l'atelier AP 2.1 Generateur SQL Ateliers 2024 AP 2.1 - Générateur SQL Évolution d'une application permettant de générer des requêtes SQL. C# WinForms SQL +1" [ref=e61] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/ap-21-generateur-sql/
+            - img "Apercu de l'atelier AP 2.1 Generateur SQL" [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]: Ateliers
+                - generic [ref=e67]: "2024"
+              - heading "AP 2.1 - Générateur SQL" [level=3] [ref=e68]
+              - paragraph [ref=e69]: Évolution d'une application permettant de générer des requêtes SQL.
+              - generic [ref=e70]:
+                - generic [ref=e71]: C#
+                - generic [ref=e72]: WinForms
+                - generic [ref=e73]: SQL
+                - generic [ref=e74]: "+1"
+          - link "Apercu de l'atelier AP 2.3 Site statique M2L Ateliers 2024 AP 2.3 - Site statique M2L Création d'un site vitrine statique pour présenter la Maison des Ligues. HTML5 CSS3 PHP +2" [ref=e75] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/ap-23-site-statique-m2l/
+            - img "Apercu de l'atelier AP 2.3 Site statique M2L" [ref=e77]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Ateliers
+                - generic [ref=e81]: "2024"
+              - heading "AP 2.3 - Site statique M2L" [level=3] [ref=e82]
+              - paragraph [ref=e83]: Création d'un site vitrine statique pour présenter la Maison des Ligues.
+              - generic [ref=e84]:
+                - generic [ref=e85]: HTML5
+                - generic [ref=e86]: CSS3
+                - generic [ref=e87]: PHP
+                - generic [ref=e88]: "+2"
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Compétences BTS SIO" [level=2] [ref=e93]
+          - link "Voir la matrice" [ref=e95] [cursor=pointer]:
+            - /url: /Portfolio-bts/competences/
+            - text: Voir la matrice
+            - img [ref=e96]
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]: B1.1
+            - generic [ref=e102]:
+              - paragraph [ref=e103]: Gérer le patrimoine informatique
+              - paragraph [ref=e104]: Recenser et identifier les ressources numériques
+          - generic [ref=e105]:
+            - generic [ref=e106]: B1.2
+            - generic [ref=e107]:
+              - paragraph [ref=e108]: Répondre aux incidents
+              - paragraph [ref=e109]: Collecter, suivre et orienter des demandes
+          - generic [ref=e110]:
+            - generic [ref=e111]: B1.3
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Développer la présence en ligne
+              - paragraph [ref=e114]: Participer à la valorisation de l'image de l'organisation
+          - generic [ref=e115]:
+            - generic [ref=e116]: B1.4
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: Travailler en mode projet
+              - paragraph [ref=e119]: Analyser les objectifs et les modalités d'organisation d'un projet
+          - generic [ref=e120]:
+            - generic [ref=e121]: B1.5
+            - generic [ref=e122]:
+              - paragraph [ref=e123]: Mettre à disposition des utilisateurs un service informatique
+              - paragraph [ref=e124]: Réaliser les tests d'intégration et d'acceptation d'un service
+          - generic [ref=e125]:
+            - generic [ref=e126]: B1.6
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: Organiser son développement professionnel
+              - paragraph [ref=e129]: Mettre en place son environnement d'apprentissage personnel
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - heading "Veille technologique" [level=2] [ref=e134]
+          - link "Toute la veille" [ref=e136] [cursor=pointer]:
+            - /url: /Portfolio-bts/veille/
+            - text: Toute la veille
+            - img [ref=e137]
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - img "Apercu de veille sur Flutter et Dart" [ref=e143]
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]: "2026"
+                - generic [ref=e148]: Documentation Flutter, Dart, pub.dev et Firebase
+              - heading "Découverte de Flutter" [level=3] [ref=e149]
+              - paragraph [ref=e150]: Veille technique sur Flutter et Dart pour comprendre le développement mobile multiplateforme, les widgets, le hot reload, l'écosystème pub.dev et l'intégration avec Firebase.
+              - generic [ref=e151]:
+                - generic [ref=e152]: Flutter
+                - generic [ref=e153]: Dart
+                - generic [ref=e154]: Mobile
+                - generic [ref=e155]: Firebase
+                - generic [ref=e156]: Veille
+          - generic [ref=e157]:
+            - img "Apercu de veille sur les outils de developpement" [ref=e159]
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]: "2026"
+                - generic [ref=e164]: GitHub, GitLab, Docker, Linear et documentations officielles
+              - heading "Évolution des outils de développement" [level=3] [ref=e165]
+              - paragraph [ref=e166]: "Veille générale sur les outils modernes des développeurs : GitHub, GitLab, CI/CD, Docker, Linear, documentation, gestion d'issues et assistants IA."
+              - generic [ref=e167]:
+                - generic [ref=e168]: GitHub
+                - generic [ref=e169]: GitLab
+                - generic [ref=e170]: Docker
+                - generic [ref=e171]: CI/CD
+                - generic [ref=e172]: Linear
+  - contentinfo [ref=e173]:
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - generic [ref=e177]: Corentin Richard
+        - generic [ref=e179]: BTS SIO SLAM
+        - generic [ref=e181]: "2026"
+      - generic [ref=e182]:
+        - link "GitHub" [ref=e183] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e184]
+        - link "LinkedIn" [ref=e187] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e188]
+        - link "Email" [ref=e192] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e193]
+  - button "Open Next.js Dev Tools" [ref=e201] [cursor=pointer]:
+    - img [ref=e202]
+  - alert [ref=e205]

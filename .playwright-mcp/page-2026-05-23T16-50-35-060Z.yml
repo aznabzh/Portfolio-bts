@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Choisir le thème" [ref=e21]:
+          - img
+          - generic [ref=e22]: Choisir le thème
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - link "Projets" [ref=e27] [cursor=pointer]:
+          - /url: /Portfolio-bts/projets/
+        - img [ref=e28]
+        - generic [ref=e30]: Portfolio personnel
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]: Réalisations personnelles
+          - generic [ref=e34]: Projet continu
+        - heading "Portfolio personnel" [level=1] [ref=e35]
+        - paragraph [ref=e36]: Développement du portfolio utilisé comme support de présentation pour l'épreuve E5.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - paragraph [ref=e41]: Contexte
+              - paragraph [ref=e42]: Ce portfolio sert à présenter les projets, compétences, preuves et éléments de veille de manière claire pendant l'oral BTS SIO SLAM.
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Objectif
+              - paragraph [ref=e45]: Construire un support sobre, lisible et maintenable, avec des données structurées et une navigation efficace pour le jury.
+            - generic [ref=e46]:
+              - paragraph [ref=e47]: Mon rôle
+              - paragraph [ref=e48]: "Développeur unique : conception, développement, structuration des données, intégration des preuves et déploiement."
+          - generic [ref=e49]:
+            - heading "Preuves par compétence" [level=2] [ref=e51]
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e56]: B1.5
+                - paragraph [ref=e58]: Mettre à disposition des utilisateurs un service informatique
+              - generic [ref=e59]:
+                - paragraph [ref=e60]: Sous-compétences travaillées
+                - generic [ref=e61]:
+                  - generic "Réaliser les tests d'intégration et d'acceptation" [ref=e62]:
+                    - generic [ref=e63]: B1.5.1
+                    - generic [ref=e64]: Réaliser les tests d'intégration et d'acceptation
+                  - generic "Déployer un service" [ref=e65]:
+                    - generic [ref=e66]: B1.5.2
+                    - generic [ref=e67]: Déployer un service
+                  - generic "Accompagner les utilisateurs dans la mise en place d'un service" [ref=e68]:
+                    - generic [ref=e69]: B1.5.3
+                    - generic [ref=e70]: Accompagner les utilisateurs dans la mise en place d'un service
+              - generic [ref=e71]:
+                - generic [ref=e72]:
+                  - img [ref=e74]
+                  - generic [ref=e78]:
+                    - paragraph [ref=e80]: B1.5.1 - Tests d'intégration et d'acceptation
+                    - paragraph [ref=e81]: Les captures montrent des checks GitHub réussis et la page Contact publiée, mais il manque encore un scénario de test formalisé.
+                    - generic [ref=e82]:
+                      - button "Checks GitHub réussis pour le portfolio" [ref=e83]:
+                        - img "Checks GitHub réussis pour le portfolio" [ref=e84]
+                        - img [ref=e86]
+                      - button "Page Contact du portfolio publiée" [ref=e89]:
+                        - img "Page Contact du portfolio publiée" [ref=e90]
+                        - img [ref=e92]
+                - generic [ref=e95]:
+                  - img [ref=e97]
+                  - generic [ref=e101]:
+                    - paragraph [ref=e103]: B1.5.2 - Déployer un service
+                    - paragraph [ref=e104]: Les captures prouvent le déploiement du portfolio avec GitHub Actions, GitHub Pages et l'accès à l'URL publique.
+                    - generic [ref=e105]:
+                      - button "Workflow GitHub Actions de déploiement du portfolio" [ref=e106]:
+                        - img "Workflow GitHub Actions de déploiement du portfolio" [ref=e107]
+                        - img [ref=e109]
+                      - button "Fichier deploy.yml du portfolio" [ref=e112]:
+                        - img "Fichier deploy.yml du portfolio" [ref=e113]
+                        - img [ref=e115]
+                      - button "Exécution du workflow de déploiement" [ref=e118]:
+                        - img "Exécution du workflow de déploiement" [ref=e119]
+                        - img [ref=e121]
+                      - button "Paramètres GitHub Pages du portfolio" [ref=e124]:
+                        - img "Paramètres GitHub Pages du portfolio" [ref=e125]
+                        - img [ref=e127]
+                      - button "Portfolio accessible depuis l'URL publique GitHub Pages" [ref=e130]:
+                        - img "Portfolio accessible depuis l'URL publique GitHub Pages" [ref=e131]
+                        - img [ref=e133]
+                - generic [ref=e136]:
+                  - img [ref=e138]
+                  - generic [ref=e142]:
+                    - paragraph [ref=e144]: B1.5.3 - Accompagner les utilisateurs
+                    - paragraph [ref=e145]: Les captures montrent la documentation expliquant comment ajouter et organiser les preuves dans le portfolio.
+                    - generic [ref=e146]:
+                      - button "Documentation d'ajout des preuves dans le portfolio" [ref=e147]:
+                        - img "Documentation d'ajout des preuves dans le portfolio" [ref=e148]
+                        - img [ref=e150]
+                      - button "Organisation des images de preuves dans le portfolio" [ref=e153]:
+                        - img "Organisation des images de preuves dans le portfolio" [ref=e154]
+                        - img [ref=e156]
+        - complementary [ref=e159]:
+          - generic [ref=e160]:
+            - paragraph [ref=e161]: Technologies
+            - generic [ref=e162]:
+              - generic [ref=e163]: Next.js
+              - generic [ref=e164]: React
+              - generic [ref=e165]: TypeScript
+              - generic [ref=e166]: Tailwind CSS
+          - generic [ref=e167]:
+            - paragraph [ref=e168]: Compétences mobilisées
+            - generic [ref=e170]:
+              - generic [ref=e171]: B1.5
+              - generic [ref=e172]: Mettre à disposition des utilisateurs un service informatique
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: Voir la synthèse complète des compétences du référentiel BTS SIO.
+            - link "Matrice compétences" [ref=e175] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+              - text: Matrice compétences
+              - img
+          - link "Retour aux projets" [ref=e176] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/
+            - img [ref=e177]
+            - text: Retour aux projets
+  - contentinfo [ref=e179]:
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: Corentin Richard
+        - generic [ref=e185]: BTS SIO SLAM
+        - generic [ref=e187]: "2026"
+      - generic [ref=e188]:
+        - link "GitHub" [ref=e189] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e190]
+        - link "LinkedIn" [ref=e193] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e194]
+        - link "Email" [ref=e198] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e199]

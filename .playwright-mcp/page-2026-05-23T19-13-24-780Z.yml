@@ -1,0 +1,262 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "portfolio" [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+        - generic [ref=e8]: portfolio
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Accueil" [ref=e12] [cursor=pointer]:
+              - /url: /Portfolio-bts/
+          - listitem [ref=e13]:
+            - link "Projets" [ref=e14] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/
+          - listitem [ref=e15]:
+            - link "Compétences" [ref=e16] [cursor=pointer]:
+              - /url: /Portfolio-bts/competences/
+          - listitem [ref=e17]:
+            - link "Veille" [ref=e18] [cursor=pointer]:
+              - /url: /Portfolio-bts/veille/
+          - listitem [ref=e19]:
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /Portfolio-bts/contact/
+        - button "Choisir le thème" [ref=e21]:
+          - img
+          - generic [ref=e22]: Choisir le thème
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Projets" [level=1] [ref=e27]
+        - paragraph [ref=e28]: Projets réalisés durant ma formation BTS SIO SLAM et en dehors.
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - heading "Ateliers professionnels" [level=2] [ref=e32]
+            - generic [ref=e34]: "6"
+          - generic [ref=e35]:
+            - link "Apercu de l'atelier AP 1.2 sur la gestion de tickets 2024 AP 1.2 - Ticketing et résolution de tickets Traitement de tickets d'évolution et de correction sur une application existante. C# Visual Studio Application desktop Issues Ticketing B1.2 B1.4 B1.5 Atelier professionnel" [ref=e36] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-12-ticketing/
+              - img "Apercu de l'atelier AP 1.2 sur la gestion de tickets" [ref=e38]
+              - generic [ref=e39]:
+                - generic [ref=e41]: "2024"
+                - heading "AP 1.2 - Ticketing et résolution de tickets" [level=3] [ref=e42]
+                - paragraph [ref=e43]: Traitement de tickets d'évolution et de correction sur une application existante.
+                - generic [ref=e44]:
+                  - generic [ref=e45]: C#
+                  - generic [ref=e46]: Visual Studio
+                  - generic [ref=e47]: Application desktop
+                  - generic [ref=e48]: Issues
+                  - generic [ref=e49]: Ticketing
+                - generic [ref=e50]:
+                  - generic [ref=e51]: B1.2
+                  - generic [ref=e52]: B1.4
+                  - generic [ref=e53]: B1.5
+                - generic [ref=e54]:
+                  - generic [ref=e55]: Atelier professionnel
+                  - img [ref=e57]
+            - link "Apercu de l'atelier AP 2.1 Generateur SQL 2024 AP 2.1 - Générateur SQL Évolution d'une application permettant de générer des requêtes SQL. C# WinForms SQL Visual Studio B1.2 B1.4 B1.5 Atelier professionnel" [ref=e60] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-21-generateur-sql/
+              - img "Apercu de l'atelier AP 2.1 Generateur SQL" [ref=e62]
+              - generic [ref=e63]:
+                - generic [ref=e65]: "2024"
+                - heading "AP 2.1 - Générateur SQL" [level=3] [ref=e66]
+                - paragraph [ref=e67]: Évolution d'une application permettant de générer des requêtes SQL.
+                - generic [ref=e68]:
+                  - generic [ref=e69]: C#
+                  - generic [ref=e70]: WinForms
+                  - generic [ref=e71]: SQL
+                  - generic [ref=e72]: Visual Studio
+                - generic [ref=e73]:
+                  - generic [ref=e74]: B1.2
+                  - generic [ref=e75]: B1.4
+                  - generic [ref=e76]: B1.5
+                - generic [ref=e77]:
+                  - generic [ref=e78]: Atelier professionnel
+                  - img [ref=e80]
+            - link "Apercu de l'atelier AP 2.3 Site statique M2L 2024 AP 2.3 - Site statique M2L Création d'un site vitrine statique pour présenter la Maison des Ligues. HTML5 CSS3 PHP Flexbox CSS Grid B1.1 B1.3 B1.4 +1 Atelier professionnel" [ref=e83] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-23-site-statique-m2l/
+              - img "Apercu de l'atelier AP 2.3 Site statique M2L" [ref=e85]
+              - generic [ref=e86]:
+                - generic [ref=e88]: "2024"
+                - heading "AP 2.3 - Site statique M2L" [level=3] [ref=e89]
+                - paragraph [ref=e90]: Création d'un site vitrine statique pour présenter la Maison des Ligues.
+                - generic [ref=e91]:
+                  - generic [ref=e92]: HTML5
+                  - generic [ref=e93]: CSS3
+                  - generic [ref=e94]: PHP
+                  - generic [ref=e95]: Flexbox
+                  - generic [ref=e96]: CSS Grid
+                - generic [ref=e97]:
+                  - generic [ref=e98]: B1.1
+                  - generic [ref=e99]: B1.3
+                  - generic [ref=e100]: B1.4
+                  - generic [ref=e101]: "+1"
+                - generic [ref=e102]:
+                  - generic [ref=e103]: Atelier professionnel
+                  - img [ref=e105]
+            - link "Apercu de l'atelier AP 2.5 Gestion des frais GSB 2025 AP 2.5 - Gestion des frais GSB Développement autour de la gestion des fiches de frais du laboratoire GSB. Java JavaFX FXML DAO Base de données B1.1 B1.2 B1.4 Atelier professionnel" [ref=e108] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-25-gsb-frais/
+              - img "Apercu de l'atelier AP 2.5 Gestion des frais GSB" [ref=e110]
+              - generic [ref=e111]:
+                - generic [ref=e113]: "2025"
+                - heading "AP 2.5 - Gestion des frais GSB" [level=3] [ref=e114]
+                - paragraph [ref=e115]: Développement autour de la gestion des fiches de frais du laboratoire GSB.
+                - generic [ref=e116]:
+                  - generic [ref=e117]: Java
+                  - generic [ref=e118]: JavaFX
+                  - generic [ref=e119]: FXML
+                  - generic [ref=e120]: DAO
+                  - generic [ref=e121]: Base de données
+                - generic [ref=e122]:
+                  - generic [ref=e123]: B1.1
+                  - generic [ref=e124]: B1.2
+                  - generic [ref=e125]: B1.4
+                - generic [ref=e126]:
+                  - generic [ref=e127]: Atelier professionnel
+                  - img [ref=e129]
+            - link "Apercu de l'atelier AP 3.1 Site dynamique M2L 2025 Projet clé AP 3.1 - Site dynamique M2L Évolution d'un site M2L dynamique avec comptes, rôles et données métier. PHP MySQL MVC Docker HTML B1.1 B1.2 B1.3 +2 Atelier professionnel" [ref=e132] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-31-m2l-dynamique/
+              - img "Apercu de l'atelier AP 3.1 Site dynamique M2L" [ref=e134]
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "2025"
+                  - generic [ref=e138]: Projet clé
+                - heading "AP 3.1 - Site dynamique M2L" [level=3] [ref=e139]
+                - paragraph [ref=e140]: Évolution d'un site M2L dynamique avec comptes, rôles et données métier.
+                - generic [ref=e141]:
+                  - generic [ref=e142]: PHP
+                  - generic [ref=e143]: MySQL
+                  - generic [ref=e144]: MVC
+                  - generic [ref=e145]: Docker
+                  - generic [ref=e146]: HTML
+                - generic [ref=e147]:
+                  - generic [ref=e148]: B1.1
+                  - generic [ref=e149]: B1.2
+                  - generic [ref=e150]: B1.3
+                  - generic [ref=e151]: "+2"
+                - generic [ref=e152]:
+                  - generic [ref=e153]: Atelier professionnel
+                  - img [ref=e155]
+            - link "Apercu de l'atelier AP 3.2 API Aux Claviers Citoyens 2025 Projet clé AP 3.2 - API Aux Claviers Citoyens Développement d'une API REST documentée pour une plateforme de tournois esport. PHP REST API JWT MariaDB Docker B1.1 B1.2 B1.4 +1 Atelier professionnel" [ref=e158] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/ap-32-aux-claviers-citoyens/
+              - img "Apercu de l'atelier AP 3.2 API Aux Claviers Citoyens" [ref=e160]
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]: "2025"
+                  - generic [ref=e164]: Projet clé
+                - heading "AP 3.2 - API Aux Claviers Citoyens" [level=3] [ref=e165]
+                - paragraph [ref=e166]: Développement d'une API REST documentée pour une plateforme de tournois esport.
+                - generic [ref=e167]:
+                  - generic [ref=e168]: PHP
+                  - generic [ref=e169]: REST API
+                  - generic [ref=e170]: JWT
+                  - generic [ref=e171]: MariaDB
+                  - generic [ref=e172]: Docker
+                - generic [ref=e173]:
+                  - generic [ref=e174]: B1.1
+                  - generic [ref=e175]: B1.2
+                  - generic [ref=e176]: B1.4
+                  - generic [ref=e177]: "+1"
+                - generic [ref=e178]:
+                  - generic [ref=e179]: Atelier professionnel
+                  - img [ref=e181]
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - heading "Stages" [level=2] [ref=e186]
+            - generic [ref=e188]: "2"
+          - generic [ref=e189]:
+            - link "Apercu du stage 1 chez Biscaphone 2025 Projet clé Stage 1 - Prise de rendez-vous Biscaphone Création d'une application web de prise de rendez-vous pour un réparateur de smartphones. PHP Symfony Twig Doctrine MySQL B1.1 B1.2 B1.3 +2 Stage de première année" [ref=e190] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/stage-1-biscaphone/
+              - img "Apercu du stage 1 chez Biscaphone" [ref=e192]
+              - generic [ref=e193]:
+                - generic [ref=e194]:
+                  - generic [ref=e195]: "2025"
+                  - generic [ref=e196]: Projet clé
+                - heading "Stage 1 - Prise de rendez-vous Biscaphone" [level=3] [ref=e197]
+                - paragraph [ref=e198]: Création d'une application web de prise de rendez-vous pour un réparateur de smartphones.
+                - generic [ref=e199]:
+                  - generic [ref=e200]: PHP
+                  - generic [ref=e201]: Symfony
+                  - generic [ref=e202]: Twig
+                  - generic [ref=e203]: Doctrine
+                  - generic [ref=e204]: MySQL
+                - generic [ref=e205]:
+                  - generic [ref=e206]: B1.1
+                  - generic [ref=e207]: B1.2
+                  - generic [ref=e208]: B1.3
+                  - generic [ref=e209]: "+2"
+                - generic [ref=e210]:
+                  - generic [ref=e211]: Stage de première année
+                  - img [ref=e213]
+            - link "Apercu du stage 2 sur l'application mobile FIND 2026 Projet clé Stage 2 - FIND, application mobile d'activités Participation au MVP mobile FIND pour créer, rejoindre et découvrir des activités proches. Flutter Dart Firebase Firestore Firebase Auth B1.1 B1.2 B1.4 +2 Stage de deuxième année" [ref=e216] [cursor=pointer]:
+              - /url: /Portfolio-bts/projets/stage-2-find/
+              - img "Apercu du stage 2 sur l'application mobile FIND" [ref=e218]
+              - generic [ref=e219]:
+                - generic [ref=e220]:
+                  - generic [ref=e221]: "2026"
+                  - generic [ref=e222]: Projet clé
+                - heading "Stage 2 - FIND, application mobile d'activités" [level=3] [ref=e223]
+                - paragraph [ref=e224]: Participation au MVP mobile FIND pour créer, rejoindre et découvrir des activités proches.
+                - generic [ref=e225]:
+                  - generic [ref=e226]: Flutter
+                  - generic [ref=e227]: Dart
+                  - generic [ref=e228]: Firebase
+                  - generic [ref=e229]: Firestore
+                  - generic [ref=e230]: Firebase Auth
+                - generic [ref=e231]:
+                  - generic [ref=e232]: B1.1
+                  - generic [ref=e233]: B1.2
+                  - generic [ref=e234]: B1.4
+                  - generic [ref=e235]: "+2"
+                - generic [ref=e236]:
+                  - generic [ref=e237]: Stage de deuxième année
+                  - img [ref=e239]
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - heading "Réalisations personnelles" [level=2] [ref=e244]
+            - generic [ref=e246]: "1"
+          - link "Portfolio Projet Next.js Static export E5 2026 Projet clé Portfolio personnel Développement du portfolio utilisé comme support de présentation pour l'épreuve E5. Next.js React TypeScript Tailwind CSS B1.5 Projet continu" [ref=e248] [cursor=pointer]:
+            - /url: /Portfolio-bts/projets/portfolio-personnel/
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - img [ref=e255]
+                - generic [ref=e258]:
+                  - paragraph [ref=e259]: Portfolio
+                  - paragraph [ref=e260]: Projet
+              - generic [ref=e266]:
+                - generic [ref=e269]: Next.js
+                - generic [ref=e274]: Static export
+                - generic [ref=e279]: E5
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - generic [ref=e284]: "2026"
+                - generic [ref=e285]: Projet clé
+              - heading "Portfolio personnel" [level=3] [ref=e286]
+              - paragraph [ref=e287]: Développement du portfolio utilisé comme support de présentation pour l'épreuve E5.
+              - generic [ref=e288]:
+                - generic [ref=e289]: Next.js
+                - generic [ref=e290]: React
+                - generic [ref=e291]: TypeScript
+                - generic [ref=e292]: Tailwind CSS
+              - generic [ref=e294]: B1.5
+              - generic [ref=e295]:
+                - generic [ref=e296]: Projet continu
+                - img [ref=e298]
+  - contentinfo [ref=e301]:
+    - generic [ref=e303]:
+      - generic [ref=e304]:
+        - generic [ref=e305]: Corentin Richard
+        - generic [ref=e307]: BTS SIO SLAM
+        - generic [ref=e309]: "2026"
+      - generic [ref=e310]:
+        - link "GitHub" [ref=e311] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e312]
+        - link "LinkedIn" [ref=e315] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e316]
+        - link "Email" [ref=e320] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e321]

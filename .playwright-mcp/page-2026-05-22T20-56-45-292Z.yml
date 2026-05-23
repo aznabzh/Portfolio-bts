@@ -1,0 +1,123 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: /Portfolio-bts/
+        - img [ref=e6]
+      - generic [ref=e8]:
+        - button "Choisir le thème" [ref=e9]:
+          - img
+          - generic [ref=e10]: Choisir le thème
+        - button "Ouvrir le menu" [ref=e11]:
+          - img
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "Veille technologique" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Suivi des évolutions dans le développement web et logiciel.
+      - generic [ref=e18]:
+        - article [ref=e19]:
+          - generic [ref=e22]:
+            - img [ref=e23]
+            - generic [ref=e27]: Apercu veille
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: Mars 2024
+              - generic [ref=e31]: Blog officiel React
+            - heading "React Server Components" [level=2] [ref=e32]
+            - paragraph [ref=e33]: Les React Server Components permettent de rendre des composants côté serveur, réduisant le JavaScript envoyé au client et améliorant les performances.
+            - generic [ref=e34]:
+              - generic [ref=e35]: React
+              - generic [ref=e36]: Performance
+              - generic [ref=e37]: SSR
+            - generic [ref=e38]:
+              - generic [ref=e39]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e40]:
+                - img [ref=e41]
+        - article [ref=e44]:
+          - generic [ref=e47]:
+            - img [ref=e48]
+            - generic [ref=e52]: Apercu veille
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]: Février 2024
+              - generic [ref=e56]: Documentation Next.js
+            - heading "App Router et nouvelles conventions" [level=2] [ref=e57]
+            - paragraph [ref=e58]: Next.js 14 introduit l'App Router comme standard, avec de nouvelles conventions de routing et le support natif des Server Components.
+            - generic [ref=e59]:
+              - generic [ref=e60]: Next.js
+              - generic [ref=e61]: Routing
+              - generic [ref=e62]: Framework
+            - generic [ref=e63]:
+              - generic [ref=e64]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e65]:
+                - img [ref=e66]
+        - article [ref=e69]:
+          - generic [ref=e72]:
+            - img [ref=e73]
+            - generic [ref=e77]: Apercu veille
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: Janvier 2024
+              - generic [ref=e81]: MDN Web Docs
+            - heading "CSS Container Queries" [level=2] [ref=e82]
+            - paragraph [ref=e83]: Les Container Queries permettent d'adapter le style d'un élément en fonction de la taille de son conteneur parent, offrant plus de flexibilité que les media queries.
+            - generic [ref=e84]:
+              - generic [ref=e85]: CSS
+              - generic [ref=e86]: Responsive
+              - generic [ref=e87]: Web
+            - generic [ref=e88]:
+              - generic [ref=e89]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e90]:
+                - img [ref=e91]
+        - article [ref=e94]:
+          - generic [ref=e97]:
+            - img [ref=e98]
+            - generic [ref=e102]: Apercu veille
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: Décembre 2023
+              - generic [ref=e106]: GitHub Blog
+            - heading "GitHub Copilot et IA générative" [level=2] [ref=e107]
+            - paragraph [ref=e108]: L'IA générative transforme le développement logiciel. GitHub Copilot utilise des modèles de langage pour suggérer du code en temps réel.
+            - generic [ref=e109]:
+              - generic [ref=e110]: IA
+              - generic [ref=e111]: Productivité
+              - generic [ref=e112]: Outils
+            - generic [ref=e113]:
+              - generic [ref=e114]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e115]:
+                - img [ref=e116]
+        - article [ref=e119]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e127]: Apercu veille
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]: Novembre 2023
+              - generic [ref=e131]: TypeScript Blog
+            - heading "TypeScript 5.3 - Nouvelles fonctionnalités" [level=2] [ref=e132]
+            - paragraph [ref=e133]: TypeScript 5.3 apporte des améliorations de performance, de nouveaux types utilitaires et une meilleure inférence de types.
+            - generic [ref=e134]:
+              - generic [ref=e135]: TypeScript
+              - generic [ref=e136]: JavaScript
+              - generic [ref=e137]: Types
+            - generic [ref=e138]:
+              - generic [ref=e139]: Veille technologique
+              - generic "Source externe a ajouter" [ref=e140]:
+                - img [ref=e141]
+  - contentinfo [ref=e144]:
+    - generic [ref=e146]:
+      - generic [ref=e148]: Corentin Richard
+      - generic [ref=e149]:
+        - link "GitHub" [ref=e150] [cursor=pointer]:
+          - /url: https://github.com/aznabzh
+          - img [ref=e151]
+        - link "LinkedIn" [ref=e154] [cursor=pointer]:
+          - /url: https://linkedin.com/in/corentin-richard-386429239
+          - img [ref=e155]
+        - link "Email" [ref=e159] [cursor=pointer]:
+          - /url: mailto:cor.rchd@gmail.com
+          - img [ref=e160]
+  - button "Open Next.js Dev Tools" [ref=e168] [cursor=pointer]:
+    - img [ref=e169]

@@ -9,6 +9,8 @@ export const watchEntries: WatchEntry[] = [
     summary:
       "Veille technique sur Flutter et Dart pour comprendre le développement mobile multiplateforme, les widgets, le hot reload, l'écosystème pub.dev et l'intégration avec Firebase.",
     tags: ["Flutter", "Dart", "Mobile", "Firebase", "Veille"],
+    image: "/previews/watch/veille-flutter.png",
+    imageAlt: "Apercu de veille sur Flutter et Dart",
     previewVariant: "framework",
   },
   {
@@ -19,6 +21,8 @@ export const watchEntries: WatchEntry[] = [
     summary:
       "Veille générale sur les outils modernes des développeurs : GitHub, GitLab, CI/CD, Docker, Linear, documentation, gestion d'issues et assistants IA.",
     tags: ["GitHub", "GitLab", "Docker", "CI/CD", "Linear"],
+    image: "/previews/watch/veille-outils-developpement.png",
+    imageAlt: "Apercu de veille sur les outils de developpement",
     previewVariant: "docs",
   },
 ];

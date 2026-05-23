@@ -1,0 +1,48 @@
+[     134ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     156ms] [LOG] [HMR] connected @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     289ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     290ms] [LOG] [Fast Refresh] done in 112ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     401ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     420ms] [LOG] [Fast Refresh] done in 126ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163060ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163199ms] [LOG] [Fast Refresh] done in 59ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163306ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163389ms] [LOG] [Fast Refresh] done in 186ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163506ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163596ms] [LOG] [Fast Refresh] done in 198ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  163999ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  164017ms] [LOG] [Fast Refresh] done in 120ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  173850ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  173863ms] [LOG] [Fast Refresh] done in 117ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1274857ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1274971ms] [LOG] [Fast Refresh] done in 46ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1275077ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1275182ms] [LOG] [Fast Refresh] done in 205ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404265ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404535ms] [LOG] [Fast Refresh] done in 62ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404636ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404689ms] [LOG] [Fast Refresh] done in 154ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404796ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404826ms] [LOG] [Fast Refresh] done in 135ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1404927ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1405158ms] [LOG] [Fast Refresh] done in 331ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1447191ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1447340ms] [LOG] [Fast Refresh] done in 264ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1631773ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1632114ms] [LOG] [Fast Refresh] done in 53ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1632372ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1632701ms] [LOG] [Fast Refresh] done in 430ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1640087ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1640164ms] [LOG] [Fast Refresh] done in 182ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2088658ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2088737ms] [LOG] [Fast Refresh] done in 189ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2094663ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2094680ms] [LOG] [Fast Refresh] done in 127ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744241ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744320ms] [LOG] [Fast Refresh] done in 57ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744441ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744808ms] [LOG] [Fast Refresh] done in 485ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744915ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2744934ms] [LOG] [Fast Refresh] done in 125ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2841132ms] [LOG] [Fast Refresh] rebuilding @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 2841345ms] [LOG] [Fast Refresh] done in 39ms @ http://127.0.0.1:3000/Portfolio-bts/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

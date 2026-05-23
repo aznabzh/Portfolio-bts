@@ -16,6 +16,8 @@ export const projects: Project[] = [
     role:
       "Développeur chargé d'analyser les demandes, d'appliquer les corrections ou évolutions retenues et de préparer les éléments de suivi.",
     competencies: ["c2", "c4", "c5"],
+    image: "/previews/projects/ap-12-ticketing.png",
+    imageAlt: "Apercu de l'atelier AP 1.2 sur la gestion de tickets",
     previewVariant: "web",
     proofs: [
       {
@@ -149,6 +151,8 @@ export const projects: Project[] = [
     role:
       "Développeur applicatif : analyse du sujet, évolution de l'interface, gestion de la génération SQL et préparation des preuves de fonctionnement.",
     competencies: ["c2", "c4", "c5"],
+    image: "/previews/projects/ap-21-generateur-sql.png",
+    imageAlt: "Apercu de l'atelier AP 2.1 Generateur SQL",
     previewVariant: "desktop",
     proofs: [
       {
@@ -330,6 +334,8 @@ export const projects: Project[] = [
     role:
       "Intégrateur web : structuration des pages, mise en forme responsive et organisation du contenu de présentation.",
     competencies: ["c1", "c3", "c4", "c5"],
+    image: "/previews/projects/ap-23-site-statique-m2l.png",
+    imageAlt: "Apercu de l'atelier AP 2.3 Site statique M2L",
     previewVariant: "web",
     proofs: [
       {
@@ -523,6 +529,8 @@ export const projects: Project[] = [
     role:
       "Développeur applicatif : compréhension de l'architecture existante, ajout de fonctionnalités et préparation de preuves par parcours utilisateur.",
     competencies: ["c1", "c2", "c4"],
+    image: "/previews/projects/ap-25-gsb-frais.png",
+    imageAlt: "Apercu de l'atelier AP 2.5 Gestion des frais GSB",
     previewVariant: "desktop",
     proofs: [
       {
@@ -668,6 +676,8 @@ export const projects: Project[] = [
     role:
       "Développeur web : évolution de l'application, manipulation des données, vérification des accès et préparation de la mise à disposition locale.",
     competencies: ["c1", "c2", "c3", "c4", "c5"],
+    image: "/previews/projects/ap-31-m2l-dynamique.png",
+    imageAlt: "Apercu de l'atelier AP 3.1 Site dynamique M2L",
     featured: true,
     previewVariant: "web",
     proofs: [
@@ -738,6 +748,8 @@ export const projects: Project[] = [
     role:
       "Développeur backend : structuration des endpoints, gestion des accès par token, tests de requêtes et préparation de la documentation d'usage.",
     competencies: ["c1", "c2", "c4", "c5"],
+    image: "/previews/projects/ap-32-aux-claviers-citoyens.png",
+    imageAlt: "Apercu de l'atelier AP 3.2 API Aux Claviers Citoyens",
     featured: true,
     previewVariant: "api",
     proofs: [
@@ -1100,6 +1112,8 @@ export const projects: Project[] = [
     role:
       "Stagiaire développeur web : maquettage, migration vers Symfony, formulaire multi-étapes, logique de créneaux et workflow de confirmation.",
     competencies: ["c1", "c2", "c3", "c4", "c5"],
+    image: "/previews/projects/stage-1-biscaphone.png",
+    imageAlt: "Apercu du stage 1 chez Biscaphone",
     featured: true,
     previewVariant: "stage",
     proofs: [
@@ -1190,6 +1204,8 @@ export const projects: Project[] = [
     role:
       "Stagiaire développeur mobile : contribution sur l'authentification, le profil, l'autocomplétion ville, la géolocalisation, les filtres et la documentation de reprise.",
     competencies: ["c1", "c2", "c4", "c5", "c6"],
+    image: "/previews/projects/stage-2-find.jpg",
+    imageAlt: "Apercu du stage 2 sur l'application mobile FIND",
     featured: true,
     previewVariant: "mobile",
     proofs: [
