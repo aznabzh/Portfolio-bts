@@ -120,13 +120,6 @@ export default function VeillePage() {
                 <div className="space-y-6 p-5 md:p-6">
                   <section>
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                      Axe de veille
-                    </p>
-                    <p className="mt-2 text-[13px] leading-relaxed">{watch.axis}</p>
-                  </section>
-
-                  <section>
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                       Pourquoi ce sujet
                     </p>
                     <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{watch.why}</p>
