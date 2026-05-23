@@ -2258,4 +2258,108 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: "menstrual-cycle-tracker",
+    title: "Menstrual Cycle Tracker",
+    category: "personnel",
+    year: "2026",
+    period: "Projet personnel",
+    summary: "Application mobile minimaliste de suivi menstruel, pensée pour fonctionner sans compte et sans cloud.",
+    context:
+      "Application mobile Android conçue à partir d'un besoin utilisateur réel : proposer un suivi de cycle simple, rapide, sans compte, avec un bouton principal pour lancer/arrêter une période.",
+    objective:
+      "Permettre de lancer/arrêter une période avec un bouton principal, consulter l'historique et suivre les cycles.",
+    technologies: ["Flutter", "Dart", "Android", "ADB"],
+    role:
+      "Développeur mobile : conception, maquettage, développement et déploiement sur appareil Android.",
+    competencies: ["c2", "c4", "c5"],
+    previewVariant: "mobile",
+    proofs: [
+      {
+        id: "mct-collecte-demandes",
+        title: "B1.2.1 — Collecter, suivre et orienter des demandes",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "Les besoins et retours de l'utilisatrice ont été collectés pendant la conception. Les maquettes montrent une version avant retours, des commentaires, puis une version après retours validée.",
+        competencyId: "c2",
+        subCompetencyIds: ["c2-1"],
+        images: [
+          { id: "mct-collecte-demandes-1", src: "/proofs/menstrual-cycle-tracker/2/2.1/1.png", alt: "MCT B1.2.1 - Maquette avant retours", title: "Maquette avant retours" },
+          { id: "mct-collecte-demandes-2", src: "/proofs/menstrual-cycle-tracker/2/2.1/2.png", alt: "MCT B1.2.1 - Maquette après retours", title: "Maquette après retours" },
+          { id: "mct-collecte-demandes-3", src: "/proofs/menstrual-cycle-tracker/2/2.1/3.png", alt: "MCT B1.2.1 - Commentaires utilisateur", title: "Commentaires utilisateur" },
+          { id: "mct-collecte-demandes-4", src: "/proofs/menstrual-cycle-tracker/2/2.1/4.png", alt: "MCT B1.2.1 - Validation propositions", title: "Validation propositions" },
+        ],
+      },
+      {
+        id: "mct-demandes-applicatives",
+        title: "B1.2.3 — Traiter des demandes concernant les applications",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "L'application répond au besoin utilisateur : suivre les cycles, sans compte, avec un bouton principal pour lancer/arrêter une période.",
+        competencyId: "c2",
+        subCompetencyIds: ["c2-3"],
+        images: [
+          { id: "mct-demandes-applicatives-1", src: "/proofs/menstrual-cycle-tracker/2/2.3/1.png", alt: "MCT B1.2.3 - Document de besoin", title: "Document de besoin" },
+          { id: "mct-demandes-applicatives-2", src: "/proofs/menstrual-cycle-tracker/2/2.3/2.png", alt: "MCT B1.2.3 - Maquette validée", title: "Maquette validée" },
+          { id: "mct-demandes-applicatives-3", src: "/proofs/menstrual-cycle-tracker/2/2.3/3.png", alt: "MCT B1.2.3 - Écran d'accueil", title: "Écran d'accueil" },
+          { id: "mct-demandes-applicatives-4", src: "/proofs/menstrual-cycle-tracker/2/2.3/4.png", alt: "MCT B1.2.3 - Écran historique", title: "Écran historique" },
+        ],
+      },
+      {
+        id: "mct-analyse-objectifs",
+        title: "B1.4.1 — Analyser les objectifs et les modalités d'organisation",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "Le document de conception présente le contexte, le besoin utilisateur, les objectifs, le MVP et les user stories.",
+        competencyId: "c4",
+        subCompetencyIds: ["c4-1"],
+        images: [
+          { id: "mct-analyse-objectifs-1", src: "/proofs/menstrual-cycle-tracker/4/4.1/1.png", alt: "MCT B1.4.1 - Contexte utilisateur", title: "Contexte utilisateur" },
+          { id: "mct-analyse-objectifs-2", src: "/proofs/menstrual-cycle-tracker/4/4.1/2.png", alt: "MCT B1.4.1 - Besoin exprimé", title: "Besoin exprimé" },
+          { id: "mct-analyse-objectifs-3", src: "/proofs/menstrual-cycle-tracker/4/4.1/3.png", alt: "MCT B1.4.1 - MVP", title: "MVP" },
+          { id: "mct-analyse-objectifs-4", src: "/proofs/menstrual-cycle-tracker/4/4.1/4.png", alt: "MCT B1.4.1 - User stories", title: "User stories" },
+          { id: "mct-analyse-objectifs-5", src: "/proofs/menstrual-cycle-tracker/4/4.1/5.png", alt: "MCT B1.4.1 - Fonctionnalités attendues", title: "Fonctionnalités" },
+        ],
+      },
+      {
+        id: "mct-tests-acceptation",
+        title: "B1.5.1 — Réaliser les tests d'intégration et d'acceptation",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "Tests fonctionnels réalisés sur les parcours : début/fin de période, historique, modification de cycle et estimation.",
+        competencyId: "c5",
+        subCompetencyIds: ["c5-1"],
+        images: [
+          { id: "mct-tests-acceptation-1", src: "/proofs/menstrual-cycle-tracker/5/5.1/1.png", alt: "MCT B1.5.1 - Tableau de tests", title: "Tableau de tests" },
+          { id: "mct-tests-acceptation-2", src: "/proofs/menstrual-cycle-tracker/5/5.1/2.png", alt: "MCT B1.5.1 - Maquette approuvée", title: "Attendu" },
+          { id: "mct-tests-acceptation-3", src: "/proofs/menstrual-cycle-tracker/5/5.1/3.png", alt: "MCT B1.5.1 - Résultats obtenus", title: "Résultats" },
+        ],
+      },
+      {
+        id: "mct-deploiement",
+        title: "B1.5.2 — Déployer un service",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "L'application a été compilée et installée sur un téléphone Android physique via ADB.",
+        competencyId: "c5",
+        subCompetencyIds: ["c5-2"],
+        images: [
+          { id: "mct-deploiement-1", src: "/proofs/menstrual-cycle-tracker/5/5.2/1.png", alt: "MCT B1.5.2 - flutter build apk", title: "Build APK" },
+          { id: "mct-deploiement-2", src: "/proofs/menstrual-cycle-tracker/5/5.2/2.png", alt: "MCT B1.5.2 - Commande ADB", title: "Commande ADB" },
+          { id: "mct-deploiement-3", src: "/proofs/menstrual-cycle-tracker/5/5.2/3.png", alt: "MCT B1.5.2 - Installation téléphone", title: "Installation" },
+          { id: "mct-deploiement-4", src: "/proofs/menstrual-cycle-tracker/5/5.2/4.png", alt: "MCT B1.5.2 - Application ouverte", title: "Application ouverte" },
+        ],
+      },
+    ],
+  },
 ];
