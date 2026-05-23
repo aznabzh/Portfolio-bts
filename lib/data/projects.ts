@@ -2272,7 +2272,7 @@ export const projects: Project[] = [
     technologies: ["Flutter", "Dart", "Android", "ADB"],
     role:
       "Développeur mobile : conception, maquettage, développement et déploiement sur appareil Android.",
-    competencies: ["c2", "c4", "c5"],
+    competencies: ["c2", "c4", "c5", "c6"],
     previewVariant: "mobile",
     proofs: [
       {
@@ -2358,6 +2358,23 @@ export const projects: Project[] = [
           { id: "mct-deploiement-2", src: "/proofs/menstrual-cycle-tracker/5/5.2/2.png", alt: "MCT B1.5.2 - Commande ADB", title: "Commande ADB" },
           { id: "mct-deploiement-3", src: "/proofs/menstrual-cycle-tracker/5/5.2/3.png", alt: "MCT B1.5.2 - Installation téléphone", title: "Installation" },
           { id: "mct-deploiement-4", src: "/proofs/menstrual-cycle-tracker/5/5.2/4.png", alt: "MCT B1.5.2 - Application ouverte", title: "Application ouverte" },
+        ],
+      },
+      {
+        id: "mct-identite-professionnelle",
+        title: "B1.6.3 — Gérer son identité professionnelle",
+        type: "screenshot",
+        evidenceType: "capture",
+        proofStatus: "à créer",
+        description:
+          "CV et profil LinkedIn mis à jour avec l'expérience du projet, les compétences techniques acquises et le lien vers le portfolio/GitHub.",
+        competencyId: "c6",
+        subCompetencyIds: ["c6-3"],
+        images: [
+          { id: "mct-identite-professionnelle-1", src: "/proofs/menstrual-cycle-tracker/6/6.3/1-cv-actualise.png", alt: "MCT B1.6.3 - CV actualisé", title: "CV actualisé" },
+          { id: "mct-identite-professionnelle-2", src: "/proofs/menstrual-cycle-tracker/6/6.3/2-linkedin-experience-stage.png", alt: "MCT B1.6.3 - LinkedIn expérience stage", title: "LinkedIn - Expérience stage" },
+          { id: "mct-identite-professionnelle-3", src: "/proofs/menstrual-cycle-tracker/6/6.3/3-linkedin-competences.png", alt: "MCT B1.6.3 - LinkedIn compétences", title: "LinkedIn - Compétences" },
+          { id: "mct-identite-professionnelle-4", src: "/proofs/menstrual-cycle-tracker/6/6.3/4-lien-portfolio-github.png", alt: "MCT B1.6.3 - Lien portfolio GitHub", title: "Lien portfolio GitHub" },
         ],
       },
     ],
