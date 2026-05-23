@@ -101,8 +101,8 @@ export const competencies: Competency[] = [
       {
         id: "c4-3",
         code: "B1.4.3",
-        name: "Communiquer l'avancement et formaliser les décisions",
-        description: "Conserver une trace claire des échanges, arbitrages et livrables projet.",
+        name: "Évaluer les indicateurs de suivi et analyser les écarts",
+        description: "Identifier les écarts, difficultés et décisions prises pendant le projet.",
       },
     ],
   },
@@ -141,8 +141,8 @@ export const competencies: Competency[] = [
       {
         id: "c6-1",
         code: "B1.6.1",
-        name: "Organiser sa veille et capitaliser les apprentissages",
-        description: "Collecter et structurer les informations utiles à sa progression technique.",
+        name: "Mettre en place son environnement d'apprentissage personnel",
+        description: "Collecter et organiser les ressources utiles à sa montée en compétence.",
       },
       {
         id: "c6-2",
