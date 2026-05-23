@@ -23,8 +23,8 @@ export const competencies: Competency[] = [
       {
         id: "c1-3",
         code: "B1.1.3",
-        name: "Mettre à jour le patrimoine et les procédures",
-        description: "Maintenir des traces fiables sur l'état du service et son évolution.",
+        name: "Mettre en place et vérifier les niveaux d'habilitation",
+        description: "Identifier les profils, rôles ou accès associés à un service informatique.",
       },
     ],
   },
