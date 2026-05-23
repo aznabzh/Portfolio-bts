@@ -528,7 +528,7 @@ export const projects: Project[] = [
     technologies: ["Java", "JavaFX", "FXML", "DAO", "Base de données"],
     role:
       "Développeur applicatif : compréhension de l'architecture existante, ajout de fonctionnalités et préparation de preuves par parcours utilisateur.",
-    competencies: ["c1", "c2", "c4"],
+    competencies: ["c1", "c4"],
     image: "/previews/projects/ap-25-gsb-frais.png",
     imageAlt: "Apercu de l'atelier AP 2.5 Gestion des frais GSB",
     previewVariant: "desktop",
@@ -584,24 +584,6 @@ export const projects: Project[] = [
             src: "/proofs/ap-25-gsb-frais/1/1.3/1.png",
             alt: "Séparation des contrôleurs par profil GSB",
             title: "Profils utilisateur",
-          },
-        ],
-      },
-      {
-        id: "ap25-demandes-applicatives",
-        title: "B1.2.3 - Traiter des demandes concernant les applications",
-        type: "screenshot",
-        evidenceType: "capture",
-        proofStatus: "à vérifier",
-        description: "La capture présente les évolutions demandées pour les fiches de frais, mais doit être renforcée par des écrans de l'application.",
-        competencyId: "c2",
-        subCompetencyIds: ["c2-3"],
-        images: [
-          {
-            id: "ap25-demandes-applicatives-1",
-            src: "/proofs/ap-25-gsb-frais/2/2.3/1.png",
-            alt: "Demande d'évolution applicative GSB",
-            title: "Demande applicative",
           },
         ],
       },
