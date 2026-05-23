@@ -1515,6 +1515,8 @@ export const projects: Project[] = [
       "Développeur unique : conception, développement, structuration des données, intégration des preuves et déploiement.",
     competencies: ["c5"],
     featured: true,
+    image: "/previews/projects/portfolio-personnel.png",
+    imageAlt: "Apercu du portfolio personnel",
     previewVariant: "portfolio",
     proofs: [
       {
