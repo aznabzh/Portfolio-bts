@@ -11,7 +11,7 @@ export default function CompetencesPage() {
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-[1.5rem] font-semibold tracking-tight">Matrice des compétences</h1>
+          <h1 className="text-[1.5rem] font-semibold tracking-tight">Compétences</h1>
           <p className="mt-2 text-[14px] text-muted-foreground max-w-xl leading-relaxed">
             Correspondance projets / compétences du référentiel BTS SIO.
           </p>

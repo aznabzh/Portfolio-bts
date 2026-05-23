@@ -41,7 +41,7 @@ export default function Home() {
               </Button>
               <Button variant="outline" asChild className="h-9 px-4 text-[13px] font-medium">
                 <Link href="/competences">
-                  Matrice compétences
+                    Compétences
                 </Link>
               </Button>
             </div>
@@ -132,7 +132,7 @@ export default function Home() {
               href="/competences"
               className="text-[12px] text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1 font-medium"
             >
-              Voir la matrice
+              Voir les compétences
               <ArrowUpRight className="h-3.5 w-3.5" />
             </Link>
           </div>

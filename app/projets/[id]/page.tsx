@@ -210,7 +210,7 @@ export default async function ProjectDetailPage({
               </p>
               <Button variant="outline" size="sm" className="w-full h-9 text-[12px] font-medium" asChild>
                 <Link href="/competences">
-                  Matrice compétences
+                  Compétences
                   <ExternalLink className="ml-2 h-3.5 w-3.5" />
                 </Link>
               </Button>
