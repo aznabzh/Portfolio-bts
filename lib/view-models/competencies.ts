@@ -22,7 +22,6 @@ const projectGroupDefinitions: Array<{
         "ap-12-ticketing",
         "ap-21-generateur-sql",
         "ap-23-site-statique-m2l",
-        "ap-24-championnat",
         "ap-25-gsb-frais",
       ].includes(project.id),
   },
