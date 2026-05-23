@@ -131,7 +131,7 @@ export function ProofImageGallery({ images }: ProofImageGalleryProps) {
       <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && closeGallery()}>
         <DialogContent
           showCloseButton={false}
-          overlayClassName="bg-transparent"
+          overlayClassName="bg-black/30 backdrop-blur-sm"
           className="h-[100dvh] max-h-[100dvh] w-[100vw] max-w-none border-0 bg-transparent p-0 shadow-none sm:max-w-none"
         >
           {selectedImage && (
