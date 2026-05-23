@@ -1401,6 +1401,18 @@ export const projects: Project[] = [
             alt: "Page Contact du portfolio publiée",
             title: "Page Contact publiée",
           },
+          {
+            id: "portfolio-tests-acceptation-3",
+            src: "/proofs/portfolio-personnel/5/5.1/3.png",
+            alt: "Formulaire de contact du portfolio rempli pour test",
+            title: "Formulaire rempli",
+          },
+          {
+            id: "portfolio-tests-acceptation-4",
+            src: "/proofs/portfolio-personnel/5/5.1/4.png",
+            alt: "Email reçu après envoi du formulaire de contact",
+            title: "Email reçu",
+          },
         ],
       },
       {
