@@ -1407,7 +1407,7 @@ export const projects: Project[] = [
     technologies: ["PHP", "Symfony", "Twig", "Doctrine", "MySQL", "JavaScript", "Bootstrap"],
     role:
       "Stagiaire développeur web : maquettage, migration vers Symfony, formulaire multi-étapes, logique de créneaux et workflow de confirmation.",
-    competencies: ["c1", "c2", "c3", "c4", "c5", "c6"],
+    competencies: ["c1", "c2", "c3", "c4", "c5"],
     image: "/previews/projects/stage-1-biscaphone.png",
     imageAlt: "Apercu du stage 1 chez Biscaphone",
     featured: true,
@@ -1711,25 +1711,6 @@ export const projects: Project[] = [
             src: "/proofs/stage-1-biscaphone/5/5.3/2.png",
             alt: "Stage 1 B1.5.3 - capture 2",
             title: "Capture 2",
-          },
-        ],
-      },
-      {
-        id: "stage1-environnement-apprentissage",
-        title: "B1.6.1 - Mettre en place son environnement d'apprentissage personnel",
-        type: "screenshot",
-        evidenceType: "capture",
-        proofStatus: "à vérifier",
-        description:
-          "La capture montre la mise en place de l'environnement d'apprentissage (WAMP, Composer, Symfony, Git).",
-        competencyId: "c6",
-        subCompetencyIds: ["c6-1"],
-        images: [
-          {
-            id: "stage1-environnement-apprentissage-1",
-            src: "/proofs/stage-1-biscaphone/6/6.1/1.png",
-            alt: "Stage 1 B1.6.1 - capture 1",
-            title: "Capture 1",
           },
         ],
       },
