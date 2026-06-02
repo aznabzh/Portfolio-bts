@@ -16,7 +16,7 @@ export const watchTopics: WatchTopic[] = [
   {
     id: "veille-flutter",
     badge: "Veille Flutter",
-    title: "Flutter",
+    title: "Veille Flutter, Dart et Firebase",
     subject: "Flutter, Dart, Firebase/FlutterFire et l'écosystème mobile.",
     goal:
       "Suivre les évolutions de Flutter et de son écosystème pour rester à jour sur le développement mobile multiplateforme.",
@@ -62,7 +62,7 @@ export const watchTopics: WatchTopic[] = [
   {
     id: "veille-outils-developpement",
     badge: "Veille outils de développement",
-    title: "Outils de développement",
+    title: "Veille GitHub, Docker et outils de projet",
     subject: "GitHub, GitLab, Docker, CI/CD, Linear, issues, documentation et déploiement.",
     goal:
       "Suivre les évolutions des outils qui aident à organiser, versionner, tester, automatiser, déployer et documenter un projet.",
