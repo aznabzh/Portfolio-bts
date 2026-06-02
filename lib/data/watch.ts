@@ -19,7 +19,7 @@ export const watchMethodSteps = [
   {
     index: "04",
     title: "Stockage",
-    value: "Notes Markdown / portfolio",
+    value: "Notes Markdown",
   },
 ] as const;
 
@@ -44,7 +44,7 @@ export const watchTopics: WatchTopic[] = [
       },
       {
         label: "Stockage",
-        value: "Notes Markdown / portfolio",
+        value: "Notes Markdown",
       },
     ],
     context:
@@ -82,7 +82,7 @@ export const watchTopics: WatchTopic[] = [
       },
       {
         label: "Stockage",
-        value: "Notes Markdown / portfolio",
+        value: "Notes Markdown",
       },
     ],
     context:
