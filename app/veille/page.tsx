@@ -98,17 +98,10 @@ export default function VeillePage() {
 
                   <section>
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                      Sujets Actifs
+                      Contexte de la veille
                     </p>
-                    <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                      {topic.activeTopics.map((item) => (
-                        <div
-                          key={item}
-                          className="rounded-md border border-border bg-secondary/45 px-4 py-3 text-[14px] font-medium leading-6 text-foreground/86"
-                        >
-                          {item}
-                        </div>
-                      ))}
+                    <div className="mt-4 rounded-lg border border-border bg-secondary/35 px-4 py-4 text-[14px] leading-7 text-foreground/84 md:px-5">
+                      {topic.context}
                     </div>
                   </section>
 

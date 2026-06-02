@@ -97,7 +97,7 @@ export interface WatchTopic {
   title: string;
   subject: string;
   workflow: WatchWorkflowStep[];
-  activeTopics: string[];
+  context: string;
   practice: string;
   skills: string[];
   sources: WatchSourceLink[];

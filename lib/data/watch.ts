@@ -4,22 +4,22 @@ export const watchMethodSteps = [
   {
     index: "01",
     title: "Sources",
-    value: "Docs officielles, changelogs, releases",
+    value: "Docs officielles, changelogs, release notes",
   },
   {
     index: "02",
     title: "Agrégation",
-    value: "Feedly, Inoreader, GitHub Watch",
+    value: "Feedly",
   },
   {
     index: "03",
     title: "Tri & synthèse",
-    value: "80/20, reformulation utile",
+    value: "Sélection des informations utiles, reformulation",
   },
   {
     index: "04",
-    title: "Stockage Markdown",
-    value: "Base de connaissances claire et relisible",
+    title: "Stockage",
+    value: "Notes Markdown / portfolio",
   },
 ] as const;
 
@@ -32,27 +32,23 @@ export const watchTopics: WatchTopic[] = [
     workflow: [
       {
         label: "Sources",
-        value: "Changelogs officiels, pub.dev, GitHub Releases",
+        value: "Docs officielles, changelogs, release notes, pub.dev",
       },
       {
         label: "Agrégation",
-        value: "Flux RSS centralisés via Feedly / Inoreader",
+        value: "Sources regroupées dans Feedly",
       },
       {
         label: "Tri & synthèse",
-        value: "Règle du 80/20, reformulation",
+        value: "Sélection des informations utiles et reformulation",
       },
       {
         label: "Stockage",
-        value: "Base de connaissances 100% Markdown",
+        value: "Notes Markdown / portfolio",
       },
     ],
-    activeTopics: [
-      "Moteur de rendu Impeller",
-      "Évolutions Dart 3.x (Records, Pattern Matching)",
-      "State Management & Architecture (Riverpod, MVVM)",
-      "Optimisation Firebase & Backend-as-a-Service",
-    ],
+    context:
+      "J'ai choisi cette veille car Flutter est lié à mon stage de deuxième année et au développement mobile. L'objectif est de suivre les évolutions de Flutter, Dart, Firebase et des packages utilisés dans l'écosystème mobile, afin de rester à jour sur les bonnes pratiques et les changements pouvant impacter un projet Flutter.",
     practice: "Utilisée pour mieux comprendre Flutter/Firebase dans mon stage mobile.",
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
@@ -74,27 +70,23 @@ export const watchTopics: WatchTopic[] = [
     workflow: [
       {
         label: "Sources",
-        value: "Changelogs officiels, Documentation technique",
+        value: "Docs officielles, changelogs, release notes",
       },
       {
         label: "Agrégation",
-        value: "Feedly / Inoreader, GitHub Watch",
+        value: "Sources regroupées dans Feedly",
       },
       {
         label: "Tri & synthèse",
-        value: "Filtrage selon l'utilité, reformulation",
+        value: "Sélection des nouveautés utiles aux projets",
       },
       {
         label: "Stockage",
-        value: "Base de connaissances 100% Markdown",
+        value: "Notes Markdown / portfolio",
       },
     ],
-    activeTopics: [
-      "Pipelines GitHub Actions (CI)",
-      "Optimisation Docker (Multi-stage builds)",
-      "Déploiement continu (CD) sur VPS",
-      "Traçabilité et synchronisation avec Linear",
-    ],
+    context:
+      "J'ai choisi cette veille car ces outils reviennent dans plusieurs projets : GitHub ou GitLab pour le versioning, Docker pour relancer des environnements, Linear ou les issues pour suivre les tâches, et la CI/CD pour automatiser certaines étapes. L'objectif est de suivre les évolutions des outils qui aident à organiser, tester, documenter et déployer un projet.",
     practice:
       "Utilisée dans mes AP et stages avec GitHub, Docker, Linear et la documentation technique.",
     skills: [
