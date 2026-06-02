@@ -25,7 +25,7 @@ export default function VeillePage() {
           </div>
 
           <div className="rounded-lg border border-border bg-card">
-            <div className="grid gap-0 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-stretch">
+            <div className="grid gap-0 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] md:items-stretch">
             {watchMethodSteps.map((step, index) => (
               <div key={step.index} className="contents">
                 <div className="px-5 py-5 md:px-6 md:py-6">
@@ -74,7 +74,7 @@ export default function VeillePage() {
               </div>
 
               <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_330px]">
-                <div className="space-y-9 px-5 py-6 md:px-6 md:py-8">
+                <div className="space-y-10 px-5 py-7 md:px-6 md:py-9">
                   <section>
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                       Mon Workflow
@@ -109,6 +109,15 @@ export default function VeillePage() {
                           {item}
                         </div>
                       ))}
+                    </div>
+                  </section>
+
+                  <section>
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                      Mise en pratique
+                    </p>
+                    <div className="mt-4 rounded-lg border border-border bg-background px-4 py-4 text-[14px] font-medium leading-6 text-foreground/84 md:px-5">
+                      {topic.practice}
                     </div>
                   </section>
                 </div>

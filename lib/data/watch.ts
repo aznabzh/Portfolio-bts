@@ -13,6 +13,11 @@ export const watchMethodSteps = [
   },
   {
     index: "03",
+    title: "Tri & synthèse",
+    value: "80/20, reformulation utile",
+  },
+  {
+    index: "04",
     title: "Stockage Markdown",
     value: "Base de connaissances claire et relisible",
   },
@@ -34,6 +39,10 @@ export const watchTopics: WatchTopic[] = [
         value: "Flux RSS centralisés via Feedly / Inoreader",
       },
       {
+        label: "Tri & synthèse",
+        value: "Règle du 80/20, reformulation",
+      },
+      {
         label: "Stockage",
         value: "Base de connaissances 100% Markdown",
       },
@@ -44,6 +53,7 @@ export const watchTopics: WatchTopic[] = [
       "State Management & Architecture (Riverpod, MVVM)",
       "Optimisation Firebase & Backend-as-a-Service",
     ],
+    practice: "Utilisée pour mieux comprendre Flutter/Firebase dans mon stage mobile.",
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
       "B1.6.1 - Mettre en place son environnement d'apprentissage personnel",
@@ -64,11 +74,15 @@ export const watchTopics: WatchTopic[] = [
     workflow: [
       {
         label: "Sources",
-        value: "Changelogs officiels, documentation technique",
+        value: "Changelogs officiels, Documentation technique",
       },
       {
         label: "Agrégation",
         value: "Feedly / Inoreader, GitHub Watch",
+      },
+      {
+        label: "Tri & synthèse",
+        value: "Filtrage selon l'utilité, reformulation",
       },
       {
         label: "Stockage",
@@ -81,6 +95,8 @@ export const watchTopics: WatchTopic[] = [
       "Déploiement continu (CD) sur VPS",
       "Traçabilité et synchronisation avec Linear",
     ],
+    practice:
+      "Utilisée dans mes AP et stages avec GitHub, Docker, Linear et la documentation technique.",
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
       "B1.6.1 - Mettre en place son environnement d'apprentissage personnel",
