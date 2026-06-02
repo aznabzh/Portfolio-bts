@@ -17,6 +17,7 @@ export type {
   StudentInfo,
   SubCompetency,
   WatchEntry,
+  WatchWorkflowStep,
   WatchSourceLink,
   WatchTopic,
 } from "./types";

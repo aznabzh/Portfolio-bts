@@ -86,18 +86,18 @@ export interface WatchSourceLink {
   href: string;
 }
 
+export interface WatchWorkflowStep {
+  label: string;
+  value: string;
+}
+
 export interface WatchTopic {
   id: string;
   badge: string;
   title: string;
   subject: string;
-  goal: string;
-  explanation: string;
-  collectionTools: string[];
-  storage: string[];
-  monitored: string[];
-  retained: string[];
-  projectLink: string;
+  workflow: WatchWorkflowStep[];
+  activeTopics: string[];
   skills: string[];
   sources: WatchSourceLink[];
 }

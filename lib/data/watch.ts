@@ -1,15 +1,21 @@
 import type { WatchEntry, WatchTopic } from "./types";
 
 export const watchMethodSteps = [
-  "Je choisis des sujets liés à mes projets et à mon parcours SLAM.",
-  "Je sélectionne un nombre limité de sources fiables.",
-  "Je privilégie les documentations officielles, changelogs, release notes et blogs officiels.",
-  "J'utilise Feedly ou Inoreader pour regrouper les sources.",
-  "Je peux compléter avec GitHub Watch ou Releases sur certains dépôts.",
-  "Je trie les informations pour ne garder que ce qui est utile à mes projets.",
-  "Je stocke les informations importantes dans une note Markdown ou dans le portfolio.",
-  "Je reformule les informations retenues au lieu de copier-coller les sources.",
-  "Je relie la veille à mes AP, mes stages ou mes projets personnels.",
+  {
+    index: "01",
+    title: "Sources",
+    value: "Docs officielles, changelogs, releases",
+  },
+  {
+    index: "02",
+    title: "Agrégation",
+    value: "Feedly, Inoreader, GitHub Watch",
+  },
+  {
+    index: "03",
+    title: "Stockage Markdown",
+    value: "Base de connaissances claire et relisible",
+  },
 ] as const;
 
 export const watchTopics: WatchTopic[] = [
@@ -18,35 +24,29 @@ export const watchTopics: WatchTopic[] = [
     badge: "Veille Flutter",
     title: "Veille Flutter, Dart et Firebase",
     subject: "Flutter, Dart, Firebase/FlutterFire et l'écosystème mobile.",
-    goal:
-      "Suivre les évolutions de Flutter et de son écosystème pour rester à jour sur le développement mobile multiplateforme.",
-    explanation:
-      "Cette veille sert à suivre les nouvelles versions de Flutter, les nouveautés Dart, les changements Firebase, les packages pub.dev et les bonnes pratiques liées aux projets mobiles.",
-    collectionTools: [
-      "Feedly ou Inoreader pour regrouper les sources.",
-      "GitHub Watch ou Releases pour suivre certains dépôts ou changelogs importants.",
-      "pub.dev pour vérifier les packages, leur maintenance et leurs versions.",
+    workflow: [
+      {
+        label: "Sources",
+        value: "Changelogs officiels, pub.dev, GitHub Releases",
+      },
+      {
+        label: "Agrégation",
+        value: "Flux RSS centralisés via Feedly / Inoreader",
+      },
+      {
+        label: "Stockage",
+        value: "Base de connaissances 100% Markdown",
+      },
     ],
-    storage: [
-      "Note Markdown ou section du portfolio.",
-      "Pour chaque information retenue : date, source, lien, information importante, intérêt pour le projet.",
+    activeTopics: [
+      "Moteur de rendu Impeller",
+      "Évolutions Dart 3.x",
+      "Records & Pattern Matching",
+      "State Management & Architecture",
+      "Riverpod / MVVM",
+      "Optimisation Firebase",
+      "Backend-as-a-Service",
     ],
-    monitored: [
-      "Nouvelles versions de Flutter.",
-      "Évolutions de Dart.",
-      "Changements Firebase utiles aux applications mobiles.",
-      "Packages pub.dev maintenus ou non.",
-      "Bonnes pratiques d'architecture Flutter.",
-    ],
-    retained: [
-      "Flutter évolue par versions, donc il faut suivre les release notes.",
-      "Dart évolue aussi, ce qui peut influencer la manière de coder.",
-      "Les packages pub.dev doivent être vérifiés avant utilisation.",
-      "Firebase est utile pour un projet mobile, mais ses SDK et règles peuvent évoluer.",
-      "Une veille Flutter permet d'éviter d'utiliser des dépendances dépassées.",
-    ],
-    projectLink:
-      "Cette veille est liée à mon stage de deuxième année sur une application mobile Flutter/Firebase.",
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
       "B1.6.1 - Mettre en place son environnement d'apprentissage personnel",
@@ -64,35 +64,28 @@ export const watchTopics: WatchTopic[] = [
     badge: "Veille outils de développement",
     title: "Veille GitHub, Docker et outils de projet",
     subject: "GitHub, GitLab, Docker, CI/CD, Linear, issues, documentation et déploiement.",
-    goal:
-      "Suivre les évolutions des outils qui aident à organiser, versionner, tester, automatiser, déployer et documenter un projet.",
-    explanation:
-      "Cette veille ne porte pas sur un langage précis, mais sur les outils utilisés par les développeurs pour travailler plus proprement et mieux organiser leurs projets.",
-    collectionTools: [
-      "Feedly ou Inoreader pour regrouper les sources.",
-      "GitHub Watch ou Releases pour suivre certains outils ou dépôts.",
-      "Changelogs officiels pour suivre les nouveautés importantes.",
+    workflow: [
+      {
+        label: "Sources",
+        value: "Changelogs officiels, documentation technique",
+      },
+      {
+        label: "Agrégation",
+        value: "Feedly / Inoreader, GitHub Watch",
+      },
+      {
+        label: "Stockage",
+        value: "Base de connaissances 100% Markdown",
+      },
     ],
-    storage: [
-      "Note Markdown ou section du portfolio.",
-      "Pour chaque information retenue : date, source, lien, outil concerné, nouveauté, intérêt possible dans mes projets.",
+    activeTopics: [
+      "Pipelines GitHub Actions",
+      "Optimisation Docker",
+      "Multi-stage builds",
+      "Déploiement continu sur VPS",
+      "Traçabilité Linear",
+      "Synchronisation projet",
     ],
-    monitored: [
-      "Nouveautés GitHub et GitLab.",
-      "Évolutions des issues, projets, branches et pipelines.",
-      "Changements Docker ou Docker Compose.",
-      "Nouveautés CI/CD.",
-      "Évolutions de Linear pour le suivi de projet.",
-    ],
-    retained: [
-      "GitHub et GitLab ne servent pas seulement à stocker du code.",
-      "Les issues permettent de structurer les demandes, bugs et évolutions.",
-      "Docker rend un environnement plus facile à relancer.",
-      "La CI/CD automatise certaines étapes comme les tests, le build ou le déploiement.",
-      "Linear aide à suivre les tâches, priorités et retards.",
-    ],
-    projectLink:
-      "Cette veille est reliée à mes AP et à mes stages : GitHub et GitLab pour les dépôts et issues, Docker pour relancer certains projets, Linear pendant le stage 2, CI/CD et GitHub Pages pour le portfolio, ainsi que les README et la documentation technique.",
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
       "B1.6.1 - Mettre en place son environnement d'apprentissage personnel",
