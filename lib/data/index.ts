@@ -9,6 +9,7 @@ export {
 } from "./selectors";
 export type {
   Competency,
+  CompetencyNote,
   CompetencyProof,
   Proof,
   ProofImage,

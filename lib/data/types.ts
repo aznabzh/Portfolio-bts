@@ -34,6 +34,11 @@ export interface CompetencyProof {
   proofs: Proof[];
 }
 
+export interface CompetencyNote {
+  implementation: string;
+  interest: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -46,6 +51,7 @@ export interface Project {
   technologies: string[];
   role: string;
   competencies: string[];
+  competencyNotes?: Record<string, CompetencyNote>;
   proofs: Proof[];
   image?: string;
   imageAlt?: string;

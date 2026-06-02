@@ -1,4 +1,4 @@
-import type { Competency, Project, Proof, ProofImage } from "@/lib/data";
+import type { Competency, CompetencyNote, Project, Proof, ProofImage } from "@/lib/data";
 
 export interface ProjectDetailSubCompetencyViewModel {
   id: string;
@@ -21,6 +21,7 @@ export interface ProjectDetailProofGroupViewModel {
   competencyCode: string;
   competencyName: string;
   subCompetencies: ProjectDetailSubCompetencyViewModel[];
+  competencyNote?: CompetencyNote;
   proofs: ProjectDetailProofViewModel[];
 }
 
@@ -81,6 +82,7 @@ export function getProjectDetailViewModel(
           competencyCode: competency.code,
           competencyName: competency.name,
           subCompetencies,
+          competencyNote: project.competencyNotes?.[competencyId],
           proofs: groupProofs.map((proof) => {
             const images =
               proof.images ??

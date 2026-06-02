@@ -16,6 +16,20 @@ export const projects: Project[] = [
     role:
       "Développeur chargé d'analyser les demandes, d'appliquer les corrections ou évolutions retenues et de préparer les éléments de suivi.",
     competencies: ["c2", "c4", "c5"],
+    competencyNotes: {
+      c2: {
+        implementation: "Suivi et traitement de tickets sur l'application C#.",
+        interest: "Corriger l'existant et tracer les demandes.",
+      },
+      c4: {
+        implementation: "Analyse du besoin et organisation du travail via les issues.",
+        interest: "Structurer le suivi et l'avancement.",
+      },
+      c5: {
+        implementation: "Tests manuels après les corrections.",
+        interest: "Vérifier que l'application fonctionne.",
+      },
+    },
     image: "/previews/projects/ap-12-ticketing.png",
     imageAlt: "Apercu de l'atelier AP 1.2 sur la gestion de tickets",
     previewVariant: "web",
@@ -151,6 +165,20 @@ export const projects: Project[] = [
     role:
       "Développeur applicatif : analyse du sujet, évolution de l'interface, gestion de la génération SQL et préparation des preuves de fonctionnement.",
     competencies: ["c2", "c4", "c5"],
+    competencyNotes: {
+      c2: {
+        implementation: "Évolution du générateur SQL à partir du besoin fourni.",
+        interest: "Répondre à la demande sans casser l'existant.",
+      },
+      c4: {
+        implementation: "Analyse du sujet et suivi des tâches de l'atelier.",
+        interest: "Garder un cadre de réalisation.",
+      },
+      c5: {
+        implementation: "Tests du chargement, de la génération et de la sauvegarde.",
+        interest: "Vérifier le résultat produit.",
+      },
+    },
     image: "/previews/projects/ap-21-generateur-sql.png",
     imageAlt: "Apercu de l'atelier AP 2.1 Generateur SQL",
     previewVariant: "desktop",
@@ -334,6 +362,24 @@ export const projects: Project[] = [
     role:
       "Intégrateur web : structuration des pages, mise en forme responsive et organisation du contenu de présentation.",
     competencies: ["c1", "c3", "c4", "c5"],
+    competencyNotes: {
+      c1: {
+        implementation: "Respect des contraintes HTML/CSS et validations du code.",
+        interest: "Produire un site propre et conforme.",
+      },
+      c3: {
+        implementation: "Création d'un site vitrine pour présenter la M2L.",
+        interest: "Valoriser l'organisation en ligne.",
+      },
+      c4: {
+        implementation: "Analyse des pages attendues et du travail à réaliser.",
+        interest: "Cadrer le projet dès le départ.",
+      },
+      c5: {
+        implementation: "Vérifications d'affichage et de compatibilité.",
+        interest: "S'assurer que le site reste utilisable.",
+      },
+    },
     image: "/previews/projects/ap-23-site-statique-m2l.png",
     imageAlt: "Apercu de l'atelier AP 2.3 Site statique M2L",
     previewVariant: "web",
@@ -529,6 +575,28 @@ export const projects: Project[] = [
     role:
       "Développeur web : évolution de l'application, manipulation des données, vérification des accès et préparation de la mise à disposition locale.",
     competencies: ["c1", "c2", "c3", "c4", "c5"],
+    competencyNotes: {
+      c1: {
+        implementation: "Analyse de l’existant : architecture MVC, base MySQL, DAO, vues, contrôleurs et rôles utilisateurs.",
+        interest: "Garder une application cohérente, maintenable et sécurisée.",
+      },
+      c2: {
+        implementation: "Ajout des fonctionnalités demandées autour des intervenants, contrats, fonctions et bulletins.",
+        interest: "Répondre au besoin métier de la M2L.",
+      },
+      c3: {
+        implementation: "Évolution du site vers une application dynamique reliée à une base de données.",
+        interest: "Permettre au site d’exploiter les données de l’organisation.",
+      },
+      c4: {
+        implementation: "Analyse du cahier des charges, découpage des tâches et répartition du travail.",
+        interest: "Mieux organiser le développement et suivre l’avancement.",
+      },
+      c5: {
+        implementation: "Tests fonctionnels, environnement Docker et documentation d’installation.",
+        interest: "Rendre le service testable, relançable et reprenable.",
+      },
+    },
     image: "/previews/projects/ap-31-m2l-dynamique.png",
     imageAlt: "Apercu de l'atelier AP 3.1 Site dynamique M2L",
     featured: true,
@@ -897,6 +965,24 @@ export const projects: Project[] = [
     role:
       "Développeur backend : structuration des endpoints, gestion des accès par token, tests de requêtes et préparation de la documentation d'usage.",
     competencies: ["c1", "c2", "c4", "c5"],
+    competencyNotes: {
+      c1: {
+        implementation: "Structuration de l'API, de la base et des accès par token.",
+        interest: "Garder une API claire et sécurisée.",
+      },
+      c2: {
+        implementation: "Développement des endpoints selon le cahier des charges.",
+        interest: "Répondre aux besoins métier.",
+      },
+      c4: {
+        implementation: "Analyse du contrat d'API, backlog et suivi des tâches.",
+        interest: "Organiser la réalisation du projet.",
+      },
+      c5: {
+        implementation: "Tests Postman, Docker et README d'utilisation.",
+        interest: "Rendre l'API testable et relançable.",
+      },
+    },
     image: "/previews/projects/ap-32-aux-claviers-citoyens.png",
     imageAlt: "Apercu de l'atelier AP 3.2 API Aux Claviers Citoyens",
     featured: true,
@@ -1261,6 +1347,32 @@ export const projects: Project[] = [
     role:
       "Stagiaire développeur web : maquettage, migration vers Symfony, formulaire multi-étapes, logique de créneaux et workflow de confirmation.",
     competencies: ["c1", "c2", "c3", "c4", "c5", "c6"],
+    competencyNotes: {
+      c1: {
+        implementation: "Recensement des ressources et structuration Symfony/Doctrine.",
+        interest: "Garder un socle clair pour faire évoluer l'application.",
+      },
+      c2: {
+        implementation: "Développement du formulaire, des créneaux et des confirmations.",
+        interest: "Répondre au besoin de prise de rendez-vous.",
+      },
+      c3: {
+        implementation: "Mise en place d'un service plus clair pour Biscaphone.",
+        interest: "Améliorer l'image et le service client.",
+      },
+      c4: {
+        implementation: "Analyse du besoin, planification et suivi des écarts.",
+        interest: "Organiser le stage et ajuster le travail.",
+      },
+      c5: {
+        implementation: "Tests fonctionnels et guide d'installation.",
+        interest: "Vérifier le service et faciliter la reprise.",
+      },
+      c6: {
+        implementation: "Mise à jour du CV, du LinkedIn et du portfolio.",
+        interest: "Valoriser l'expérience de stage.",
+      },
+    },
     image: "/previews/projects/stage-1-biscaphone.png",
     imageAlt: "Apercu du stage 1 chez Biscaphone",
     featured: true,
@@ -1620,6 +1732,28 @@ export const projects: Project[] = [
     role:
       "Stagiaire développeur mobile : contribution sur l'authentification, le profil, l'autocomplétion ville, la géolocalisation, les filtres et la documentation de reprise.",
     competencies: ["c1", "c2", "c4", "c5", "c6"],
+    competencyNotes: {
+      c1: {
+        implementation: "Structuration de l’application Flutter avec vues, modèles, services, viewmodels et Firebase.",
+        interest: "Rendre l’application plus lisible, maintenable et évolutive.",
+      },
+      c2: {
+        implementation: "Suivi des retours via Slack et Linear, puis transformation en tickets et fonctionnalités.",
+        interest: "Garder une trace claire des besoins et prioriser le travail.",
+      },
+      c4: {
+        implementation: "Création de user stories, estimation des tâches et suivi de l’avancement dans Linear.",
+        interest: "Organiser le travail en binôme et repérer les retards.",
+      },
+      c5: {
+        implementation: "Tests fonctionnels et rédaction d’une documentation technique de reprise.",
+        interest: "Vérifier les parcours utilisateurs et faciliter la reprise du projet.",
+      },
+      c6: {
+        implementation: "Veille et apprentissage autour de Flutter, Dart, Firebase et des pratiques mobiles.",
+        interest: "Monter en compétence et valoriser l’expérience dans le portfolio.",
+      },
+    },
     image: "/previews/projects/stage-2-find.jpg",
     imageAlt: "Apercu du stage 2 sur l'application mobile FIND",
     featured: true,
@@ -1966,6 +2100,16 @@ export const projects: Project[] = [
     role:
       "Développeur unique : conception, développement, structuration des données, intégration des preuves et déploiement.",
     competencies: ["c5", "c6"],
+    competencyNotes: {
+      c5: {
+        implementation: "Structuration du portfolio, tests des pages et déploiement GitHub Pages.",
+        interest: "Disposer d'un support fiable pour l'oral.",
+      },
+      c6: {
+        implementation: "Mise à jour du CV, du LinkedIn et des liens du portfolio.",
+        interest: "Valoriser le parcours et les projets réalisés.",
+      },
+    },
     featured: true,
     image: "/previews/projects/portfolio-personnel.png",
     imageAlt: "Apercu du portfolio personnel",
@@ -2126,6 +2270,24 @@ export const projects: Project[] = [
     role:
       "Développeur mobile : conception, maquettage, développement et déploiement sur appareil Android.",
     competencies: ["c2", "c4", "c5", "c6"],
+    competencyNotes: {
+      c2: {
+        implementation: "Recueil des retours, puis adaptation des écrans et du parcours.",
+        interest: "Répondre à un besoin utilisateur réel.",
+      },
+      c4: {
+        implementation: "Définition du besoin, du MVP et des user stories.",
+        interest: "Garder un périmètre clair.",
+      },
+      c5: {
+        implementation: "Tests fonctionnels et installation sur téléphone Android.",
+        interest: "Vérifier l'usage réel de l'application.",
+      },
+      c6: {
+        implementation: "Mise à jour du CV, du LinkedIn et du portfolio autour du projet.",
+        interest: "Valoriser le projet et les compétences mobiles.",
+      },
+    },
     image: "/previews/projects/menstrual-cycle-tracker.png",
     imageAlt: "Apercu du projet Menstrual Cycle Tracker",
     previewVariant: "mobile",

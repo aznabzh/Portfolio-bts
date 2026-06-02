@@ -128,6 +128,25 @@ export default async function ProjectDetailPage({
                       </div>
                     )}
 
+                    {group.competencyNote && (
+                      <div className="px-5 py-4 border-b border-border bg-secondary/25">
+                        <div className="space-y-2 text-[12px] leading-relaxed">
+                          <p>
+                            <span className="font-semibold text-foreground">Mise en œuvre :</span>{" "}
+                            <span className="text-muted-foreground">
+                              {group.competencyNote.implementation}
+                            </span>
+                          </p>
+                          <p>
+                            <span className="font-semibold text-foreground">Intérêt :</span>{" "}
+                            <span className="text-muted-foreground">
+                              {group.competencyNote.interest}
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Proofs List */}
                     <div className="divide-y divide-border">
                       {group.proofs.map((proof) => (
