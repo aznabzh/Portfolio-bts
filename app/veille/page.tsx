@@ -5,10 +5,12 @@ import { watchMethodSteps, watchTopics } from "@/lib/data";
 
 export default function VeillePage() {
   return (
-    <div className="pt-18 pb-14 md:pt-20 md:pb-18">
+    <div className="pt-18 pb-16 md:pt-20 md:pb-20">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
-        <header className="mb-14 max-w-3xl">
-          <h1 className="page-title">Veille technologique</h1>
+        <header className="mb-12 max-w-3xl">
+          <h1 className="text-[1.65rem] font-semibold leading-tight tracking-normal md:text-[1.9rem]">
+            Veille technologique
+          </h1>
           <p className="mt-3 text-[15px] leading-7 text-foreground/80 md:text-[16px]">
             Cette page sert de support visuel pour présenter ma démarche de veille.
             Je suis deux axes : Flutter, Dart et Firebase d&apos;un côté, puis les
@@ -16,40 +18,46 @@ export default function VeillePage() {
           </p>
         </header>
 
-        <section className="surface-card mb-14 rounded-lg p-5 md:p-6">
-          <div className="mb-6 flex items-center gap-3">
+        <section className="mb-14">
+          <div className="mb-5 flex items-center gap-3">
             <h2 className="text-[15px] font-semibold">Pipeline de veille</h2>
             <div className="h-px flex-1 bg-border" />
           </div>
 
-          <div className="grid gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-stretch">
+          <div className="rounded-lg border border-border bg-card">
+            <div className="grid gap-0 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-stretch">
             {watchMethodSteps.map((step, index) => (
               <div key={step.index} className="contents">
-                <div className="rounded-lg border border-border bg-background px-4 py-4 md:px-5 md:py-5">
-                  <p className="text-[10px] font-mono font-semibold tracking-wide text-muted-foreground">
-                    {step.index}
-                  </p>
-                  <p className="mt-2 text-[14px] font-semibold tracking-tight">
-                    {step.title}
-                  </p>
-                  <p className="mt-2 text-[13px] leading-6 text-foreground/76">
-                    {step.value}
-                  </p>
+                <div className="px-5 py-5 md:px-6 md:py-6">
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-border bg-secondary text-[11px] font-mono font-semibold text-foreground/70">
+                      {step.index}
+                    </span>
+                    <div>
+                      <p className="text-[14px] font-semibold tracking-tight">
+                        {step.title}
+                      </p>
+                      <p className="mt-1.5 text-[13px] leading-6 text-foreground/76">
+                        {step.value}
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 {index < watchMethodSteps.length - 1 && (
-                  <div className="hidden items-center justify-center md:flex">
+                  <div className="hidden items-center justify-center border-x border-border px-4 md:flex">
                     <ArrowRight className="h-4 w-4 text-foreground/35" />
                   </div>
                 )}
               </div>
             ))}
+            </div>
           </div>
         </section>
 
-        <div className="space-y-10">
+        <div className="space-y-12">
           {watchTopics.map((topic) => (
-            <article key={topic.id} className="surface-card overflow-hidden rounded-lg">
+            <article key={topic.id} className="overflow-hidden rounded-lg border border-border bg-card">
               <div className="border-b border-border px-5 py-5 md:px-6 md:py-6">
                 <div className="mb-3 flex flex-wrap items-center gap-2">
                   <Badge variant="secondary" className="font-mono text-[10px]">
@@ -65,20 +73,22 @@ export default function VeillePage() {
                 </h2>
               </div>
 
-              <div className="grid gap-0 lg:grid-cols-[1.3fr_0.95fr]">
-                <div className="space-y-10 px-5 py-6 md:px-6 md:py-7">
+              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_330px]">
+                <div className="space-y-9 px-5 py-6 md:px-6 md:py-8">
                   <section>
-                    <p className="section-kicker">Mon Workflow</p>
-                    <div className="mt-4 grid gap-4 md:grid-cols-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                      Mon Workflow
+                    </p>
+                    <div className="mt-4 divide-y divide-border rounded-lg border border-border bg-background">
                       {topic.workflow.map((step) => (
                         <div
                           key={step.label}
-                          className="rounded-lg border border-border/80 bg-background px-4 py-4"
+                          className="grid gap-2 px-4 py-4 md:grid-cols-[130px_1fr] md:items-center md:px-5"
                         >
                           <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                             {step.label}
                           </p>
-                          <p className="mt-3 text-[14px] leading-6 text-foreground/78">
+                          <p className="text-[14px] leading-6 text-foreground/82">
                             {step.value}
                           </p>
                         </div>
@@ -87,23 +97,27 @@ export default function VeillePage() {
                   </section>
 
                   <section>
-                    <p className="section-kicker">Sujets Actifs</p>
-                    <div className="mt-4 flex flex-wrap gap-2.5">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                      Sujets Actifs
+                    </p>
+                    <div className="mt-4 grid gap-3 sm:grid-cols-2">
                       {topic.activeTopics.map((item) => (
-                        <span
+                        <div
                           key={item}
-                          className="meta-chip px-3 py-1.5 text-[11px] normal-case tracking-normal"
+                          className="rounded-md border border-border bg-secondary/45 px-4 py-3 text-[14px] font-medium leading-6 text-foreground/86"
                         >
                           {item}
-                        </span>
+                        </div>
                       ))}
                     </div>
                   </section>
                 </div>
 
-                <aside className="border-t border-border bg-secondary/30 px-5 py-6 md:px-6 md:py-7 lg:border-l lg:border-t-0">
+                <aside className="border-t border-border bg-secondary/30 px-5 py-6 md:px-6 md:py-8 lg:border-l lg:border-t-0">
                   <section>
-                    <p className="section-kicker">Sources suivies</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                      Sources suivies
+                    </p>
                     <div className="mt-3 space-y-2.5">
                       {topic.sources.map((source) => (
                         <Link
@@ -111,7 +125,7 @@ export default function VeillePage() {
                           href={source.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-between gap-3 rounded-md border border-border bg-card px-3 py-2.5 text-[13px] font-medium text-foreground/80 transition-colors hover:bg-background hover:text-foreground"
+                          className="flex items-center justify-between gap-3 rounded-md border border-border bg-card px-3.5 py-3 text-[13px] font-medium text-foreground/82 transition-colors hover:bg-background hover:text-foreground"
                         >
                           <span>{source.label}</span>
                           <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-foreground/45" />
@@ -121,12 +135,17 @@ export default function VeillePage() {
                   </section>
 
                   <section className="mt-8">
-                    <p className="section-kicker">Compétences BTS</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                      Compétences BTS
+                    </p>
+                    <div className="mt-3 space-y-2">
                       {topic.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="px-2.5 py-1 text-[10px]">
+                        <div
+                          key={skill}
+                          className="rounded-md bg-secondary px-2.5 py-1.5 text-[11px] font-medium leading-5 text-secondary-foreground"
+                        >
                           {skill}
-                        </Badge>
+                        </div>
                       ))}
                     </div>
                   </section>

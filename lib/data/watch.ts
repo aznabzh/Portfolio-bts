@@ -40,12 +40,9 @@ export const watchTopics: WatchTopic[] = [
     ],
     activeTopics: [
       "Moteur de rendu Impeller",
-      "Évolutions Dart 3.x",
-      "Records & Pattern Matching",
-      "State Management & Architecture",
-      "Riverpod / MVVM",
-      "Optimisation Firebase",
-      "Backend-as-a-Service",
+      "Évolutions Dart 3.x (Records, Pattern Matching)",
+      "State Management & Architecture (Riverpod, MVVM)",
+      "Optimisation Firebase & Backend-as-a-Service",
     ],
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
@@ -79,12 +76,10 @@ export const watchTopics: WatchTopic[] = [
       },
     ],
     activeTopics: [
-      "Pipelines GitHub Actions",
-      "Optimisation Docker",
-      "Multi-stage builds",
-      "Déploiement continu sur VPS",
-      "Traçabilité Linear",
-      "Synchronisation projet",
+      "Pipelines GitHub Actions (CI)",
+      "Optimisation Docker (Multi-stage builds)",
+      "Déploiement continu (CD) sur VPS",
+      "Traçabilité et synchronisation avec Linear",
     ],
     skills: [
       "B1.6.2 - Mettre en œuvre des outils et stratégies de veille informationnelle",
