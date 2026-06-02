@@ -81,6 +81,27 @@ export interface WatchEntry {
   previewVariant?: "article" | "docs" | "css" | "ai" | "framework" | "typescript";
 }
 
+export interface WatchSourceLink {
+  label: string;
+  href: string;
+}
+
+export interface WatchTopic {
+  id: string;
+  badge: string;
+  title: string;
+  subject: string;
+  goal: string;
+  explanation: string;
+  collectionTools: string[];
+  storage: string[];
+  monitored: string[];
+  retained: string[];
+  projectLink: string;
+  skills: string[];
+  sources: WatchSourceLink[];
+}
+
 export interface StudentInfo {
   name: string;
   subtitle: string;

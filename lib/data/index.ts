@@ -17,7 +17,9 @@ export type {
   StudentInfo,
   SubCompetency,
   WatchEntry,
+  WatchSourceLink,
+  WatchTopic,
 } from "./types";
 export { projects } from "./projects";
 export { studentInfo } from "./student";
-export { watchEntries } from "./watch";
+export { watchEntries, watchMethodSteps, watchTopics } from "./watch";
